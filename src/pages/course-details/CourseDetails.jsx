@@ -164,7 +164,7 @@ const CourseDetails = () => {
               <label for="tabtwo">Modules</label>
               <div className="tab">
                 <span>Modules</span>
-                <ul>
+                {/* <ul>
                   {course?.modules?.map((mod, i) => (
                     <li>
                       <button
@@ -176,7 +176,21 @@ const CourseDetails = () => {
                       </button>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
+
+                <ol class="style_1">
+                  {course?.modules?.map((mod, i) => (
+                    <li>
+                      <button
+                        onClick={() =>
+                          handleShowModal(mod.title, mod.description)
+                        }
+                      >
+                        {mod.title}
+                      </button>
+                    </li>
+                  ))}
+                </ol>
 
                 <div className="container">
                   <div className="main-video-container">
