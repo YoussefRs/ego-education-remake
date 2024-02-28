@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Modal from "../../components/modal/Modal";
 
 import SubHeader from "../../components/global/sub-header/SubHeader";
 
@@ -15,12 +16,28 @@ import ApplyWidget from "../../components/widgets/apply-widget/ApplyWidget";
 import EnquireWidget from "../../components/widgets/enquire-widget/EnquireWidget";
 import PromoWidget from "../../components/widgets/promo-widget/PromoWidget";
 import AboutWelcome from "../../components/about/about-welcome/AboutWelcome";
+import { useModal } from "../../hooks/useModal";
 
 const CourseDetails = () => {
   const [course, setCourse] = useState();
   const [courseId, setCourseId] = useState(null);
   const location = useLocation();
   const [activeTab, setActiveTab] = useState("tabone");
+  const [selectedVideo, setSelectedVideo] = useState(course?.videos[0]);
+
+  const { showModal, openModal, closeModal } = useModal();
+  const [selectedTitle, setSelectedTitle] = useState("");
+  const [modalContent, setModalContent] = useState("");
+
+  const handleShowModal = (title, content) => {
+    setSelectedTitle(title);
+    setModalContent(content);
+    openModal();
+  };
+
+  const handleCloseModal = () => {
+    closeModal();
+  };
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
@@ -39,8 +56,12 @@ const CourseDetails = () => {
     }
   }, [courseId]);
 
+  const handleVideoClick = (video) => {
+    setSelectedVideo(video);
+  };
+
   if (!course) {
-    return;
+    return null; // or a loading indicator
   }
 
   return (
@@ -142,109 +163,47 @@ const CourseDetails = () => {
               />
               <label for="tabtwo">Modules</label>
               <div className="tab">
+                <span>Modules</span>
                 <ul>
-                  <li>
-                    <p>Basic Java</p>
-                    <span>
-                      Basic Java The module explores the fundamentals of Java
-                      programming and Object Oriented programming The Basic Java
-                      module provides students with a solid foundation in Java
-                      programming, catering to both beginners and those with
-                      limited prior experience in coding. Throughout this
-                      module, students will embark on a journey to Master Degree
-                      the essential concepts of Java, ultimately enabling them
-                      to critically analyze code, understand object-oriented
-                      programming principles, and construct basic Java
-                      applications. 12 ECTS
-                    </span>
-                  </li>
-                  <li>
-                    <p>Advanced Java</p>
-                    <span>
-                      The module presents the techniques for good Java
-                      programming, and the Java Framework API The Advanced Java
-                      module is designed to empower students with a deeper
-                      understanding of the Java programming language, equipping
-                      them with the expertise needed to tackle complex software
-                      projects and leverage Java's rich ecosystem effectively.
-                      Throughout this module, students will Master Degree
-                      advanced Java concepts and frameworks, enabling them to
-                      critically analyze and apply their knowledge to real-world
-                      software development scenarios. 12 ECTS
-                    </span>
-                  </li>
-                  <li>
-                    <p>DBMS and SQL</p>
-                    <span>
-                      The module defines the techniques for the data persistence
-                      and for data access via the Structured Query Language The
-                      DBMS and SQL module offers a comprehensive exploration of
-                      Database Management Systems (DBMS) and Structured Query
-                      Language (SQL). Designed for students pursuing a deeper
-                      understanding of data management and database design, this
-                      module equips them with the skills required to critically
-                      analyze data relations, plan and implement databases on a
-                      Relational Database Management System (RDBMS), and employ
-                      advanced SQL commands effectively. 12 ECTS
-                    </span>
-                  </li>
-                  <li>
-                    <p>Access to Databases from Applications</p>
-                    <span>
-                      The module defines the techniques remote accesso to
-                      persistent data from a Java application The Access to
-                      Databases from Applications module offers students a
-                      comprehensive exploration of the critical intersection
-                      between application development and database management.
-                      This module equips students with the skills and knowledge
-                      required to effectively access, manipulate, and manage
-                      data stored in Relational Database Management Systems
-                      (RDBMS) from Java applications. Through this course,
-                      students will gain a deep understanding of access control,
-                      access control systems, and the use of the Java
-                      Persistence API (JPA) framework. 12 ECTS
-                    </span>
-                  </li>
-                  <li>
-                    <p>Web Applications</p>
-                    <span>
-                      Module covers implementation of the full software web
-                      application project, back-end, front- end and management
-                      of third-party systems used for data persistence The Web
-                      Applications module provides students with an in-depth
-                      exploration of the technologies and principles behind
-                      modern web development. Students will develop a profound
-                      understanding of web application architecture, design
-                      patterns, and the intricacies of web protocols. This
-                      module equips them with the skills and critical knowledge
-                      necessary to design, develop, and deploy web-based
-                      software systems, with a specific focus on the J2EE
-                      framework and the Java Spring Framework. 12 ECTS
-                    </span>
-                  </li>
-                  <li>
-                    <p>Research Methods 6 ECTS</p>
-                  </li>
-                  <li>
-                    <p>Dissertation</p>
-                    <span>
-                      The dissertation is a compulsory element of Master Degree
-                      of Science in Java Programming. Dissertation is based on a
-                      major piece of work that involves applying material
-                      encountered in the taught component of the degree, and
-                      extending that knowledge with the student's contribution,
-                      under the guidance of a supervisor. This component of the
-                      Master Degree’s degree provides an opportunity for
-                      students to pursue a single topic in depth and to
-                      demonstrate evidence of research ability at a Master
-                      Degrees level. The topic is typically a current problem in
-                      the broad area of their MSc programme. The dissertation
-                      usually involves experimental or theoretical research, or
-                      a substantial literature survey on a specific topic. 24
-                      ECTS
-                    </span>
-                  </li>
+                  {course?.modules?.map((mod, i) => (
+                    <li>
+                      <button
+                        onClick={() =>
+                          handleShowModal(mod.title, mod.description)
+                        }
+                      >
+                        {mod.title}
+                      </button>
+                    </li>
+                  ))}
                 </ul>
+
+                <div className="container">
+                  <div className="main-video-container">
+                    <video
+                      className="main-video"
+                      src={selectedVideo?.src || course.videos[0].src}
+                      loop
+                      controls
+                    ></video>
+                    <h3 className="main-video__title">
+                      {selectedVideo?.src || course.videos[0].src}
+                    </h3>
+                  </div>
+                  <div className="video-list-container">
+                    {course?.videos?.map((video, index) => (
+                      <div
+                        className={`list ${
+                          selectedVideo == video ? "active" : ""
+                        }`}
+                        key={index}
+                        onClick={() => handleVideoClick(video)}
+                      >
+                        <h3 className="list__title">{video.title}</h3>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
 
               <input
@@ -276,6 +235,9 @@ const CourseDetails = () => {
           </div>
         </div>
       </div>
+      <Modal title="My Modal" show={showModal} onHide={closeModal} size="lg">
+        {modalContent}
+      </Modal>
     </div>
   );
 };

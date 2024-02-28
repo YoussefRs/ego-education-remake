@@ -17,7 +17,11 @@ const useCourse = (req) => {
         source:
           "https://t4.ftcdn.net/jpg/06/87/83/03/360_F_687830359_0gDt5GdOpAE51LqpgxgrNGhlH9Jb2TBm.jpg",
       },
-      career : ["Java Programmer", "Software Engineer", "IT/Java Programme Manager"],
+      career: [
+        "Java Programmer",
+        "Software Engineer",
+        "IT/Java Programme Manager",
+      ],
       description:
         "The aim of the course is to allow students to deal with the entire software development cycle, from the analysis of customer needs to the structuring of the database, from the design of the user interface to the construction of the back end using Object Oriented programming model and the Java language.",
       slogan:
@@ -27,13 +31,117 @@ const useCourse = (req) => {
         "https://dce0qyjkutl4h.cloudfront.net/wp-content/webp-express/webp-images/uploads/2023/08/Java-enterprise-solutions.jpg.webp",
       degree: "Master Degree",
       institute: "Ego",
+      modules: [
+        {
+          title: "Basic Java",
+          description: `Basic Java The module explores the fundamentals of Java
+      programming and Object Oriented programming The Basic Java
+      module provides students with a solid foundation in Java
+      programming, catering to both beginners and those with
+      limited prior experience in coding. Throughout this
+      module, students will embark on a journey to Master Degree
+      the essential concepts of Java, ultimately enabling them
+      to critically analyze code, understand object-oriented
+      programming principles, and construct basic Java
+      applications.`,
+          ects: 12,
+        },
+        {
+          title: "Advanced Java",
+          description: `The module presents the techniques for good Java
+                      programming, and the Java Framework API The Advanced Java
+                      module is designed to empower students with a deeper
+                      understanding of the Java programming language, equipping
+                      them with the expertise needed to tackle complex software
+                      projects and leverage Java's rich ecosystem effectively.
+                      Throughout this module, students will Master Degree
+                      advanced Java concepts and frameworks, enabling them to
+                      critically analyze and apply their knowledge to real-world
+                      software development scenarios.`,
+          ects: 12,
+        },
+        {
+          title: "DBMS and SQL",
+          description: `The module defines the techniques for the data persistence
+                       and for data access via the Structured Query Language The
+                      DBMS and SQL module offers a comprehensive exploration of
+                      Database Management Systems (DBMS) and Structured Query
+                     Language (SQL). Designed for students pursuing a deeper
+                     understanding of data management and database design, this
+                     module equips them with the skills required to critically
+                      analyze data relations, plan and implement databases on a
+                      Relational Database Management System (RDBMS), and employ
+                       advanced SQL commands effectively.`,
+          ects: 12,
+        },
+        {
+          title: "Access to Databases from Applications",
+          description: `The module defines the techniques remote accesso to
+                     persistent data from a Java application The Access to
+                      Databases from Applications module offers students a
+                      comprehensive exploration of the critical intersection
+                     between application development and database management.
+                      This module equips students with the skills and knowledge
+                      required to effectively access, manipulate, and manage
+                     data stored in Relational Database Management Systems
+                      (RDBMS) from Java applications. Through this course,
+                       students will gain a deep understanding of access control,
+                      access control systems, and the use of the Java
+                      Persistence API (JPA) framework.`,
+          ects: 12,
+        },
+        {
+          title: "Web Applications",
+          description: `Module covers implementation of the full software web
+                       application project, back-end, front- end and management
+                       of third-party systems used for data persistence The Web
+                      Applications module provides students with an in-depth
+                      exploration of the technologies and principles behind
+                       modern web development. Students will develop a profound
+                       understanding of web application architecture, design
+                      patterns, and the intricacies of web protocols. This
+                      module equips them with the skills and critical knowledge
+                     necessary to design, develop, and deploy web-based
+                   software systems, with a specific focus on the J2EE
+                       framework and the Java Spring Framework.`,
+          ects: 12,
+        },
+        {
+          title: "Research Methods",
+          description: ``,
+          ects: 6,
+        },
+        {
+          title: "Dissertation",
+          description: `The dissertation is a compulsory element of Master Degree
+                     of Science in Java Programming. Dissertation is based on a
+                      major piece of work that involves applying material
+                      encountered in the taught component of the degree, and
+                      extending that knowledge with the student's contribution,
+                     under the guidance of a supervisor. This component of the
+                      Master Degree’s degree provides an opportunity for
+                     students to pursue a single topic in depth and to
+                      demonstrate evidence of research ability at a Master
+                      Degrees level. The topic is typically a current problem in
+                      the broad area of their MSc programme. The dissertation
+                      usually involves experimental or theoretical research, or
+                      a substantial literature survey on a specific topic.`,
+          ects: 24,
+        },
+      ],
+      videos: [
+        { src: "img/vid-1.mp4", title: "Intro" },
+        { src: "img/vid-2.mp4", title: "video example 1" },
+        { src: "img/vid-3.mp4", title: "video example 2" },
+        { src: "img/vid-4.mp4", title: "video example 3" },
+      ],
     },
     {
       id: "tU1vW2xY",
       name: "Master of Science in Information Security",
       startDate: "05 Jun 2023",
       duration: "2 years",
-      location: "In Campus",
+      location: "Online",
       media: {
         type: "image",
         source:
