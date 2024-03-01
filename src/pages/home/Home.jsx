@@ -8,26 +8,59 @@ import HomeDocumentary from "../../components/home/home-documentary/HomeDocument
 import HomeQuickLinks from "../../components/home/home-quick-links/HomeQuickLinks";
 import HomeTestimonials from "../../components/home/home-testimonials/HomeTestimonials";
 import HomeInstitutes from "../../components/home/home-institutes/HomeInstitutes";
+import ego from "../../assets/images/ego.png";
+import Dec2 from "../team/deck2";
+import HomeLecturers from "../../components/home/home-lecturers/HomeLecturers";
 
 export default function Home() {
   return (
     <main className="home-page">
       <div className="content container">
         <Hero />
+        <div class="divisions division_2 flex slider">
+          <section class="flex-content slide-track">
+            <figure class="slide">
+              <img src={ego} height="100" alt="" />
+            </figure>
+            <figure class="slide">
+              <img src={ego} height="100" alt="" />
+            </figure>
+            <figure class="slide">
+              <img src={ego} height="100" alt="" />
+            </figure>
+            <figure class="slide">
+              <img src={ego} height="100" alt="" />
+            </figure>
+            <figure class="slide">
+              <img src={ego} height="100" alt="" />
+            </figure>
+            <figure class="slide">
+              <img src={ego} height="100" alt="" />
+            </figure>
+            <figure class="slide">
+              <img src={ego} height="100" alt="" />
+            </figure>
+            <figure class="slide">
+              <img src={ego} height="100" alt="" />
+            </figure>
+          </section>
+        </div>
         <HomeHeading />
         <NewsSection />
         <div className="row cols-wrapper">
           {/* <HomeEvents /> */}
           <div className="col-lg-9 col-12">
-            <HomeCourseFinder />
-            <HomeDocumentary />
+            {/* <HomeCourseFinder /> */}
+            {/* <HomeDocumentary /> */}
           </div>
           <div className="col-lg-3 col-12">
-            <HomeQuickLinks />
-            <HomeTestimonials />
+            {/* <HomeQuickLinks /> */}
+            {/* <HomeTestimonials /> */}
           </div>
         </div>
         <HomeInstitutes />
+        <HomeLecturers />
+        <Dec2 />
       </div>
     </main>
   );

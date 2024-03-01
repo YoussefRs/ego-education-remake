@@ -260,6 +260,27 @@ const useCourse = (req) => {
       degree: "Bachelor Degree",
       institute: "Pegaso",
     },
+    {
+      id: "gH7iJ8UI",
+      name: "Educational Science",
+      startDate: "18 Oct 2023",
+      duration: "1 year",
+      location: "Online",
+      media: {
+        type: "image",
+        source:
+          "https://cognizant.scene7.com/is/image/cognizant/gmp-manufacturing-hero-banner",
+      },
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum pellentesque urna. Phasellus adipiscing et massa et aliquam. Ut odio magna, interdum quis dolor non, tristique vestibulum nisi. Nam accumsan convallis venenatis. Nullam posuere risus odio, in interdum felis venenatis sagittis. Integer malesuada porta fermentum. Sed luctus nibh sed mi auctor imperdiet. Cras et sapien rhoncus, pulvinar dolor sed, tincidunt massa. Nullam fringilla mauris non risus ultricies viverra. Donec a turpis non lorem pulvinar posuere.",
+      slogan:
+        "Fostering Minds, Shaping Futures: A Journey in Educational Science.",
+      promo: null,
+      thumb:
+        "https://plus.unsplash.com/premium_photo-1682124416359-d48d59ad6916?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2NpZW5jZSUyMGVkdWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+      degree: "PhD",
+      institute: "Pegaso",
+    },
   ];
 
   const getCourseById = (id) => {

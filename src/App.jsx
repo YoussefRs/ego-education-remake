@@ -27,6 +27,7 @@ import NewDetails from "./pages/new-details/NewDetails";
 import RegistrationForm from "./pages/registration-form/RegistrationForm";
 import EnrollmentForm from "./pages/course-purchase/EnrollmentForm";
 import Dashboard from "./pages/dashboard/Dashboard";
+import CookiesBox from "./Cookies";
 
 function App() {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <div className="app">
+      <CookiesBox />
       <Navbar show={setShowSideMenu} />
       <SideMenu show={showSideMenu} handleShow={setShowSideMenu} />
       <Routes>

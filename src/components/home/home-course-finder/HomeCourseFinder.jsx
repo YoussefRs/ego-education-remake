@@ -36,14 +36,18 @@ const HomeCourseFinder = () => {
     (course) =>
       (selectedInstitute === "ego" &&
         course.institute === "Ego" &&
-        course.degree === "Master Degree") ||
+        (selectedProgram === "Master Degree" ||
+          course.degree === "Bachelor Degree" ||
+          course.degree === "PhD Degree")) ||
       (selectedInstitute === "pegasso" &&
         course.institute === "Pegaso" &&
-        (selectedProgram === "Master Degree" || course.degree === "Bachelor Degree"))
+        (selectedProgram === "Master Degree" ||
+          course.degree === "Bachelor Degree" ||
+          course.degree === "PhD Degree"))
   );
 
   return (
-    <section className="course-finder rounded shadow">
+    <section className="course-finder rounded shadow mb-4 p-3">
       <h1 className="section-heading text-highlight">
         <span className="line">Quick Search</span>
       </h1>
@@ -74,6 +78,7 @@ const HomeCourseFinder = () => {
                   <>
                     <option value="Master Degree">Master Degree</option>
                     <option value="Bachelor Degree">Bachelor Degree</option>
+                    <option value="PhD Degree">PhD Degree</option>
                   </>
                 )}
               </select>

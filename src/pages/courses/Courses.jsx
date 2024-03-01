@@ -7,6 +7,7 @@ import ApplyWidget from "../../components/widgets/apply-widget/ApplyWidget";
 import SubHeader from "../../components/global/sub-header/SubHeader";
 
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import HomeCourseFinder from "../../components/home/home-course-finder/HomeCourseFinder";
 
 const Courses = () => {
   const coursesSomeData = useCourse({
@@ -18,11 +19,12 @@ const Courses = () => {
     <div className="content container">
       <div className="page-wrapper">
         <SubHeader
-          title={"Departments"}
+          title={"Courses"}
           path={[{ url: "/", label: "Home" }]}
           current={"Courses"}
         />
         <div className="page-content">
+          <HomeCourseFinder />
           <div className="row page-row">
             <div className="courses-wrapper col-lg-8 col-md-8 col-12">
               <div className="featured-courses tabbed-info page-row">
@@ -107,6 +109,38 @@ const Courses = () => {
                           (course) =>
                             course.institute === "Pegaso" &&
                             course.degree === "Master Degree"
+                        )
+                        .map((crs) => (
+                          <div className="item col-lg-3 col-6" key={crs.id}>
+                            <img
+                              className="img-fluid rounded courses-img"
+                              src={crs.thumb}
+                              alt=""
+                            />
+                            <p className="text-start">
+                              <Link to={`/course/${crs.id}`}>
+                                <FontAwesomeIcon
+                                  icon={faGraduationCap}
+                                  className="me-1"
+                                />
+                                {crs.name}
+                              </Link>
+                            </p>
+                          </div>
+                        ))}
+                    </div>
+                    <div className="row">
+                      <p
+                        className="col-12 fw-bold h4"
+                        style={{ color: "#046635" }}
+                      >
+                        PhD
+                      </p>
+                      {coursesSomeData
+                        .filter(
+                          (course) =>
+                            course.institute === "Pegaso" &&
+                            course.degree === "PhD"
                         )
                         .map((crs) => (
                           <div className="item col-lg-3 col-6" key={crs.id}>
