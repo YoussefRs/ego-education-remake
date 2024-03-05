@@ -34,7 +34,7 @@ const CookiesBox = () => {
       <div className="cookies__buttons">
         <button
           id="acceptBtn"
-          className="cookies__btn cookies__btn--accept"
+          className="cookies__btn cookies__btn--accept mb-1"
           onClick={handleAccept}
         >
           Allow
