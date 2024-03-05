@@ -12,10 +12,7 @@ import {
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import useCourse from "../../hooks/useCourse";
-import ApplyWidget from "../../components/widgets/apply-widget/ApplyWidget";
 import EnquireWidget from "../../components/widgets/enquire-widget/EnquireWidget";
-import PromoWidget from "../../components/widgets/promo-widget/PromoWidget";
-import AboutWelcome from "../../components/about/about-welcome/AboutWelcome";
 import { useModal } from "../../hooks/useModal";
 
 const CourseDetails = () => {
@@ -25,20 +22,13 @@ const CourseDetails = () => {
   const [activeTab, setActiveTab] = useState("tabone");
   const [selectedVideo, setSelectedVideo] = useState(course?.videos[0]);
 
-  const { showModal, openModal, closeModal } = useModal();
-  const [selectedTitle, setSelectedTitle] = useState("");
-  const [modalContent, setModalContent] = useState("");
+  
 
-  const handleShowModal = (title, content) => {
-    setSelectedTitle(title);
-    setModalContent(content);
-    openModal();
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
   };
-
-  const handleCloseModal = () => {
-    closeModal();
-  };
-
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
   };
@@ -104,7 +94,7 @@ const CourseDetails = () => {
               />
               <label for="tabone">overview</label>
               <div className="tab">
-                <div className="page-row box box-border rounded">
+                <div className="page-row box box-border rounded mb-4">
                   <ul className="list-unstyled no-margin-bottom">
                     <li>
                       <strong>
@@ -178,7 +168,7 @@ const CourseDetails = () => {
                   ))}
                 </ul> */}
 
-                <ol class="style_1">
+                {/* <ol class="style_1">
                   {course?.modules?.map((mod, i) => (
                     <li>
                       <button
@@ -190,7 +180,139 @@ const CourseDetails = () => {
                       </button>
                     </li>
                   ))}
-                </ol>
+                </ol> */}
+
+                <div class="container p-4 bg-light">
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item rounded-3 border-0 shadow mb-2">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button border-bottom collapsed fw-semibold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                        >
+                          Basic Java
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body d-flex gap-4">
+                          <div className="accordion-body d-flex gap-4">
+                            <ul className="cursor-pointer">
+                              <li
+                                onClick={() => handleItemClick("Description")}
+                              >
+                                Description
+                              </li>
+                              <li onClick={() => handleItemClick("ETC")}>
+                                ETC
+                              </li>
+                              <li onClick={() => handleItemClick("Lecturer")}>
+                                Lecturer
+                              </li>
+                            </ul>
+                            {selectedItem && (
+                              <div>
+                                {selectedItem === "Description" && (
+                                  <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Doloremque cumque fugiat
+                                    aliquid ipsum, maxime animi, recusandae
+                                    aliquam reprehenderit expedita facere omnis
+                                    amet obcaecati ex incidunt? Nesciunt
+                                    corrupti accusamus voluptatem vitae. Lorem,
+                                    ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quidem, porro non enim facere
+                                    voluptatem ipsam veniam adipisci. Id
+                                    repudiandae saepe ipsum, obcaecati debitis,
+                                    fugiat adipisci veniam rerum non eligendi
+                                    qui. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Numquam, porro nisi! Quis,
+                                    eligendi eius! Architecto nobis ipsa vero
+                                    temporibus fugiat rerum voluptatum nostrum,
+                                    odio voluptates vitae amet sequi laudantium
+                                    eveniet!
+                                  </p>
+                                )}
+                                {selectedItem === "ETC" && (
+                                  <p>Content for ETC</p>
+                                )}
+                                {selectedItem === "Lecturer" && (
+                                  <p>Content for Lecturer</p>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item rounded-3 border-0 shadow mb-2">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button border-bottom collapsed fw-semibold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          Other Example
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          {/* <p>
+                            Please check our more latest Design @
+                            <a href="https://codepen.io/Gaurav-Rana-the-reactor">
+                              Codepen
+                            </a>
+                          </p> */}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item rounded-3 border-0 mb-2 shadow">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button border-bottom collapsed fw-semibold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          Other Example
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">
+                          {/* <p>
+                            Please check our more latest Design @{" "}
+                            <a href="https://codepen.io/Gaurav-Rana-the-reactor">
+                              Codepen
+                            </a>
+                          </p> */}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="container">
                   <div className="main-video-container">
@@ -227,9 +349,22 @@ const CourseDetails = () => {
                 checked={activeTab === "tabthree"}
                 onChange={() => handleTabChange("tabthree")}
               />
-              <label for="tabthree">Instructor</label>
+              <label for="tabthree">Lecturer</label>
               <div className="tab">
                 <h1>Tab Three Content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+
+              <input
+                type="radio"
+                name="tabs"
+                id="tabfour"
+                checked={activeTab === "tabfour"}
+                onChange={() => handleTabChange("tabfour")}
+              />
+              <label for="tabfour" id="special_label">Admission</label>
+              <div className="tab">
+                <h1>Tab Four Content</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
             </div>
@@ -241,7 +376,7 @@ const CourseDetails = () => {
               <EnquireWidget /> */}
               <div className="right_box">
                 <div className="mb-3 p-4">
-                  <ApplyWidget />
+                  {/* <ApplyWidget /> */}
                   <EnquireWidget />
                 </div>
               </div>
@@ -249,9 +384,6 @@ const CourseDetails = () => {
           </div>
         </div>
       </div>
-      <Modal title="My Modal" show={showModal} onHide={closeModal} size="lg">
-        {modalContent}
-      </Modal>
     </div>
   );
 };

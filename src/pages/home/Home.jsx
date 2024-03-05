@@ -11,40 +11,13 @@ import HomeInstitutes from "../../components/home/home-institutes/HomeInstitutes
 import ego from "../../assets/images/ego.png";
 import Dec2 from "../team/deck2";
 import HomeLecturers from "../../components/home/home-lecturers/HomeLecturers";
+import Faq from "../faq/Faq";
 
 export default function Home() {
   return (
     <main className="home-page">
       <div className="content container">
         <Hero />
-        <div class="divisions division_2 flex slider">
-          <section class="flex-content slide-track">
-            <figure class="slide">
-              <img src={ego} height="100" alt="" />
-            </figure>
-            <figure class="slide">
-              <img src={ego} height="100" alt="" />
-            </figure>
-            <figure class="slide">
-              <img src={ego} height="100" alt="" />
-            </figure>
-            <figure class="slide">
-              <img src={ego} height="100" alt="" />
-            </figure>
-            <figure class="slide">
-              <img src={ego} height="100" alt="" />
-            </figure>
-            <figure class="slide">
-              <img src={ego} height="100" alt="" />
-            </figure>
-            <figure class="slide">
-              <img src={ego} height="100" alt="" />
-            </figure>
-            <figure class="slide">
-              <img src={ego} height="100" alt="" />
-            </figure>
-          </section>
-        </div>
         <HomeHeading />
         <NewsSection />
         <div className="row cols-wrapper">
@@ -61,6 +34,7 @@ export default function Home() {
         <HomeInstitutes />
         <HomeLecturers />
         <Dec2 />
+        <Faq />
       </div>
     </main>
   );

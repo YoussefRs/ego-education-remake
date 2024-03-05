@@ -1,60 +1,29 @@
-.staff-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px;
-  
-}
-.single-staff {
-  max-width: 250px;
-  width: 100%;
-  background: #046635;
+#cards .card {
   border-radius: 20px;
-  text-align: center;
-  position: relative;
-  padding: 0 0 20px;
-  margin: 0px 50px 30px 0;
+  min-height: 100%;
   
 }
-.single-staff:before {
+
+#cards .heading-border {
   position: absolute;
-  content: "";
-  width: 95px;
-  height: 105px;
-  top: -20px;
-  left: -20px;
-  background: black;
-  z-index: -1;
-  
-}
-.single-staff:after {
-  position: absolute;
-  content: "";
-  width: 95px;
-  height: 105px;
-  bottom: -20px;
-  right: -20px;
-  background: black;
-  z-index: -1;
-  
-}
-.staff-info {
-  padding: 20px 15px 0;
-}
-.single-staff img {
   width: 100%;
-  display: block;
+  top: 60%;
 }
-.fst-name {
-  display: block;
-  color: black;
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
+
+#cards .card .user-picture img {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  background: #f8f9fa !important;
+  padding: 10px;
 }
-.lst-name {
-  display: block;
-  color: black;
-  font-size: 26px;
-  font-weight: 700;
+
+#cards .card .user-content .user-name {
+  margin-right: 150px;
+  margin-bottom: 2rem;
+}
+
+#cards .card .card-body {
+    border-radius: 20px;
+    box-shadow: 0px 16px 15px 0px rgba(0, 0, 0, 0.24);
 }

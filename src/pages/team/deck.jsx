@@ -178,7 +178,7 @@ class Deck extends Component {
 
   render() {
     return (
-      <div className="content container">
+      <div className="content container __deck_bg">
         <h1 className="section-heading text-highlight">
           <span className="line fw-bold">Our Staff</span>
         </h1>

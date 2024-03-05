@@ -2,6 +2,10 @@
 ._team_ {
   width: 100%;
 }
+.__deck_bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .deck-button {
   text-align: center;
   margin-top: 120px;

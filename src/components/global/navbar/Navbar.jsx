@@ -84,12 +84,12 @@ export default function Navbar({ show }) {
           Our Partners
         </a>
         <Link
-          to="/about"
-          className={activeLink === "about" ? "active" : ""}
-          onClick={() => handleLinkClick("about")}
+          to="/research"
+          className={activeLink === "research" ? "active" : ""}
+          onClick={() => handleLinkClick("research")}
           style={{ color: "#fff" }}
         >
-          About us
+          Ego Research
         </Link>
         <Link
           to="/enrollment"
@@ -98,6 +98,14 @@ export default function Navbar({ show }) {
           style={{ color: "#fff" }}
         >
           Apply
+        </Link>
+        <Link
+          to="/about"
+          className={activeLink === "about" ? "active" : ""}
+          onClick={() => handleLinkClick("about")}
+          style={{ color: "#fff" }}
+        >
+          About us
         </Link>
       </section>
       <section className="flex_content">
