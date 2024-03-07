@@ -16,7 +16,7 @@ import Faq from "../faq/Faq";
 export default function Home() {
   return (
     <main className="home-page">
-      <div className="content container">
+      <div className="">
         <Hero />
         <HomeHeading />
         <NewsSection />

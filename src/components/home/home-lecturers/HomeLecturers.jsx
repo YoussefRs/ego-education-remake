@@ -4,7 +4,7 @@ import "./HomeLecturers.css";
 export default function HomeLecturers() {
   return (
     <>
-      <h1 className="section-heading text-highlight mb-4">
+      <h1 className="section-heading text-highlight content container mb-4">
         <span className="line fw-bold">Our Lecturers</span>
       </h1>
       <section id="cards">

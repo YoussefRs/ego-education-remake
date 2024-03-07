@@ -1,7 +1,10 @@
+#cards {
+  background-color: #f8f8f8;
+}
+
 #cards .card {
   border-radius: 20px;
   min-height: 100%;
-  
 }
 
 #cards .heading-border {

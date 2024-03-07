@@ -51,7 +51,7 @@ const HomeInstitutes = () => {
         </table>
       </div> */}
 
-      <div class="divisions division_2 flex slider">
+      {/* <div class="divisions division_2 flex slider">
         <section class="flex-content slide-track">
           <figure class="slide">
             <img src={ego} height="70" alt="" />
@@ -78,7 +78,7 @@ const HomeInstitutes = () => {
             <img src={ego} height="70" alt="" />
           </figure>
         </section>
-      </div>
+      </div> */}
     </section>
   );
 };

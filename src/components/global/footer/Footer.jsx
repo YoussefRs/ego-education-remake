@@ -11,104 +11,87 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <div className="container">
-          <div className="row">
-            <div className="footer-col col-lg-3 col-md-4 col-12 about">
-              <div className="footer-col-inner">
-                <h3>About</h3>
-                <ul>
-                  <li className="red_hover hov_pointer">
-                    <Link to={"/about"}>
-                      <FontAwesomeIcon icon={faCaretRight} /> About us
-                    </Link>
-                  </li>
-                  <li className="red_hover hov_pointer">
-                    <Link to={"/contact"}>
-                      <FontAwesomeIcon icon={faCaretRight} /> Contact us
-                    </Link>
-                  </li>
-                  <li className="red_hover hov_pointer">
-                    <Link to={"/privacy"}>
-                      <FontAwesomeIcon icon={faCaretRight} /> Privacy policy
-                    </Link>
-                  </li>
-                  <li className="red_hover hov_pointer">
-                    <Link to={"/terms"}>
-                      <FontAwesomeIcon icon={faCaretRight} /> Terms & Conditions
-                    </Link>
-                  </li>
-                </ul>
+    <>
+      <div class="contact-us section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6  align-self-center">
+              <div class="section-heading">
+                <h6>Contact Us</h6>
+                <h2>Feel free to contact us anytime</h2>
+                <p>
+                  Thank you for choosing our templates. We provide you best CSS
+                  templates at absolutely 100% free of charge. You may support
+                  us by sharing our website to your friends.
+                </p>
               </div>
             </div>
-            <div className="footer-col col-lg-6 col-md-8 col-12 newsletter">
-              <div className="footer-col-inner">
-                <h3>Join our mailing list</h3>
-                <p>Subscribe Us</p>
-                <form className="subscribe-form">
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className="form-control rounded-pill"
-                      placeholder="Enter your email"
-                    />
+            <div class="col-lg-6">
+              <div class="contact-us-content">
+                <form id="contact-form" action="" method="post">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <input
+                          type="name"
+                          name="name"
+                          id="name"
+                          placeholder="Your Name..."
+                          autocomplete="on"
+                          required
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          pattern="[^ @]*@[^ @]*"
+                          placeholder="Your E-mail..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          id="message"
+                          placeholder="Your Message"
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <button
+                          type="submit"
+                          id="form-submit"
+                          className="_btn btn-cta"
+                        >
+                          Send Message Now
+                        </button>
+                      </fieldset>
+                    </div>
                   </div>
-                  <input
-                    className="_btn btn-theme btn-subscribe"
-                    type="submit"
-                    value="Subscribe"
-                  />
                 </form>
               </div>
             </div>
-            <div className="footer-col col-lg-3 col-12 contact">
-              <div className="footer-col-inner">
-                <h3>Contact us</h3>
-                <div className="row">
-                  <p className="adr clearfix col-lg-12 col-md-4 col-12">
-                    <FontAwesomeIcon
-                      icon={faMapMarkerAlt}
-                      className="float-left"
-                    />{" "}
-                    {/* Replace <i> with <FontAwesomeIcon> */}
-                    <span className="adr-group float-left">
-                      <span className="street-address">
-                        40, Villa Fairholme, Sir Augustus Bartolo Street, Ta’
-                        Xbiex XBX 1095, Malta
-                      </span>
-                    </span>
-                  </p>
-                  <p className="tel col-lg-12 col-md-4 col-12">
-                    <FontAwesomeIcon icon={faPhone} /> +8801712345678
-                  </p>
-                  <p className="email col-lg-12 col-md-4 col-12">
-                    <FontAwesomeIcon icon={faEnvelope} />{" "}
-                    {/* Replace <i> with <FontAwesomeIcon> */}
-                    <span
-                      href="mailto:info@ego-education.com"
-                      className="red_hover hov_pointer"
-                    >
-                      info@ego-education.com
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-      <div className="bottom-bar">
-        <div className="container">
-          <div className="row">
-            <small className="copyright col-lg-6 col-12 justify-content-center align-items-center d-flex flex-column w-100">
-              Copyright © 2024. All rights reserved.<br/>
-              <a href="/" className="m-0">www.ego-education.com</a>
-            </small>
+      <footer>
+        <div class="container">
+          <div class="col-lg-12">
+            <p>
+              Copyright © 2024 Ego Eduation. All rights reserved.
+              
+            </p>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 

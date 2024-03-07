@@ -102,8 +102,8 @@
 .button1 {
   width: 48px;
   height: 48px;
-  background-color: #046635;;
-  border: 2px solid #046635;;
+   background-color: transparent;
+  border: 1px solid #046635;
   border-radius: 48px;
   transition: all 0.3s ease;
   margin-left: 20px;
@@ -122,9 +122,9 @@
 .button2 {
   width: 48px;
   height: 48px;
-  background-color: #046635;;
+  background-color: transparent;
   border-radius: 48px;
-  border: 2px solid #046635;;
+  border: 1px solid #046635;
   transition: all 0.3s ease;
   margin-left: 20px;
   margin-right: 20px;
@@ -140,7 +140,7 @@
 }
 
 button:hover {
-  background-color: #141820;
+  background: var(--Linear, linear-gradient(315deg, #07D25F 20.24%, #046635 80.97%));
   border-color: #046635;
 }
 /* 

@@ -12,17 +12,18 @@ import news3 from "../../../assets/images/news/news-thumb-3.jpg";
 import news4 from "../../../assets/images/news/news-thumb-4.jpg";
 import news5 from "../../../assets/images/news/news-thumb-5.jpg";
 import news6 from "../../../assets/images/news/news-thumb-6.jpg";
+import random from "../../../assets/images/ego.png";
 
 const NewsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const handlePrev = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
   };
- const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(0);
 
- const handleTabClick = (id) => {
-   setActiveTab(id);
- };
+  const handleTabClick = (id) => {
+    setActiveTab(id);
+  };
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
   };
@@ -217,132 +218,189 @@ const NewsSection = () => {
     //     </div>
     //   </div> */}
     // </section>
-    <div>
-      <ul className="tabs__ p-0">
-        <li
-          className={activeTab === 0 ? "activetab" : ""}
-          onClick={() => handleTabClick(0)}
-          data-id="0"
-        >
-          Education
-        </li>
-        <li
-          className={activeTab === 1 ? "activetab" : ""}
-          onClick={() => handleTabClick(1)}
-          data-id="1"
-        >
-          Professional Skills
-        </li>
-        <li
-          className={activeTab === 2 ? "activetab" : ""}
-          onClick={() => handleTabClick(2)}
-          data-id="2"
-        >
-          Experience
-        </li>
-        <li
-          className={activeTab === 3 ? "activetab" : ""}
-          onClick={() => handleTabClick(3)}
-          data-id="3"
-        >
-          Interview
-        </li>
-      </ul>
+    // <div className="">
+    //   <ul className="tabs__ p-0">
+    //     <li
+    //       className={activeTab === 0 ? "activetab" : ""}
+    //       onClick={() => handleTabClick(0)}
+    //       data-id="0"
+    //     >
+    //       Education
+    //     </li>
+    //     <li
+    //       className={activeTab === 1 ? "activetab" : ""}
+    //       onClick={() => handleTabClick(1)}
+    //       data-id="1"
+    //     >
+    //       Professional Skills
+    //     </li>
+    //     <li
+    //       className={activeTab === 2 ? "activetab" : ""}
+    //       onClick={() => handleTabClick(2)}
+    //       data-id="2"
+    //     >
+    //       Experience
+    //     </li>
+    //     <li
+    //       className={activeTab === 3 ? "activetab" : ""}
+    //       onClick={() => handleTabClick(3)}
+    //       data-id="3"
+    //     >
+    //       Interview
+    //     </li>
+    //   </ul>
 
-      <div className="contents">
-        <div
-          className={activeTab === 0 ? "box show" : "box hide"}
-          data-content="0"
-        >
-          <img
-            src="https://images.pexels.com/photos/5088009/pexels-photo-5088009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt=""
-          />
-          <div>
-            <h3>Lorem ipsum dolor</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              accusantium itaque amet ducimus, magni iure a repudiandae
-              molestias nemo voluptatibus voluptas earum excepturi architecto,
-              iusto necessitatibus sequi perferendis veritatis! Voluptatem?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              accusantium itaque amet ducimus, magni iure a repudiandae
-              molestias nemo voluptatibus voluptas earum excepturi architecto,
-              iusto necessitatibus sequi perferendis veritatis! Voluptatem?
-            </p>
+    //   <div className="contents">
+    //     <div
+    //       className={activeTab === 0 ? "box show" : "box hide"}
+    //       data-content="0"
+    //     >
+    //       <img
+    //         src="https://images.pexels.com/photos/5088009/pexels-photo-5088009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    //         alt=""
+    //       />
+    //       <div>
+    //         <h3>Lorem ipsum dolor</h3>
+    //         <p>
+    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+    //           accusantium itaque amet ducimus, magni iure a repudiandae
+    //           molestias nemo voluptatibus voluptas earum excepturi architecto,
+    //           iusto necessitatibus sequi perferendis veritatis! Voluptatem?
+    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+    //           accusantium itaque amet ducimus, magni iure a repudiandae
+    //           molestias nemo voluptatibus voluptas earum excepturi architecto,
+    //           iusto necessitatibus sequi perferendis veritatis! Voluptatem?
+    //         </p>
+    //       </div>
+    //     </div>
+
+    //     <div
+    //       className={activeTab === 1 ? "box show" : "box hide"}
+    //       data-content="1"
+    //     >
+    //       <img
+    //         src="https://images.pexels.com/photos/5865862/pexels-photo-5865862.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+    //         alt=""
+    //       />
+    //       <div>
+    //         <h3>Lorem ipsum dolor</h3>
+    //         <p>
+    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+    //           accusantium itaque amet ducimus, magni iure a repudiandae
+    //           molestias nemo voluptatibus voluptas earum excepturi architecto,
+    //           iusto necessitatibus sequi perferendis veritatis! Voluptatem?
+    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+    //           accusantium itaque amet ducimus, magni iure a repudiandae
+    //           molestias nemo voluptatibus voluptas earum excepturi architecto,
+    //           iusto necessitatibus sequi perferendis veritatis! Voluptatem?
+    //         </p>
+    //       </div>
+    //     </div>
+
+    //     <div
+    //       className={activeTab === 2 ? "box show" : "box hide"}
+    //       data-content="2"
+    //     >
+    //       <img
+    //         src="https://images.pexels.com/photos/3761308/pexels-photo-3761308.jpeg?auto=compress&cs=tinysrgb&w=800"
+    //         alt=""
+    //       />
+    //       <div>
+    //         <h3>Lorem ipsum dolor</h3>
+    //         <p>
+    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+    //           accusantium itaque amet ducimus, magni iure a repudiandae
+    //           molestias nemo voluptatibus voluptas earum excepturi architecto,
+    //           iusto necessitatibus sequi perferendis veritatis! Voluptatem?
+    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+    //           accusantium itaque amet ducimus, magni iure a repudiandae
+    //           molestias nemo voluptatibus voluptas earum excepturi architecto,
+    //           iusto necessitatibus sequi perferendis veritatis! Voluptatem?
+    //         </p>
+    //       </div>
+    //     </div>
+
+    //     <div
+    //       className={activeTab === 3 ? "box show" : "box hide"}
+    //       data-content="3"
+    //     >
+    //       <img
+    //         src="https://images.pexels.com/photos/5336951/pexels-photo-5336951.jpeg?auto=compress&cs=tinysrgb&w=800"
+    //         alt=""
+    //       />
+    //       <div>
+    //         <h3>Lorem ipsum dolor</h3>
+    //         <p>
+    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+    //           accusantium itaque amet ducimus, magni iure a repudiandae
+    //           molestias nemo voluptatibus voluptas earum excepturi architecto,
+    //           iusto necessitatibus sequi perferendis veritatis! Voluptatem?
+    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+    //           accusantium itaque amet ducimus, magni iure a repudiandae
+    //           molestias nemo voluptatibus voluptas earum excepturi architecto,
+    //           iusto necessitatibus sequi perferendis veritatis! Voluptatem?
+    //         </p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    <>
+      <section id="feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+              <h2 class="text-uppercase">Our Software Features</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                <span>
+                  <i class="fa fa-mobile"></i>
+                </span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                <i class="fa fa-code"></i>Quis autem velis reprehenderit et quis
+                voluptate velit esse quam.
+              </p>
+            </div>
+            <div class="col-md-6 wow fadeInRight d-flex" data-wow-delay="0.6s">
+              <img src={random} class="img-responsive" alt="feature img" />
+            </div>
           </div>
         </div>
+      </section>
 
-        <div
-          className={activeTab === 1 ? "box show" : "box hide"}
-          data-content="1"
-        >
-          <img
-            src="https://images.pexels.com/photos/5865862/pexels-photo-5865862.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-            alt=""
-          />
-          <div>
-            <h3>Lorem ipsum dolor</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              accusantium itaque amet ducimus, magni iure a repudiandae
-              molestias nemo voluptatibus voluptas earum excepturi architecto,
-              iusto necessitatibus sequi perferendis veritatis! Voluptatem?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              accusantium itaque amet ducimus, magni iure a repudiandae
-              molestias nemo voluptatibus voluptas earum excepturi architecto,
-              iusto necessitatibus sequi perferendis veritatis! Voluptatem?
-            </p>
+      <section id="feature1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 wow fadeInUp d-flex" data-wow-delay="0.6s">
+              <img src={random} class="img-responsive" alt="feature img" />
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <h2 class="text-uppercase">More of Your Software</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                <span>
+                  <i class="fa fa-mobile"></i>
+                </span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                <i class="fa fa-code"></i>Quis autem velis reprehenderit et quis
+                voluptate velit esse quam.
+              </p>
+            </div>
           </div>
         </div>
-
-        <div
-          className={activeTab === 2 ? "box show" : "box hide"}
-          data-content="2"
-        >
-          <img
-            src="https://images.pexels.com/photos/3761308/pexels-photo-3761308.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt=""
-          />
-          <div>
-            <h3>Lorem ipsum dolor</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              accusantium itaque amet ducimus, magni iure a repudiandae
-              molestias nemo voluptatibus voluptas earum excepturi architecto,
-              iusto necessitatibus sequi perferendis veritatis! Voluptatem?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              accusantium itaque amet ducimus, magni iure a repudiandae
-              molestias nemo voluptatibus voluptas earum excepturi architecto,
-              iusto necessitatibus sequi perferendis veritatis! Voluptatem?
-            </p>
-          </div>
-        </div>
-
-        <div
-          className={activeTab === 3 ? "box show" : "box hide"}
-          data-content="3"
-        >
-          <img
-            src="https://images.pexels.com/photos/5336951/pexels-photo-5336951.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt=""
-          />
-          <div>
-            <h3>Lorem ipsum dolor</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              accusantium itaque amet ducimus, magni iure a repudiandae
-              molestias nemo voluptatibus voluptas earum excepturi architecto,
-              iusto necessitatibus sequi perferendis veritatis! Voluptatem?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              accusantium itaque amet ducimus, magni iure a repudiandae
-              molestias nemo voluptatibus voluptas earum excepturi architecto,
-              iusto necessitatibus sequi perferendis veritatis! Voluptatem?
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

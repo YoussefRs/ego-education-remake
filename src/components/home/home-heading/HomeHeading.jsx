@@ -28,7 +28,7 @@ export default function HomeHeading() {
     //     </div>
     //   </div>
     // </section>
-    <section className="special_section mb-4">
+    <section className="special_section content container mb-4 px-0">
       <div class="about-us">
         <h2>Why Ego Education?</h2>
         <p>
