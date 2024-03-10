@@ -7,6 +7,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons"; // Import necessary icons
 import { Link } from "react-router-dom";
+import CustomBtn from "../btn/CustomBtn";
 // import "./styles.css";
 
 const Footer = () => {
@@ -64,15 +65,7 @@ const Footer = () => {
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
-                      <fieldset>
-                        <button
-                          type="submit"
-                          id="form-submit"
-                          className="_btn btn-cta"
-                        >
-                          Send Message Now
-                        </button>
-                      </fieldset>
+                      <CustomBtn content={"Send Us A Message"}/>
                     </div>
                   </div>
                 </form>

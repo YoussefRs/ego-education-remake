@@ -79,7 +79,7 @@ const Courses = () => {
                             course.degree === "Bachelor Degree"
                         )
                         .map((crs) => (
-                          <div className="item col-lg-3 col-6" key={crs.id}>
+                          <div className="item_ col-lg-3 col-6" key={crs.id}>
                             <img
                               className="img-fluid rounded courses-img"
                               src={crs.thumb}
@@ -111,7 +111,7 @@ const Courses = () => {
                             course.degree === "Master Degree"
                         )
                         .map((crs) => (
-                          <div className="item col-lg-3 col-6" key={crs.id}>
+                          <div className="item_ col-lg-3 col-6" key={crs.id}>
                             <img
                               className="img-fluid rounded courses-img"
                               src={crs.thumb}
@@ -143,7 +143,7 @@ const Courses = () => {
                             course.degree === "PhD"
                         )
                         .map((crs) => (
-                          <div className="item col-lg-3 col-6" key={crs.id}>
+                          <div className="item_ col-lg-3 col-6" key={crs.id}>
                             <img
                               className="img-fluid rounded courses-img"
                               src={crs.thumb}
@@ -178,7 +178,7 @@ const Courses = () => {
                       {coursesSomeData
                         .filter((course) => course.institute === "Ego")
                         .map((crs) => (
-                          <div className="item col-lg-3 col-6" key={crs.id}>
+                          <div className="item_ col-lg-3 col-6" key={crs.id}>
                             <img
                               className="img-fluid rounded courses-img"
                               src={crs.thumb}

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
 import ego from "../../../assets/images/1709110968814.jpg";
+import CustomBtn from "../../global/btn/CustomBtn";
 
 export default function HomeHeading() {
   return (
@@ -39,10 +40,11 @@ export default function HomeHeading() {
           internationalization process through highly specialized, innovative
           and professionalizing courses for active employment research.
         </p>
-        <a className="_btn btn-cta" href="/enrollment">
-          <FontAwesomeIcon icon={faPlayCircle} />
+        {/* <a className="_btn btn-cta" href="/enrollment">
+          
           Apply Now
-        </a>
+        </a> */}
+        <CustomBtn  content={"Apply Now"}/>
       </div>
       <div class="image-wrapper">
         <img src={ego} />

@@ -32,6 +32,7 @@ body {
   height: 344px;
 }
 
+
 h1,
 h2,
 h3,
@@ -1519,7 +1520,7 @@ marquee {
 .courses-wrapper .tab-content {
   font-size: 12px;
 }
-.courses-wrapper .tab-content .item {
+.courses-wrapper .tab-content .item_ {
   margin-top: 15px;
 }
 .courses-wrapper .tab-content img {
@@ -4619,3 +4620,4 @@ footer::before {
   margin-right: 20px;
 }
 /* end feature1 */
+
