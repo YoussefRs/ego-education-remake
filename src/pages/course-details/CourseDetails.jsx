@@ -56,7 +56,7 @@ const CourseDetails = () => {
 
   return (
     <div className="content container">
-      <div className="page-wrapper">
+      {/* <div className="page-wrapper">
         <SubHeader
           title={course.name}
           path={[
@@ -65,8 +65,8 @@ const CourseDetails = () => {
           ]}
           current={course.name.split(" ")[0]}
         />
-      </div>
-      <div className="page-content">
+      </div> */}
+      <div className="page-content mt-5">
         <div className="row page-row gap-4">
           <section className="ban_sec">
             <div className="container p-0">

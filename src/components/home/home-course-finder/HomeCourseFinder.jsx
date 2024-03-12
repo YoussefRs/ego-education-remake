@@ -47,11 +47,11 @@ const HomeCourseFinder = () => {
   );
 
   return (
-    <section className="course-finder rounded shadow mb-4 p-3">
+    <section className="course-finder rounded shadow mb-4 mt-4 p-3">
       <h1 className="section-heading text-highlight">
         <span className="line">Quick Search</span>
       </h1>
-      <div className="section-content">
+      <div className="section-content ">
         <form className="course-finder-form" action="#" method="get">
           <div className="row">
             <div className="col-md col-12 subject">
@@ -110,10 +110,6 @@ const HomeCourseFinder = () => {
             </div>
           </div>
         </form>
-        <Link className="read-more" to={"/courses"}>
-          View all our courses
-          <FontAwesomeIcon icon={faChevronRight} />
-        </Link>
       </div>
     </section>
   );

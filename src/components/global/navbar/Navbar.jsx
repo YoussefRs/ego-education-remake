@@ -66,14 +66,14 @@ export default function Navbar({ show }) {
         >
           Courses
         </Link>
-        <a
-          href="#eLearning"
+        <Link
+          to="/elearning"
           className={activeLink === "eLearning" ? "active" : ""}
           onClick={() => handleLinkClick("eLearning")}
           style={{ color: "#fff" }}
         >
           eLearning
-        </a>
+        </Link>
         <a
           href="#"
           class="contact_btn"

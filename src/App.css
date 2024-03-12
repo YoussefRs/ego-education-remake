@@ -2125,7 +2125,7 @@ html {
 
 /*NAV*/
 nav {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   width: 100%;
   align-items: center;
@@ -2135,7 +2135,7 @@ nav {
   white-space: nowrap;
   transition: 0.5s;
   color: var(--lite);
-  background-color: transparent;
+  background-color: #046635;
   transition: 0.5s;
   /* margin-bottom: 0.5rem; */
 }
@@ -2431,13 +2431,14 @@ nav .ham:hover {
 /*HEADER*/
 header {
   width: 100%;
+  height: 300px;
   background: linear-gradient(
       to right,
       rgba(1, 1, 1, 0.9) 10%,
       rgba(1, 1, 1, 0.5) 50%,
       rgba(1, 1, 1, 0.1) 100%
     ),
-    url("https://i.postimg.cc/1t2jwYgp/malgorzata-bujalska-03-Zf94er-QWo-unsplash.jpg");
+    url("https://demo.htmlcodex.com/2151/elearning-html-template/img/carousel-1.jpg");
   background-size: cover;
   background-position: left;
   align-items: center;
