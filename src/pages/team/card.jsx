@@ -46,9 +46,8 @@ const styles = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%,-50%)",
-    height: "400px",
+    height: "300px",
     width: "300px",
-    backgroundColor: "red",
     boxShadow:
       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
     boxSizing: "border-box",
@@ -56,7 +55,7 @@ const styles = {
   },
   image: {
     width: "150px",
-    height: "250px",
+    height: "160px",
     borderRadius: "5px",
     zIndex: "3",
     objectFit: "contain",

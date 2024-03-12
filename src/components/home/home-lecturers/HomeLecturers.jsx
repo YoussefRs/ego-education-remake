@@ -5,7 +5,7 @@ export default function HomeLecturers() {
   return (
     <>
       <h1 className="section-heading text-highlight content container mb-4">
-        <span className="line fw-bold">Our Lecturers</span>
+        <span className="line fw-bold">Lecturers</span>
       </h1>
       <section id="cards">
         <div class="container py-2">

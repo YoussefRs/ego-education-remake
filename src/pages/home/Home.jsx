@@ -12,6 +12,8 @@ import Dec2 from "../team/deck2";
 import HomeLecturers from "../../components/home/home-lecturers/HomeLecturers";
 import Faq from "../faq/Faq";
 import HomeCourseSlider from "../../components/home/Home-course-slider/HomeCourseSlider";
+import HomeAbout from "../../components/home/home-about/HomeAbout";
+import HomeGraduate from "../../components/home/home-gradutae/HomeGraduate";
 
 export default function Home() {
   return (
@@ -19,7 +21,9 @@ export default function Home() {
       <div className="">
         <Hero />
         <HomeHeading />
-        <NewsSection />
+        <HomeAbout />
+        {/* <NewsSection /> */}
+        <HomeGraduate />
         <HomeCourseSlider />
         <div className="row cols-wrapper">
           {/* <HomeEvents /> */}

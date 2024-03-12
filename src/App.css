@@ -61,7 +61,7 @@ p {
   float: right;
   position: sticky;
   top: 90px;
-}
+} 
 
 a {
   /* color: #046635 !important; */
@@ -2125,6 +2125,7 @@ html {
 
 /*NAV*/
 nav {
+  position: fixed;
   display: flex;
   width: 100%;
   align-items: center;
@@ -2134,7 +2135,7 @@ nav {
   white-space: nowrap;
   transition: 0.5s;
   color: var(--lite);
-  background-color: #046635;
+  background-color: transparent;
   transition: 0.5s;
   /* margin-bottom: 0.5rem; */
 }
@@ -2145,6 +2146,7 @@ nav {
   top: 0;
   box-shadow: 0px 6px 16px -6px var(--gray);
   animation: fixed_nav 1s linear 1;
+  background-color: #046635;
 }
 
 nav a {

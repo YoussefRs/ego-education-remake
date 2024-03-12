@@ -180,7 +180,7 @@ class Deck extends Component {
     return (
       <div className="content container __deck_bg">
         <h1 className="section-heading text-highlight">
-          <span className="line fw-bold">Our Staff</span>
+          <span className="line fw-bold">Staff</span>
         </h1>
         <div
           ref={(ref_id) => (this.deck = ref_id)}

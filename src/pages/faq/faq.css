@@ -16,10 +16,12 @@
 article {
   display: grid;
   margin-top: min(1.5rem, 5vw);
+  grid-gap: 1rem;
 }
 @media (min-width: 57.06rem) {
   article {
     grid-template-columns: 22.5rem 1fr;
+    
   }
 }
 .faq_container {
@@ -37,6 +39,8 @@ article {
   background-repeat: no-repeat;
   background-size: auto 85%, auto 50%;
   background-position: 50% 0%, 50% 100%;
+  animation: float 6s ease-in-out infinite;
+  border-radius: 20px !important;
 }
 @media (min-width: 57.06rem) {
   .img-container {
@@ -68,15 +72,16 @@ article {
   grid-column: 1;
   padding: min(7.5rem, 30vw) 1.5rem 2.5rem;
   background-color: white;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   box-shadow: 0 0.62rem 1.87rem rgba(0, 0, 0, 0.2);
+  
 }
 @media (min-width: 57.06rem) {
   .faq {
     grid-row: 1;
     grid-column: 2;
     padding: 3.5rem 4rem 3.5rem;
-    border-radius: 0 1.25rem 1.25rem 0;
+    border-radius: 20px;
   }
 }
 .faq h2 {
