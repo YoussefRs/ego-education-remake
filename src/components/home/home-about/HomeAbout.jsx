@@ -78,9 +78,9 @@ export default function HomeAbout() {
                 animationName: "fadeInRight",
               }}
             >
-              <img src="https://thememaker.net/ecuda/assets/images/technology/tech1.jpg" alt="" />
+              <img src="https://www.itnewsafrica.com/wp-content/uploads/2020/05/Connected-IoT-Devices-1.png" alt="" style={{height: 400}}/>
               <div class="dr-sm-img">
-                <img src="https://thememaker.net/ecuda/assets/images/technology/tech2.jpg" alt="" />
+                <img src="https://corporate.bestbuy.com/wp-content/uploads/2022/07/computing-blog-bts-e1659126841179.png" alt="" />
               </div>
               <div class="job-ct-1 job-item">
                 <div class="job-ct-icon">

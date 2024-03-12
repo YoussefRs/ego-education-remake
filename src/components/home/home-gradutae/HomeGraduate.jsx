@@ -7,7 +7,7 @@ export default function HomeGraduate() {
   return (
     <div
       class="features-video pt-110 pb-110 mb-4"
-      style={{backgroundImage:"url(https://thememaker.net/ecuda/assets/images/video/video-1.jpg)"}}
+      style={{backgroundImage:"url(https://wallpaperboat.com/wp-content/uploads/2020/10/30/58688/graduation-04.jpg)"}}
     >
       <div class="video-overlay"></div>
       <div class="container">
