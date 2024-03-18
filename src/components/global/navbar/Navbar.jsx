@@ -34,9 +34,9 @@ export default function Navbar({ show }) {
   return (
     <nav ref={navRef}>
       <section className="flex_content">
-        <figure className="logo fixed_flex">
+        <figure className="logo fixed_flex" >
           <Link to={"/"} className="p-0">
-            <img src={logoWhite} alt="white logo" />
+            <img src={logoWhite} alt="white logo" id="nav_logo"/>
           </Link>
         </figure>
       </section>
@@ -76,8 +76,7 @@ export default function Navbar({ show }) {
         </Link>
         <a
           href="#"
-          className="contact_btn"
-          className={activeLink === "partners" ? "active" : ""}
+          className={`contact_btn ${ activeLink} === "partners" ? "active" : ""`}
           onClick={() => handleLinkClick("partners")}
           style={{ color: "#fff" }}
         >

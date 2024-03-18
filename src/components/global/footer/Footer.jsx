@@ -65,7 +65,12 @@ const Footer = () => {
                       </fieldset>
                     </div>
                     <div className="col-lg-12">
-                      <CustomBtn content={"Send Us A Message"}/>
+                      <a
+                        className="_btn btn-cta d-flex justify-content-center"
+                        href="/enrollment"
+                      >
+                        Send
+                      </a>
                     </div>
                   </div>
                 </form>
@@ -77,10 +82,7 @@ const Footer = () => {
       <footer>
         <div className="container">
           <div className="col-lg-12">
-            <p>
-              Copyright © 2024 Ego Eduation. All rights reserved.
-              
-            </p>
+            <p>Copyright © 2024 Ego Eduation. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -4,9 +4,7 @@
   align-items: center;
 }
 
-.logo {
-  height: 7vh;
-}
+
 
 #content-text_ {
   font-family: "Poppins", sans-serif;
@@ -20,10 +18,8 @@
 
 .header-image {
   max-height: 50vh;
-  height: 50vh;
-  width: 25vw;
-  animation: float 3s ease-in-out infinite;
-  border-radius: 50%;
+  width: 450px;
+  border-radius: 20px;
 }
 
 #content-text_ h1 {

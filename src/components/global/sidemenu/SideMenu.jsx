@@ -8,15 +8,15 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 const SideMenu = ({ show, handleShow }) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
-const [dropdownVisible1, setDropdownVisible1] = useState(false);
-const [dropdownVisible2, setDropdownVisible2] = useState(false);
+  const [dropdownVisible1, setDropdownVisible1] = useState(false);
+  const [dropdownVisible2, setDropdownVisible2] = useState(false);
 
-const toggleDropdown = () => {
-  setDropdownVisible(!dropdownVisible);
-};
-const toggleDropdown1 = () => {
-  setDropdownVisible1(!dropdownVisible1);
-};
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+  const toggleDropdown1 = () => {
+    setDropdownVisible1(!dropdownVisible1);
+  };
   const toggleDropdown2 = () => {
     setDropdownVisible2(!dropdownVisible2);
   };
@@ -27,42 +27,39 @@ const toggleDropdown1 = () => {
       className="side_menu"
       style={{ right: show ? 0 : "-400px" }}
     >
-      <a
-        className="close"
-        onClick={() => {
-          handleShow((prev) => !prev);
-        }}
-      >
-        <FontAwesomeIcon icon={faTimes} />
-      </a>
-      <strong className="fixed_flex logo">
-        <img src={logoWhite2} alt="Summit" loading="lazy" />
-      </strong>
+      <div className="d-flex justify-content-between align-items-center w-100">
+        <a
+          className="close"
+          onClick={() => {
+            handleShow((prev) => !prev);
+          }}
+        >
+          <FontAwesomeIcon icon={faTimes} />
+        </a>
+        <strong className="fixed_flex logo">
+          <img src={logoWhite2} alt="Summit" loading="lazy" />
+        </strong>
+      </div>
       <br />
-      <ul className="p-0">
+      <ul className="px-0">
         <li>
-          <Link>
-            <FontAwesomeIcon icon={faCaretRight} style={{ marginRight: 4 }} />
-            Events
-          </Link>
+          <Link>Events</Link>
         </li>
 
         <li>
-          <Link>
-            <FontAwesomeIcon icon={faCaretRight} style={{ marginRight: 4 }} />
-            Governance Structure
-          </Link>
+          <Link>Governance Structure</Link>
         </li>
         <li className="dropdown">
           <a onClick={toggleDropdown}>
+            Policies
             <FontAwesomeIcon
               icon={faCaretRight}
               style={{
-                marginRight: 4,
+                marginLeft: 28,
+                marginTop: 5,
                 transform: dropdownVisible ? "rotate(90deg)" : "none",
               }}
             />
-            Policies
           </a>
           {dropdownVisible && (
             <aside>
@@ -85,14 +82,15 @@ const toggleDropdown1 = () => {
         </li>
         <li className="dropdown">
           <a onClick={toggleDropdown1}>
+            Resources
             <FontAwesomeIcon
               icon={faCaretRight}
               style={{
-                marginRight: 4,
+                marginLeft: 8,
+                marginTop: 5,
                 transform: dropdownVisible1 ? "rotate(90deg)" : "none",
               }}
             />
-            Resources
           </a>
           {dropdownVisible1 && (
             <aside>
@@ -114,15 +112,16 @@ const toggleDropdown1 = () => {
           )}
         </li>
         <li className="dropdown">
-          <a  onClick={toggleDropdown2}>
+          <a onClick={toggleDropdown2}>
+            Admission
             <FontAwesomeIcon
               icon={faCaretRight}
               style={{
-                marginRight: 4,
+                marginLeft: 10,
+                marginTop: 5,
                 transform: dropdownVisible2 ? "rotate(90deg)" : "none",
               }}
             />
-            Admission
           </a>
           {dropdownVisible2 && (
             <aside>
@@ -145,7 +144,6 @@ const toggleDropdown1 = () => {
         </li>
         <li>
           <Link to={"/contact"}>
-            <FontAwesomeIcon icon={faCaretRight} style={{ marginRight: 4 }} />
             Contact Us
           </Link>
         </li>

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Slider.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomeCourseSlider() {
   useEffect(() => {
@@ -119,8 +121,8 @@ export default function HomeCourseSlider() {
           </li>
         </ul>
         <div className="_nav_">
-          <ion-icon className="btn prev" name="arrow-back-outline"></ion-icon>
-          <ion-icon className="btn next" name="arrow-forward-outline"></ion-icon>
+          <FontAwesomeIcon icon={faArrowLeft} class="btn prev"/>
+          <FontAwesomeIcon icon={faArrowRight} class="btn next"/>
         </div>
       </main>
     </>
