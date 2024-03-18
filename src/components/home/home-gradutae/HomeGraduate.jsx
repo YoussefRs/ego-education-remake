@@ -1,46 +1,59 @@
 import React from "react";
 import "./graduate.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode, faPersonChalkboard, faUserGraduate } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLaptopCode,
+  faPersonChalkboard,
+  faUserGraduate,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function HomeGraduate() {
   return (
     <div
-      class="features-video pt-110 pb-110 mb-4"
-      style={{backgroundImage:"url(https://wallpaperboat.com/wp-content/uploads/2020/10/30/58688/graduation-04.jpg)"}}
+      className="features-video pt-110 pb-110 mb-4"
+      style={{
+        backgroundImage:
+          "url(https://wallpaperboat.com/wp-content/uploads/2020/10/30/58688/graduation-04.jpg)",
+      }}
     >
-      <div class="video-overlay"></div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-7 col-lg-7 col-md-10">
-            <div class="section-title mb-40 text-left">
-              <h2 class=" text-white">Place To Find Your Dream</h2>
-              <p class="text-white">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+      <div className="video-overlay"></div>
+      <div className="container">
+        <div className="row align-items-center justify-content">
+          <div className="col-xl-7 col-lg-7 col-md-10">
+            <div className="section-title mb-40 text-left">
+              <h2 className=" text-white mb-5">
+                Start Transforming Your Future Today
+              </h2>
+            </div>
+            <div className="single-video-box">
+              <i>
+                <FontAwesomeIcon icon={faPersonChalkboard} />
+              </i>
+              <h5>International Qualification</h5>
+              <p>
+                Upon graduation, you&#39;ll gain an internationally recognized
+                degree that helps you qualify for career opportunities both
+                locally and abroad.
               </p>
             </div>
-            <div class="single-video-box">
-            <i><FontAwesomeIcon icon={faPersonChalkboard}/></i>
-              <h3>Graduate Certificate Program.</h3>
+            <div className="single-video-box">
+              <i>
+                <FontAwesomeIcon icon={faLaptopCode} />
+              </i>
+              <h5>A World of Opportunities </h5>
               <p>
-                We denounce with righteous indignation and dislike men who are
-                so beguiled and demoralized by the
+                Our degrees are recognized throughout the EU and easily
+                validable in Commonwealth countries.
               </p>
             </div>
-            <div class="single-video-box">
-            <i><FontAwesomeIcon icon={faLaptopCode}/></i>
-              <h3>while earning one </h3>
+            <div className="single-video-box">
+              <i>
+                <FontAwesomeIcon icon={faUserGraduate} />
+              </i>
+              <h5>Gain The Qualifications You Need To Advance</h5>
               <p>
-                We denounce with righteous indignation and dislike men who are
-                so beguiled and demoralized by the
-              </p>
-            </div>
-            <div class="single-video-box">
-            <i><FontAwesomeIcon icon={faUserGraduate}/></i>
-              <h3>Certificate is a way</h3>
-              <p>
-                We denounce with righteous indignation and dislike men who are
-                so beguiled and demoralized by the
+                Apply now to kickstart an online master&#39;s degree that will
+                accelerate your career and transform your life for the better.
               </p>
             </div>
           </div>

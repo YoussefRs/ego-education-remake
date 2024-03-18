@@ -32,7 +32,6 @@ body {
   height: 344px;
 }
 
-
 h1,
 h2,
 h3,
@@ -61,7 +60,7 @@ p {
   float: right;
   position: sticky;
   top: 90px;
-} 
+}
 
 a {
   /* color: #046635 !important; */
@@ -79,10 +78,7 @@ a:focus {
   border-radius: 20px;
   box-shadow: none;
   border: none;
-  background: var(
-    --Linear,
-    linear-gradient(315deg, #07d25f 20.24%, #046635 80.97%)
-  );
+  background: #046635;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -4623,4 +4619,3 @@ footer::before {
   margin-right: 20px;
 }
 /* end feature1 */
-

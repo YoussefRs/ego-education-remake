@@ -13,11 +13,11 @@ import CustomBtn from "../btn/CustomBtn";
 const Footer = () => {
   return (
     <>
-      <div class="contact-us section" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6  align-self-center">
-              <div class="section-heading">
+      <div className="contact-us section" id="contact">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6  align-self-center">
+              <div className="section-heading">
                 <h6>Contact Us</h6>
                 <h2>Feel free to contact us anytime</h2>
                 <p>
@@ -27,23 +27,23 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="contact-us-content">
+            <div className="col-lg-6">
+              <div className="contact-us-content">
                 <form id="contact-form" action="" method="post">
-                  <div class="row">
-                    <div class="col-lg-12">
+                  <div className="row">
+                    <div className="col-lg-12">
                       <fieldset>
                         <input
                           type="name"
                           name="name"
                           id="name"
                           placeholder="Your Name..."
-                          autocomplete="on"
+                          autoComplete="on"
                           required
                         />
                       </fieldset>
                     </div>
-                    <div class="col-lg-12">
+                    <div className="col-lg-12">
                       <fieldset>
                         <input
                           type="text"
@@ -55,7 +55,7 @@ const Footer = () => {
                         />
                       </fieldset>
                     </div>
-                    <div class="col-lg-12">
+                    <div className="col-lg-12">
                       <fieldset>
                         <textarea
                           name="message"
@@ -64,7 +64,7 @@ const Footer = () => {
                         ></textarea>
                       </fieldset>
                     </div>
-                    <div class="col-lg-12">
+                    <div className="col-lg-12">
                       <CustomBtn content={"Send Us A Message"}/>
                     </div>
                   </div>
@@ -75,8 +75,8 @@ const Footer = () => {
         </div>
       </div>
       <footer>
-        <div class="container">
-          <div class="col-lg-12">
+        <div className="container">
+          <div className="col-lg-12">
             <p>
               Copyright © 2024 Ego Eduation. All rights reserved.
               

@@ -168,7 +168,7 @@ const CourseDetails = () => {
                   ))}
                 </ul> */}
 
-                {/* <ol class="style_1">
+                {/* <ol className="style_1">
                   {course?.modules?.map((mod, i) => (
                     <li>
                       <button
@@ -182,15 +182,15 @@ const CourseDetails = () => {
                   ))}
                 </ol> */}
 
-                <div class="container p-4 bg-light">
+                <div className="container p-4 bg-light">
                   <div
-                    class="accordion accordion-flush"
+                    className="accordion accordion-flush"
                     id="accordionFlushExample"
                   >
-                    <div class="accordion-item rounded-3 border-0 shadow mb-2">
-                      <h2 class="accordion-header">
+                    <div className="accordion-item rounded-3 border-0 shadow mb-2">
+                      <h2 className="accordion-header">
                         <button
-                          class="accordion-button border-bottom collapsed fw-semibold"
+                          className="accordion-button border-bottom collapsed fw-semibold"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#flush-collapseOne"
@@ -202,10 +202,10 @@ const CourseDetails = () => {
                       </h2>
                       <div
                         id="flush-collapseOne"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body d-flex gap-4">
+                        <div className="accordion-body d-flex gap-4">
                           <div className="accordion-body d-flex gap-4">
                             <ul className="cursor-pointer">
                               <li
@@ -255,10 +255,10 @@ const CourseDetails = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="accordion-item rounded-3 border-0 shadow mb-2">
-                      <h2 class="accordion-header">
+                    <div className="accordion-item rounded-3 border-0 shadow mb-2">
+                      <h2 className="accordion-header">
                         <button
-                          class="accordion-button border-bottom collapsed fw-semibold"
+                          className="accordion-button border-bottom collapsed fw-semibold"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#flush-collapseTwo"
@@ -270,10 +270,10 @@ const CourseDetails = () => {
                       </h2>
                       <div
                         id="flush-collapseTwo"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body">
+                        <div className="accordion-body">
                           {/* <p>
                             Please check our more latest Design @
                             <a href="https://codepen.io/Gaurav-Rana-the-reactor">
@@ -283,10 +283,10 @@ const CourseDetails = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="accordion-item rounded-3 border-0 mb-2 shadow">
-                      <h2 class="accordion-header">
+                    <div className="accordion-item rounded-3 border-0 mb-2 shadow">
+                      <h2 className="accordion-header">
                         <button
-                          class="accordion-button border-bottom collapsed fw-semibold"
+                          className="accordion-button border-bottom collapsed fw-semibold"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#flush-collapseThree"
@@ -298,10 +298,10 @@ const CourseDetails = () => {
                       </h2>
                       <div
                         id="flush-collapseThree"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
                       >
-                        <div class="accordion-body">
+                        <div className="accordion-body">
                           {/* <p>
                             Please check our more latest Design @{" "}
                             <a href="https://codepen.io/Gaurav-Rana-the-reactor">

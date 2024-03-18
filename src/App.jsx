@@ -26,6 +26,7 @@ import EnrollmentForm from "./pages/course-purchase/EnrollmentForm";
 import Dashboard from "./pages/dashboard/Dashboard";
 import CookiesBox from "./Cookies";
 import Elearning from "./pages/partners/Elearning";
+import Candidates from "./pages/dashboard/dashComponents/candidatesContent/Candidates";
 
 function App() {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -58,7 +59,9 @@ function App() {
         <Route path="/news/:slug" element={<NewDetails />} />
         <Route path="/enrollment" element={<EnrollmentForm />} />
         <Route path="/course/:slug/enrollment" element={<EnrollmentForm />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="/dashboard/candidates" element={<Candidates />}/>
+        </Route>
         <Route path="/elearning" element={<Elearning />} />
       </Routes>
       <Footer />

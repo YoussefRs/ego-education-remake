@@ -14,13 +14,13 @@ import ego from "../../../assets/images/ego.png";
 const HomeInstitutes = () => {
   return (
     <section className="testimonials rounded mt-5 mb-4">
-      {/* <div class="container">
+      {/* <div className="container">
         <table>
           <tr>
             <td>
               <img
                 src="https://i.ibb.co/w4dySWD/01.webp"
-                class="inline-photo show-on-scroll"
+                className="inline-photo show-on-scroll"
                 alt="About Us"
                 style={{
                   height: 350,
@@ -28,8 +28,8 @@ const HomeInstitutes = () => {
               />
             </td>
             <td>
-              <h6 class="sub-title">Discover Our Company</h6>
-              <h1 class="title">Creative software development company</h1>
+              <h6 className="sub-title">Discover Our Company</h6>
+              <h1 className="title">Creative software development company</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -43,7 +43,7 @@ const HomeInstitutes = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a href="#moreaboutus" class="btn2">
+              <a href="#moreaboutus" className="btn2">
                 Discover More
               </a>
             </td>
@@ -51,30 +51,30 @@ const HomeInstitutes = () => {
         </table>
       </div> */}
 
-      {/* <div class="divisions division_2 flex slider">
-        <section class="flex-content slide-track">
-          <figure class="slide">
+      {/* <div className="divisions division_2 flex slider">
+        <section className="flex-content slide-track">
+          <figure className="slide">
             <img src={ego} height="70" alt="" />
           </figure>
-          <figure class="slide">
+          <figure className="slide">
             <img src={ego} height="70" alt="" />
           </figure>
-          <figure class="slide">
+          <figure className="slide">
             <img src={ego} height="70" alt="" />
           </figure>
-          <figure class="slide">
+          <figure className="slide">
             <img src={ego} height="70" alt="" />
           </figure>
-          <figure class="slide">
+          <figure className="slide">
             <img src={ego} height="70" alt="" />
           </figure>
-          <figure class="slide">
+          <figure className="slide">
             <img src={ego} height="70" alt="" />
           </figure>
-          <figure class="slide">
+          <figure className="slide">
             <img src={ego} height="70" alt="" />
           </figure>
-          <figure class="slide">
+          <figure className="slide">
             <img src={ego} height="70" alt="" />
           </figure>
         </section>

@@ -7,70 +7,69 @@ import {
   faComments,
   faPersonChalkboard,
   faBookOpenReader,
-  faUserGraduate
+  faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HomeAbout() {
   return (
-    <div id="about" class="section mb-5">
-      <div class="container" id="about_ctr">
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-center flex-column justify-content-center">
-            <div class="section-header">
-              <h1>With educational technology, everything is personal.</h1>
-              <p class="lead">
-                opening up a world of possibilities for collaboration and
-                feedback. Many teachers use educational technology through
-                mobile devices, like iPads or tablets to play games and present
-                content. Some schools use handheld devices as a part of an
-                evaluation process
+    <div id="about" className="section mb-5">
+      <div className="container" id="about_ctr">
+        <div className="row">
+          <div className="col-md-6 d-flex align-items-center flex-column justify-content-center">
+            <div className="section-header">
+              <h1>Study flexibly around your life.</h1>
+              <p className="lead">
+                Our online courses on our platform are always available, so you
+                can fit your studies into your busy schedule.
               </p>
             </div>
 
-            <div class="feature">
-              <FontAwesomeIcon icon={faFlask} class="feature-icon" />
+            <div className="feature d-flex justify-content-between w-100">
+              <FontAwesomeIcon icon={faFlask} className="feature-icon" />
 
-              <div class="feature-content">
+              <div className="feature-content">
                 <h4>Online Courses </h4>
                 <p>
-                  Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et
-                  his suas veniam nominati.
+                  Access lessons, materials and interact with peers and faculty
+                  anytime.
                 </p>
               </div>
             </div>
 
-            <div class="feature">
-              <FontAwesomeIcon icon={faUsers} class="feature-icon" />
-              <div class="feature-content">
+            <div className="feature">
+              <FontAwesomeIcon icon={faUsers} className="feature-icon" />
+              <div className="feature-content">
                 <h4>Expert Teachers</h4>
                 <p>
-                  Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et
-                  his suas veniam nominati.
+                  Our world-class faculty members have extensive professional
+                  experience, ensuring you receive a high-quality education and
+                  practical skills.
                 </p>
               </div>
             </div>
 
-            <div class="feature">
-              <FontAwesomeIcon icon={faComments} class="feature-icon" />
-              <div class="feature-content">
+            <div className="feature">
+              <FontAwesomeIcon icon={faComments} className="feature-icon" />
+              <div className="feature-content">
                 <h4>Community</h4>
                 <p>
-                  Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et
-                  his suas veniam nominati.
+                  Our platform enables students to communicate with each other.
+                  Thanks to study groups you will be part of an international
+                  community.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* <div class="col-md-6">
-            <div class="about-img">
+          {/* <div className="col-md-6">
+            <div className="about-img">
               <img src={about} alt="" />
             </div>
           </div> */}
-          <div class="col-xl-6 col-lg-6">
+          <div className="col-xl-6 col-lg-6">
             <div
-              class="drem-job d-none d-sm-block wow fadeInRight"
+              className="drem-job d-none d-sm-block wow fadeInRight"
               data-wow-delay=".7s"
               style={{
                 visibility: "visible",
@@ -78,35 +77,39 @@ export default function HomeAbout() {
                 animationName: "fadeInRight",
               }}
             >
-              <img src="https://www.itnewsafrica.com/wp-content/uploads/2020/05/Connected-IoT-Devices-1.png" alt="" style={{height: 400}}/>
-              <div class="dr-sm-img">
-                <img src="https://corporate.bestbuy.com/wp-content/uploads/2022/07/computing-blog-bts-e1659126841179.png" alt="" />
+              <img
+                src="https://www.itnewsafrica.com/wp-content/uploads/2020/05/Connected-IoT-Devices-1.png"
+                alt=""
+                style={{ height: 400 }}
+              />
+              <div className="dr-sm-img">
+                <img
+                  src="https://corporate.bestbuy.com/wp-content/uploads/2022/07/computing-blog-bts-e1659126841179.png"
+                  alt=""
+                />
               </div>
-              <div class="job-ct-1 job-item">
-                <div class="job-ct-icon">
-                <FontAwesomeIcon icon={faPersonChalkboard}/>
+              <div className="job-ct-1 job-item">
+                <div className="job-ct-icon">
+                  <FontAwesomeIcon icon={faPersonChalkboard} />
                 </div>
-                <div class="job-ct-text">
-                  <h4>10K+</h4>
-                  <p>Focus on making </p>
-                </div>
-              </div>
-              <div class="job-ct-2 job-item">
-                <div class="job-ct-icon">
-                <FontAwesomeIcon icon={faBookOpenReader}/>
-                </div>
-                <div class="job-ct-text">
-                  <h4>20K+</h4>
-                  <p>Active Candidate</p>
+                <div className="job-ct-text">
+                  <h6>24/7 Access</h6>
                 </div>
               </div>
-              <div class="job-ct-3 job-item">
-                <div class="job-ct-icon">
-                <FontAwesomeIcon icon={faUserGraduate}/>
+              <div className="job-ct-2 job-item">
+                <div className="job-ct-icon">
+                  <FontAwesomeIcon icon={faBookOpenReader} />
                 </div>
-                <div class="job-ct-text">
-                  <h4>40K+</h4>
-                  <p>Remote Candidate</p>
+                <div className="job-ct-text">
+                  <h6>Personalised and Flexible</h6>
+                </div>
+              </div>
+              <div className="job-ct-3 job-item">
+                <div className="job-ct-icon">
+                  <FontAwesomeIcon icon={faUserGraduate} />
+                </div>
+                <div className="job-ct-text">
+                  <h6>Global opportunities</h6>
                 </div>
               </div>
             </div>

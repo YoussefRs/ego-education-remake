@@ -3,10 +3,10 @@ import "./Discover.css";
 
 export default function Discover() {
   return (
-    <header class="header__main">
-      <div class="_slider_">
+    <header className="header__main">
+      <div className="_slider_">
         <svg
-          class="slider__mask"
+          className="slider__mask"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 1920 1080"
@@ -98,9 +98,9 @@ export default function Discover() {
           </defs>
         </svg>
       </div>
-      <div class="slide" id="slide-1">
+      <div className="slide" id="slide-1">
         <svg
-          class="slide__bg"
+          className="slide__bg"
           viewBox="0 0 1920 1080"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -111,8 +111,8 @@ export default function Discover() {
         >
           <rect x="0" y="0" width="1920" height="1080" fill="url(#bg1)" />
         </svg>
-        <div class="slide__images">
-          <div class="slide__image slide__image--left">
+        <div className="slide__images">
+          <div className="slide__image slide__image--left">
             <svg
               viewBox="0 0 900 365"
               version="1.1"
@@ -129,7 +129,7 @@ export default function Discover() {
             </svg>
           </div>
 
-          <div class="slide__image slide__image--right">
+          <div className="slide__image slide__image--right">
             <svg
               viewBox="0 0 900 365"
               version="1.1"
@@ -148,9 +148,9 @@ export default function Discover() {
         </div>
       </div>
 
-      <div class="slide" id="slide-2">
+      <div className="slide" id="slide-2">
         <svg
-          class="slide__bg"
+          className="slide__bg"
           viewBox="0 0 1920 1080"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -161,8 +161,8 @@ export default function Discover() {
         >
           <rect x="0" y="0" width="1920" height="1080" fill="url(#bg2)" />
         </svg>
-        <div class="slide__images">
-          <div class="slide__image slide__image--left">
+        <div className="slide__images">
+          <div className="slide__image slide__image--left">
             <svg
               viewBox="0 0 900 365"
               version="1.1"
@@ -179,7 +179,7 @@ export default function Discover() {
             </svg>
           </div>
 
-          <div class="slide__image slide__image--right">
+          <div className="slide__image slide__image--right">
             <svg
               viewBox="0 0 900 365"
               version="1.1"
@@ -198,11 +198,11 @@ export default function Discover() {
         </div>
       </div>
 
-      <div class="slider__pagination">
-        <a href="#slide-1" class="button">
+      <div className="slider__pagination">
+        <a href="#slide-1" className="button">
           Slide 1
         </a>
-        <a href="#slide-2" class="button">
+        <a href="#slide-2" className="button">
           Slide 2
         </a>
       </div>

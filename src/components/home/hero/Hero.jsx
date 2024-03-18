@@ -2,31 +2,28 @@ import React, { useRef } from "react";
 import IntroVideo from "../../../assets/video/finalIntro.mp4";
 
 export default function Hero() {
- 
   return (
     <section id="home" data-stellar-background-ratio="0.5" className="mb-4">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
+      <div className="overlay"></div>
+      <div className="container">
+        <div className="row">
           <div
-            class="col-md-4 col-sm-12 d-flex align-items-center"
+            className="col-md-4 col-sm-12 d-flex align-items-center"
             id="hero_title_ctr"
           >
-            <div class="home-info">
-              <h1>Website Introduction description</h1>
-              <a href="#about" class="btn section-btn smoothScroll">
-                Start a project
-              </a>
-              <span>
-                CALL US (+66) 010-020-0340
-                <small>For any inquiry</small>
+            <div className="home-info">
+              <h1>Accelerate your career with an online degree.</h1>
+              <h2 className="text-white">Learn from anywhere. Advance faster.</h2>
+              <span className="mx-0">
+                Our accredited programs provide in-demand skills to expand your
+                opportunities.
               </span>
             </div>
           </div>
 
-          <div class="col-md-8 col-sm-12">
-            <div class="home-video">
-              <div class="embed-responsive embed-responsive-16by9">
+          <div className="col-md-8 col-sm-12">
+            <div className="home-video">
+              <div className="embed-responsive embed-responsive-16by9">
                 <video
                   muted
                   autoPlay

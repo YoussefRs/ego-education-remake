@@ -3,21 +3,21 @@ import "./btn.css";
 
 export default function CustomBtn({content}) {
   return (
-    <div class="hero-video-play">
+    <div className="hero-video-play">
       <div
         // style="--animation-speed:2s"
-        class="glowing-box glowing-box-active"
+        className="glowing-box glowing-box-active"
       >
-        <div class="glowing-box-animations">
-          <div class="glowing-box-glow"></div>
-          <div class="glowing-box-stars-masker">
-            <div class="glowing-box-stars"></div>
+        <div className="glowing-box-animations">
+          <div className="glowing-box-glow"></div>
+          <div className="glowing-box-stars-masker">
+            <div className="glowing-box-stars"></div>
           </div>
         </div>
-        <div class="glowing-box-borders-masker">
-          <div class="glowing-box-borders"></div>
+        <div className="glowing-box-borders-masker">
+          <div className="glowing-box-borders"></div>
         </div>
-        <button class="glowing-box-button">
+        <button className="glowing-box-button">
           <span>
             <svg
               width="16"
@@ -31,8 +31,8 @@ export default function CustomBtn({content}) {
                 fill="white"
               ></path>
             </svg>
-            <div class="hero-video-play-text">
-              <div class="hero-video-play-title">{content}</div>
+            <div className="hero-video-play-text">
+              <div className="hero-video-play-title">{content}</div>
             </div>
           </span>
         </button>

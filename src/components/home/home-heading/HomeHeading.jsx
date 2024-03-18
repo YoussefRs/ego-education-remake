@@ -30,23 +30,23 @@ export default function HomeHeading() {
     //   </div>
     // </section>
     <section className="special_section content container mb-4 px-0">
-      <div class="about-us">
+      <div className="about-us">
         <h2>Why Ego Education?</h2>
         <p>
-          The International E-Learning Institute Ltd (IELI) is a company
-          established since October 23rd, 2017 in Malta, by deed C83113, created
-          by a decennial experience of its founders in the field of university
-          education. With the new eGO brand, Ieli intends to initiate this
-          internationalization process through highly specialized, innovative
-          and professionalizing courses for active employment research.
+          eGO Education is a brand by the International E-Learning Institute Ltd
+          (IELI), a Higher Education Institute based in Malta, created thanks to
+          the decennial experience of its founders in the field of online
+          University education.<br/> <br/> With our 100% online learning experience, you
+          gain an internationally recognized degree without putting your life on
+          hold. Study on evenings and weekends, at your own pace.
         </p>
-        {/* <a className="_btn btn-cta" href="/enrollment">
+        <a className="_btn btn-cta" href="/enrollment">
           
           Apply Now
-        </a> */}
-        <CustomBtn  content={"Apply Now"}/>
+        </a>
+        {/* <CustomBtn content={"Apply Now"} /> */}
       </div>
-      <div class="image-wrapper">
+      <div className="image-wrapper">
         <img src={ego} />
       </div>
     </section>

@@ -49,7 +49,7 @@ export default function Navbar({ show }) {
         
         
     </nav> */}
-      <section class="flex_content nav_content" id="nav_content">
+      <section className="flex_content nav_content" id="nav_content">
         <a
           href="/"
           className={activeLink === "home" ? "active" : ""}
@@ -76,7 +76,7 @@ export default function Navbar({ show }) {
         </Link>
         <a
           href="#"
-          class="contact_btn"
+          className="contact_btn"
           className={activeLink === "partners" ? "active" : ""}
           onClick={() => handleLinkClick("partners")}
           style={{ color: "#fff" }}
