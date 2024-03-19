@@ -16,7 +16,7 @@ export default function Hero() {
               <h2 className="text-white">Learn from anywhere. Advance faster.</h2>
               <span className="mx-0">
                 Our accredited programs provide in-demand skills to expand your
-                opportunities.
+                opportunities
               </span>
             </div>
           </div>
