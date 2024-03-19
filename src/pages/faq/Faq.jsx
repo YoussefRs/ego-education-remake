@@ -112,7 +112,7 @@ const Faq = () => {
         <div className="accordion-container">
           <div className="accordion-item">
             <button
-              className={`accordion-header ${
+              className={`accordion-headerr ${
                 activeIndex === 0 ? "active" : ""
               }`}
               onClick={() => toggleAccordion(0)}
@@ -138,7 +138,7 @@ const Faq = () => {
 
           <div className="accordion-item">
             <button
-              className={`accordion-header ${
+              className={`accordion-headerr ${
                 activeIndex === 1 ? "active" : ""
               }`}
               onClick={() => toggleAccordion(1)}
@@ -157,7 +157,7 @@ const Faq = () => {
 
           <div className="accordion-item">
             <button
-              className={`accordion-header ${
+              className={`accordion-headerr ${
                 activeIndex === 2 ? "active" : ""
               }`}
               onClick={() => toggleAccordion(2)}
@@ -179,10 +179,10 @@ const Faq = () => {
           </div>
           <div className="accordion-item">
             <button
-              className={`accordion-header ${
+              className={`accordion-headerr ${
                 activeIndex === 3 ? "active" : ""
               }`}
-              onClick={() => toggleAccordion(2)}
+              onClick={() => toggleAccordion(3)}
             >
               Can I transfer credits earned at other institutions to the online
               university?{" "}
@@ -193,7 +193,7 @@ const Faq = () => {
               style={{ maxHeight: activeIndex === 3 ? "100px" : "0" }}
             >
               <p>
-                Yes, feel free to contact us at evaluation@ego-education.com,
+                Yes, feel free to contact us at <b>evaluation@ego-education.com</b>,
                 attaching your academic records.
               </p>
             </div>
