@@ -72,6 +72,12 @@ const Faq = () => {
     },
   ];
 
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
   return (
     // <div className="content container">
     //   <div className="page-wrapper">
@@ -103,101 +109,94 @@ const Faq = () => {
     <div className="faq_container ">
       <article>
         <div className="img-container"></div>
-        <div className="faq">
-          <h2>FAQ</h2>
-          <div className="q-a">
-            <div className="q-wrapper">
-              <h3 tabIndex="0">How many team members can I invite?</h3>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1 .799l4 4 4-4"
-                  stroke="#F47B56"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                />
-              </svg>
+        <div className="accordion-container">
+          <div className="accordion-item">
+            <button
+              className={`accordion-header ${
+                activeIndex === 0 ? "active" : ""
+              }`}
+              onClick={() => toggleAccordion(0)}
+            >
+              Are the qualifications recognised?{" "}
+              <span className="icon">{activeIndex === 0 ? "-" : "+"}</span>
+            </button>
+            <div
+              className="accordion-content"
+              style={{ maxHeight: activeIndex === 0 ? "100px" : "0" }}
+            >
+              <p>
+                Our degrees are accredited by the Malta Further &amp; Higher
+                Education Authority (MFHEA) and recognised across the 27 EU
+                member states as Malta is an EU member itself. Malta has also
+                signed international treaties on education like the Treaty of
+                Bologna and the Lisbon Convention. Finally, since Malta is also
+                a Commonwealth member, our degrees are easily recognised across
+                its 56 member nations.
+              </p>
             </div>
-            <p hidden>
-              You can invite up to 2 additional users on the Free plan. There is
-              no limit on team members for the Premium plan.
-            </p>
           </div>
 
-          <div className="q-a">
-            <div className="q-wrapper">
-              <h3 tabIndex="0">What is the maximum file upload size?</h3>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1 .799l4 4 4-4"
-                  stroke="#F47B56"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                />
-              </svg>
+          <div className="accordion-item">
+            <button
+              className={`accordion-header ${
+                activeIndex === 1 ? "active" : ""
+              }`}
+              onClick={() => toggleAccordion(1)}
+            >
+              Are there any specific technical requirements or equipment
+              necessary for participating in online courses?{" "}
+              <span className="icon">{activeIndex === 1 ? "-" : "+"}</span>
+            </button>
+            <div
+              className="accordion-content"
+              style={{ maxHeight: activeIndex === 1 ? "100px" : "0" }}
+            >
+              <p>You only need your laptop and an internet connection.</p>
             </div>
-            <p hidden>
-              No more than 2GB. All files in your account must fit your allotted
-              storage space.
-            </p>
           </div>
 
-          <div className="q-a">
-            <div className="q-wrapper">
-              <h3 tabIndex="0">How do I reset my password?</h3>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1 .799l4 4 4-4"
-                  stroke="#F47B56"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                />
-              </svg>
+          <div className="accordion-item">
+            <button
+              className={`accordion-header ${
+                activeIndex === 2 ? "active" : ""
+              }`}
+              onClick={() => toggleAccordion(2)}
+            >
+              What kind of support services does the online university offer to
+              students?{" "}
+              <span className="icon">{activeIndex === 2 ? "-" : "+"}</span>
+            </button>
+            <div
+              className="accordion-content"
+              style={{ maxHeight: activeIndex === 2 ? "100px" : "0" }}
+            >
+              <p>
+                24/7 Online Tutoring &amp; Tech Support - Students can contact
+                online tutors who can help with coursework, assignments, and
+                study skills. This is available at any time of the day.
+              </p>
             </div>
-            <p hidden>
-              Click “Forgot password” from the login page or “Change password”
-              from your profile page. A reset link will be emailed to you.
-            </p>
           </div>
-
-          <div className="q-a">
-            <div className="q-wrapper">
-              <h3 tabIndex="0">Can I cancel my subscription?</h3>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1 .799l4 4 4-4"
-                  stroke="#F47B56"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                />
-              </svg>
+          <div className="accordion-item">
+            <button
+              className={`accordion-header ${
+                activeIndex === 3 ? "active" : ""
+              }`}
+              onClick={() => toggleAccordion(2)}
+            >
+              Can I transfer credits earned at other institutions to the online
+              university?{" "}
+              <span className="icon">{activeIndex === 3 ? "-" : "+"}</span>
+            </button>
+            <div
+              className="accordion-content"
+              style={{ maxHeight: activeIndex === 3 ? "100px" : "0" }}
+            >
+              <p>
+                Yes, feel free to contact us at evaluation@ego-education.com,
+                attaching your academic records.
+              </p>
             </div>
-            <p hidden>
-              Yes! Send us a message and we’ll process your request no questions
-              asked.
-            </p>
-          </div>
-
-          <div className="q-a">
-            <div className="q-wrapper">
-              <h3 tabIndex="0">Do you provide additional support?</h3>
-              <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1 .799l4 4 4-4"
-                  stroke="#F47B56"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-            <p hidden>
-              Chat and email support is available 24/7. Phone lines are open
-              during normal business hours.
-            </p>
           </div>
         </div>
       </article>
