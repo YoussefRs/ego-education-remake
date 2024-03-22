@@ -1163,12 +1163,13 @@ marquee {
   line-height: 2;
   margin-top: 0;
   color: #2f506c;
+  text-align: center;
 }
 .home-page h1.section-heading .line {
-  border-top: 2px solid #046635;
+  border-bottom: 2px solid #046635;
   display: inline-block;
   padding: 0 15px;
-  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .home-page section {
   overflow: hidden;
@@ -3771,6 +3772,7 @@ ol.style_1 > li::after {
   line-height: 1.5;
   font-family: "Gotham Medium", sans-serif;
   border-radius: 20px;
+  margin-bottom: 8rem;
 }
 
 @media (max-width: 480px) {
@@ -4234,6 +4236,7 @@ ol.style_1 > li::after {
   overflow: hidden;
   text-align: left;
   z-index: 1;
+  margin-bottom: 8rem;
 }
 
 #home h1 {

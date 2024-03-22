@@ -10,6 +10,9 @@
   --tp-white-bg: #fff;
   --tp-text-black: #333;
 }
+#about {
+  margin-bottom: 8rem;
+}
 .feature {
   position: relative;
 }

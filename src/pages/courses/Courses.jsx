@@ -22,10 +22,10 @@ const Courses = () => {
         path={[{ url: "/", label: "Home" }]}
         current={"Courses"}
       />
-      <div className="content container">
+      <div className="content container mt-5">
         <div className="page-wrapper">
           <div className="page-content">
-            <HomeCourseFinder />
+            {/* <HomeCourseFinder /> */}
             <div className="row page-row">
               <div className="courses-wrapper col-lg-8 col-md-8 col-12">
                 <div className="featured-courses tabbed-info page-row">
@@ -55,7 +55,7 @@ const Courses = () => {
                           activePane === "Featured" ? "active" : ""
                         }`}
                       >
-                        Pegasso
+                        Pegasso International
                       </Link>
                     </li>
                   </ul>
@@ -71,7 +71,7 @@ const Courses = () => {
                           className="col-12 fw-bold h4"
                           style={{ color: "#046635" }}
                         >
-                          Bachelor Degree
+                          Bachelor's Degree
                         </p>
                         {coursesSomeData
                           .filter(
@@ -103,7 +103,7 @@ const Courses = () => {
                           className="col-12 fw-bold h4"
                           style={{ color: "#046635" }}
                         >
-                          Master Degree
+                          Master's Degrees
                         </p>
                         {coursesSomeData
                           .filter(

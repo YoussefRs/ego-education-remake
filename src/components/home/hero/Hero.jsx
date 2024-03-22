@@ -3,7 +3,7 @@ import IntroVideo from "../../../assets/video/finalIntro.mp4";
 
 export default function Hero() {
   return (
-    <section id="home" data-stellar-background-ratio="0.5" className="mb-4">
+    <section id="home" data-stellar-background-ratio="0.5" >
       <div className="overlay"></div>
       <div className="container">
         <div className="row">

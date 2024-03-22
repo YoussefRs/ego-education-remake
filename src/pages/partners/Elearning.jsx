@@ -6,6 +6,11 @@ export default function Elearning() {
   return (
     <div id="why-us" className="section">
       <div className="container">
+        <h1 className="section-heading text-center text-highlight m-5">
+          <span className="line fw-bold" style={{color: "#046635"}}>
+            Our Platform Is Shaped Around Your Life
+          </span>
+        </h1>
         <hr className="section-hr" />
         <div className="row justify-content-between">
           <div className="col-md-6" id="content_">
@@ -37,7 +42,7 @@ export default function Elearning() {
 
         <div className="row justify-content-between">
           <div className="col-md-5 col-md-offset-1">
-            <a className="about-video" href="#">
+            <a className="about-video" href="#" id="content_">
               <img
                 class="header-image"
                 src="https://raw.githubusercontent.com/malunaridev/Landing-Pages-Are-Fun-01-to-10/master/1-business-agency-concept/assets/image.png"
@@ -47,7 +52,7 @@ export default function Elearning() {
             </a>
           </div>
 
-          <div className="col-md-6" id="content_">
+          <div className="col-md-6">
             <div id="content-text_">
               <h1>
                 <u>Collaborate </u>and Grow

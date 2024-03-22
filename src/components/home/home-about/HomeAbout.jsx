@@ -13,10 +13,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HomeAbout() {
   return (
-    <div id="about" className="section mb-5">
+    <div id="about" className="section">
       <div className="container" id="about_ctr">
         <div className="row">
-          <div className="col-md-6 d-flex align-items-center flex-column justify-content-center">
+          <div className="col-md-6 d-flex align-items-center flex-column justify-content-center gap-4">
             <div className="section-header">
               <h1>Study flexibly around your life.</h1>
               <p className="lead">
@@ -78,7 +78,7 @@ export default function HomeAbout() {
               }}
             >
               <img
-                src="https://www.itnewsafrica.com/wp-content/uploads/2020/05/Connected-IoT-Devices-1.png"
+                src="https://imageio.forbes.com/specials-images/imageserve/62cf74fbc1c0f60b774c2945/E-learning-online-education-or-internet--encyclopedia-concept--Open-laptop-and-book/960x0.jpg?format=jpg&width=960"
                 alt=""
                 style={{ height: 400 }}
               />

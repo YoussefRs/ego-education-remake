@@ -21,7 +21,6 @@ article {
 @media (min-width: 57.06rem) {
   article {
     grid-template-columns: 22.5rem 1fr;
-    
   }
 }
 .faq_container {
@@ -30,7 +29,7 @@ article {
   margin: auto;
 }
 .img-container {
-  grid-row: 1/span 2;
+  grid-row: 1 / span 2;
   grid-column: 1;
   z-index: 1;
   height: min(15rem, 60vw);
@@ -74,16 +73,16 @@ article {
 }
 
 .accordion-item {
-  background-color: #FFFFFF; /* White background for items */
-  border: 1px solid #E0E0E0; /* Light border */
+  background-color: #ffffff; /* White background for items */
+  border: 1px solid #e0e0e0; /* Light border */
   border-radius: 8px;
   margin-bottom: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Softer shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
 .accordion-headerr {
-  background-color: #6C63FF; /* Soft purple */
-  color: #FFFFFF; /* White text */
+  background-color: #046635; /* Soft purple */
+  color: #ffffff; /* White text */
   padding: 15px 20px;
   font-size: 18px;
   border: none;
@@ -99,11 +98,11 @@ article {
 }
 
 .accordion-header:hover {
-  background-color: #5753C9; /* Darker shade of purple */
+  background-color: #5753c9; /* Darker shade of purple */
 }
 
 .accordion-content {
-  background-color: #FAFAFA; /* Very light grey for content */
+  background-color: #fafafa; /* Very light grey for content */
   overflow: hidden;
   padding: 0 15px;
   max-height: 0;

@@ -48,13 +48,11 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/team" element={<Team />} />
-        {/* <Route path="/jobs" element={<Jobs />} /> */}
         <Route path="/courses" element={<Courses />} />
         <Route path="/events" element={<Events />} />
         <Route path="/news" element={<News />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/register" element={<RegistrationForm />} />
-        {/* <Route path="/job/:slug" element={<JobDetails />} /> */}
         <Route path="/course/:slug" element={<CourseDetails />} />
         <Route path="/news/:slug" element={<NewDetails />} />
         <Route path="/enrollment" element={<EnrollmentForm />} />

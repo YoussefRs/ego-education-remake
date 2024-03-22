@@ -8,9 +8,10 @@ const ApplyWidget = () => {
     <section className="widget has-divider mb-3">
       <h3 className="title">Why Ego-Education ?</h3>
       <p>
-        With the new eGO brand, Ieli intends to initiate this
-        internationalization process through highly specialized, innovative and
-        professionalizing courses for active employment research.
+        Advance your career through continuous learning. Expand your skillset,
+        gain industry certifications, learn on your schedule, and do it all at a
+        lower cost. Online education provides opportunities for career growth
+        that will benefit you for years to come.
       </p>
       <div className="d-flex align-items-center justify-content-start">
         <a className="_btn btn-cta" href="/enrollment">

@@ -2,20 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8rem;
 }
 
-
-
-#content-text_ {
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-  /* padding-left: 10rem; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+#content-text {
+  
 }
-
 .header-image {
   max-height: 50vh;
   width: 450px;
@@ -23,7 +15,6 @@
 }
 
 #content-text_ h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   color: #26394e;
   margin-bottom: 3rem;
@@ -36,7 +27,7 @@
 }
 
 #content-text_ h1 u {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: underline;
   text-decoration-color: #046635;
   text-underline-offset: 1rem;
@@ -44,7 +35,6 @@
 }
 
 #content-text_ h2 {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 2rem;

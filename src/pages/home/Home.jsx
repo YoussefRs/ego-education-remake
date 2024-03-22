@@ -21,10 +21,10 @@ export default function Home() {
       <div className="">
         <Hero />
         <HomeHeading />
+        <HomeCourseSlider />
         <HomeAbout />
         {/* <NewsSection /> */}
         <HomeGraduate />
-        <HomeCourseSlider />
         <div className="row cols-wrapper">
           {/* <HomeEvents /> */}
           <div className="col-lg-9 col-12">

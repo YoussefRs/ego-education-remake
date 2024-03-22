@@ -18,12 +18,12 @@ export default function HomeGraduate() {
     >
       <div className="video-overlay"></div>
       <div className="container">
-        <div className="row align-items-center justify-content">
+        <div className="row ">
           <div className="col-xl-7 col-lg-7 col-md-10">
             <div className="section-title mb-40 text-left">
-              <h2 className=" text-white mb-5">
+              <h1 className=" text-white mb-5">
                 Start Transforming Your Future Today
-              </h2>
+              </h1>
             </div>
             <div className="single-video-box">
               <i>
