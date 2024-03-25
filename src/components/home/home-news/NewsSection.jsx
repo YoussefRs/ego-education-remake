@@ -6,12 +6,6 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"; // Import the required icons
 
-import news1 from "../../../assets/images/news/news-thumb-1.jpg";
-import news2 from "../../../assets/images/news/news-thumb-2.jpg";
-import news3 from "../../../assets/images/news/news-thumb-3.jpg";
-import news4 from "../../../assets/images/news/news-thumb-4.jpg";
-import news5 from "../../../assets/images/news/news-thumb-5.jpg";
-import news6 from "../../../assets/images/news/news-thumb-6.jpg";
 import random from "../../../assets/images/ego.png";
 
 const NewsSection = () => {

@@ -60,14 +60,14 @@
 }
 
 .modal-content {
-    background: none !important;
-    background-color: none !important;
-    box-shadow: none !important;
-    border: none !important;
+  background: none !important;
+  background-color: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 .hero-ctr .container-heading {
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Gotham Medium", sans-serif;
   font-size: 14px;
   color: #fff;
   margin: 20px 0px;
@@ -78,7 +78,7 @@
 }
 .hero-ctr .title-ctr .container-title {
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Gotham Medium", sans-serif;
   font-size: clamp(1.875rem, 1.4525rem + 2.3313vw, 7rem);
   text-transform: capitalize;
   letter-spacing: 5px;
@@ -89,7 +89,7 @@
 
 .hero-ctr .container-p {
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Gotham Medium", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;

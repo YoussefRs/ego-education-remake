@@ -152,104 +152,119 @@
       &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
     }
   } */
-  .swiper-container {
-    margin-bottom: 8rem;
-  }
-  .slick-dots li button:before {
-    content: " ";
-    background: #d8d8d8;
-    opacity: 1;
-    border-radius: 50%;
-  }
-  .slick-dots li.slick-active button:before {
-    content: "";
-    background: #046635;
-    opacity: 1;
-  }
- 
-  .slick-arrow {
-    margin: -50px 0px 0px 0px;
-    width: 30px;
-    height: 30px;
-  }
-  .slick-arrow.slick-prev {
-    left: 5%;
-  }
-  .slick-arrow.slick-next {
-    right: 5%;
-  }
+.swiper-container {
+  margin-bottom: 8rem;
+}
+.slick-dots li button:before {
+  content: " ";
+  background: #d8d8d8;
+  opacity: 1;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button:before {
+  content: "";
+  background: #046635;
+  opacity: 1;
+}
 
+.slick-arrow {
+  margin: -50px 0px 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+.slick-arrow.slick-prev {
+  left: 5%;
+}
+.slick-arrow.slick-next {
+  right: 5%;
+}
 
-  
-  .swiper .swiper-wrapper + .container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    top: -40px;
-    z-index: 5;
+.swiper .swiper-wrapper + .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  top: -40px;
+  z-index: 5;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+.swiper-slide .slide-image {
+  display: block;
+  object-fit: cover;
+  height: 400px;
+  position: relative;
+  width: 66%;
+  z-index: 1;
+}
+
+.swiper-slide::before {
+  content: "";
+  background-image: url(../../../assets/images/contact-dec-01.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #046635;
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 55%;
+  width: 70%;
+  top: 0px;
+  transform: skew(-20deg);
+  z-index: 2;
+}
+.swiper-slide::after {
+  content: "";
+  background-image: linear-gradient(
+    65deg,
+    rgba(8, 75, 6, 0.5) 20%,
+    rgba(5, 105, 35, 0.5) 80%
+  );
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 45%;
+  width: 0px;
+  transform: skew(-20deg);
+  transition: width 0.32s ease-in-out;
+  z-index: 3;
+}
+.swiper-slide.swiper-slide-active::after {
+  width: 100px;
+}
+
+.swiper-slide .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0px;
+  left: 80%;
+  width: 450px;
+  transform: translateX(-50%);
+  z-index: 3;
+  height: 100%;
+  color: #fff;
+}
+.swiper-slide .slide-content .slide-content-inner {
+  text-align: right;
+}
+
+.course_icon_btn {
+  & button {
+    border: none;
+    padding: 8px 50px;
+    border-radius: 10px;
+    color: #046635;
+    border: 2px solid #fff;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
   }
-  
-  .swiper-slide {
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px;
-  }
-  .swiper-slide .slide-image {
-    display: block;
-    object-fit: cover;
-    height: 400px;
-    position: relative;
-    width: 66%;
-    z-index: 1;
-  }
-  
-  .swiper-slide::before {
-    content: "";
-    background: linear-gradient(to right, #046635 10%, #fff);
-    display: block;
-    height: 100%;
-    position: absolute;
-    left: 55%;
-    width: 70%;
-    top: 0px;
-    transform: skew(-20deg);
-    z-index: 2;
-  }
-  .swiper-slide::after {
-    content: "";
-    background-image: linear-gradient(
-      65deg,
-      rgba(8, 75, 6, 0.5) 20%,
-      rgba(5, 105, 35, 0.5) 80%
-    );
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    right: 45%;
-    width: 0px;
-    transform: skew(-20deg);
-    transition: width 0.32s ease-in-out;
-    z-index: 3;
-  }
-  .swiper-slide.swiper-slide-active::after {
-    width: 100px;
-  }
-  
-  .swiper-slide .container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    height: 100%;
-    color: #fff;
-  }
-  .swiper-slide .slide-content .slide-content-inner {
-    text-align: right;
-  }
-  
+}

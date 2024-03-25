@@ -1,11 +1,5 @@
 import getRandomItems from "../utils";
 
-import img1 from "../assets/images/news/news-thumb-1.jpg";
-import img2 from "../assets/images/news/news-thumb-2.jpg";
-import img3 from "../assets/images/news/news-thumb-3.jpg";
-import img4 from "../assets/images/news/news-thumb-4.jpg";
-import img5 from "../assets/images/news/news-thumb-5.jpg";
-import img6 from "../assets/images/news/news-thumb-6.jpg";
 
 const useNews = (req) => {
   const newsData = [

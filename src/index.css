@@ -1,5 +1,4 @@
 :root {
- 
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,18 +12,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html{
-	scroll-behavior: smooth;
-	
-	/* Variables For Storing Colors */
-	--primary-clr: #046635;
-	--primary-medium-clr: #d8e9df;
-	--primary-light-clr: #edfaf1;
-	--bg-clr-1: #ffffff;
-	--dark-heading-clr: #232d39;
-	--dark-text-clr: #6c757d;
-	--light-heading-clr: #efefef;
-	--light-text-clr: #cecece;
+@font-face {
+  font-family: "Gotham Medium";
+  src: local("Gotham Medium"),
+    url("../assets/fonts/Gotham-Black.otf") format("truetype");
+}
+
+* {
+  font-family: "Gotham Medium", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  /* Variables For Storing Colors */
+  --primary-clr: #046635;
+  --primary-medium-clr: #d8e9df;
+  --primary-light-clr: #edfaf1;
+  --bg-clr-1: #ffffff;
+  --dark-heading-clr: #232d39;
+  --dark-text-clr: #6c757d;
+  --light-heading-clr: #efefef;
+  --light-text-clr: #cecece;
 }
 
 body {
@@ -33,8 +42,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Gotham Medium", sans-serif !important;
 }
-
 
 button {
   border-radius: 8px;

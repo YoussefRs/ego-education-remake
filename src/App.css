@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Gotham Medium";
   src: local("Gotham Medium"),
-    url("../assets/fonts/GothamMedium.ttf") format("truetype");
+    url("../assets/fonts/Gotham-Black.otf") format("truetype");
 }
 
 * {
@@ -3434,7 +3434,7 @@ ol.style_1 > li::after {
   border-radius: 20px;
   margin-bottom: 8rem;
   max-height: 250px;
-  z-index: 99999;
+  z-index: 99;
   position: absolute;
   top: 88%;
 }

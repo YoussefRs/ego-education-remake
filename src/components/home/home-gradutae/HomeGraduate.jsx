@@ -20,10 +20,25 @@ export default function HomeGraduate() {
       <div className="container">
         <div className="row ">
           <div className="col-xl-7 col-lg-7 col-md-10">
-            <div className="section-title mb-40 text-left">
-              <h1 className=" text-white mb-5">
-                Start Transforming Your Future Today
-              </h1>
+            <div className="section-title mb-4 text-left">
+              <div className="section-title mb-4 text-left">
+                <h2 class="container-heading text-start text-white">
+                  EXPLORE ALL COURSES
+                </h2>
+                <h1 className="container-title text-start text-white mb-4">
+                  Start Transforming your{" "}
+                  <span>Future</span> today
+                </h1>
+                <p className="container-p text-start text-white mb-4" style={{maxWidth: 650}}>
+                  Embark on a journey of transformation today and unlock
+                  boundless opportunities for your future. With our
+                  internationally acclaimed degree programs, you'll equip
+                  yourself with the qualifications essential for thriving in
+                  today's global landscape. Our degrees hold recognition across
+                  the EU and are easily validated in Commonwealth nations,
+                  offering you a passport to diverse career prospects worldwide.
+                </p>
+              </div>
             </div>
             <div className="single-video-box">
               <i>
