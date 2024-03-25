@@ -57,7 +57,7 @@ export default function HomeCourseSlider() {
   // };
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -65,7 +65,7 @@ export default function HomeCourseSlider() {
     autoplaySpeed: 2000,
     className: "sample",
     autoplay: false,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -199,11 +199,18 @@ export default function HomeCourseSlider() {
 
     <div className="swiper-container">
       <div className="container">
-        <h1 className="section-heading text-highlight mb-4">
-          <span className="line fw-bold">Courses</span>
+        <h2 class="container-heading">EXPLORE ALL COURSES</h2>
+        <h1 className="container-title">
+          browse Our <span style={{ color: "#046635" }}>Course</span> catalog
         </h1>
+        <p className="container-p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor
+          laudantium illo aliquam ducimus possimus rerum iure provident. Eaque
+          odit est sit aliquid quisquam dolor vitae laborum accusamus sapiente
+          debitis.
+        </p>
       </div>
-      <Slider {...settings}>
+      <Slider {...settings} className="container mt-5">
         <div className="swiper-slide">
           <img
             src="https://images7.alphacoders.com/133/1337527.png"
@@ -249,76 +256,6 @@ export default function HomeCourseSlider() {
           </div>
         </div>
       </Slider>
-      {/* <Swiper {...params}>
-        <SwiperSlide>
-          {" "}
-          <img
-            src="https://images7.alphacoders.com/133/1337527.png"
-            className="slide-image"
-            alt=""
-          />
-          <div className="container">
-            <div className="slide-content">
-              <div className="slide-content-inner">
-                <h2>Automotive</h2>
-                <h3>Innovation</h3>
-                <p>
-                  lorem ipsum
-                  <br />
-                  dolore sit
-                  <br />
-                  amet lorem ipsum
-                </p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://mrwallpaper.com/images/hd/business-growth-r82mri4n6cbnyt5t.jpg"
-            className="slide-image"
-            alt=""
-          />
-          <div className="container">
-            <div className="slide-content">
-              <div className="slide-content-inner">
-                <h2>Quality</h2>
-                <h3>Ipsum</h3>
-                <p>
-                  lorem ipsum
-                  <br />
-                  dolore sit
-                  <br />
-                  amet lorem ipsum
-                </p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://www.arrow.com/ais/wp-content/uploads/2019/07/The-Digital-Human-Body_Image-resized.jpg"
-            className="slide-image"
-            alt=""
-          />
-          <div className="container">
-            <div className="slide-content">
-              <div className="slide-content-inner">
-                <h2>Quality</h2>
-                <h3>Ipsum</h3>
-                <p>
-                  lorem ipsum
-                  <br />
-                  dolore sit
-                  <br />
-                  amet lorem ipsum
-                </p>
-              </div>
-            </div>
-          </div>
-          https://images7.alphacoders.com/878/878663.jpg
-        </SwiperSlide>
-      </Swiper> */}
     </div>
   );
 }

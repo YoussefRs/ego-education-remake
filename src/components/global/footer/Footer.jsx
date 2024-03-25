@@ -8,12 +8,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons"; // Import necessary icons
 import { Link } from "react-router-dom";
 import CustomBtn from "../btn/CustomBtn";
-// import "./styles.css";
+import logo from "../../../assets/images/logo-ego-white.png"
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <>
-      <div className="contact-us section" id="contact">
+      {/* <div className="contact-us section" id="contact">
         <div className="container">
           <div className="row">
             <div className="col-lg-6  align-self-center">
@@ -85,7 +86,83 @@ const Footer = () => {
             <p>Copyright © 2024 Ego Eduation. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </footer> */}
+
+      <section class="footer mt-5" id="footer">
+        <div class="footer-contents">
+          <div class="footer-col footer-col-1">
+            <div class="col-title">
+              <img src={logo} alt="ego-edication" />
+            </div>
+            <div class="col-contents">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col-2">
+            <div class="col-title">
+              <h3>Contact</h3>
+            </div>
+            <div class="col-contents">
+              <div class="contact-row">
+                <span>Address</span>
+                <span>1234 Street, Colifornia, USA</span>
+              </div>
+              <div class="contact-row">
+                <span>Phone</span>
+                <span>+012 987 23456</span>
+              </div>
+              <div class="contact-row">
+                <span>Website</span>
+                <span>ego-education.com</span>
+              </div>
+              <div class="contact-row">
+                <span>Email</span>
+                <span>info@ego-education.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col-3">
+            <div class="col-title">
+              <h3>Quick Links</h3>
+            </div>
+            <div class="col-contents">
+              <a href="#">Home</a>
+              <a href="#">Services</a>
+              <a href="#">Courses</a>
+              <a href="#">Categories</a>
+              <a href="#">Testimonials</a>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col-4">
+            <div class="col-title">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="col-contents">
+              <form class="newsletter">
+                <input type="email" placeholder="Your Email" />
+                <button class="newsletter-btn btn" type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="copy-rights">
+          <p>
+             All Rights Reserved
+          </p>
+        </div>
+      </section>
     </>
   );
 };

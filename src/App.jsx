@@ -63,7 +63,7 @@ function App() {
         <Route path="/elearning" element={<Elearning />} />
       </Routes>
       <Footer />
-      <BackToTopButton />
+      {/* <BackToTopButton /> */}
     </div>
   );
 }

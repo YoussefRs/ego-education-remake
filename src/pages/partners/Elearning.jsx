@@ -5,14 +5,19 @@ import guys from "../../assets/about-video.jpg";
 export default function Elearning() {
   return (
     <div id="why-us" className="section">
-      <div className="container">
-        <h1 className="section-heading text-center text-highlight m-5">
-          <span className="line fw-bold" style={{color: "#046635"}}>
-            Our Platform Is Shaped Around Your Life
-          </span>
+      <div className="container ">
+        <h2 class="container-heading ">team</h2>
+        <h1 className="container-title ">
+          Answer You Need To <span style={{ color: "#046635" }}>Know</span>
         </h1>
-        <hr className="section-hr" />
-        <div className="row justify-content-between">
+        <p className="container-p ">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor
+          laudantium illo aliquam ducimus possimus rerum iure provident. Eaque
+          odit est sit aliquid quisquam dolor vitae laborum accusamus sapiente
+          debitis.
+        </p>
+        <hr className="section-hr mt-5 mb-5" />
+        <div className="row justify-content-between mt-5">
           <div className="col-md-6" id="content_">
             <div id="content-text_">
               <h1>
@@ -32,7 +37,7 @@ export default function Elearning() {
             <a className="about-video" href="#">
               <img
                 class="header-image"
-                src="https://news.umanitoba.ca/wp-content/uploads/2020/04/LearningForLife_UMToday-1200x800-1200x800.jpg"
+                src="https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/02/1.webp"
                 alt="a business man standing and smiling"
               />
               <i className="play-icon fa fa-play"></i>
@@ -45,7 +50,7 @@ export default function Elearning() {
             <a className="about-video" href="#" id="content_">
               <img
                 class="header-image"
-                src="https://raw.githubusercontent.com/malunaridev/Landing-Pages-Are-Fun-01-to-10/master/1-business-agency-concept/assets/image.png"
+                src="https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/02/2-768x494.webp"
                 alt="a business man standing and smiling"
               />
               <i className="play-icon fa fa-play"></i>
@@ -88,7 +93,7 @@ export default function Elearning() {
             <a className="about-video" href="#">
               <img
                 class="header-image"
-                src="https://images.pexels.com/photos/1198171/pexels-photo-1198171.jpeg"
+                src="https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/02/3.webp"
                 alt="a business man standing and smiling"
               />
               <i className="play-icon fa fa-play"></i>

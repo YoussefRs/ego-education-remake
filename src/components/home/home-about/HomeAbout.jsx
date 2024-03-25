@@ -18,8 +18,17 @@ export default function HomeAbout() {
         <div className="row">
           <div className="col-md-6 d-flex align-items-center flex-column justify-content-center gap-4">
             <div className="section-header">
-              <h1>Study flexibly around your life.</h1>
+              {/* <h1>Study flexibly around your life.</h1>
               <p className="lead">
+                Our online courses on our platform are always available, so you
+                can fit your studies into your busy schedule.
+              </p> */}
+              <h2 class="container-heading text-start">Features</h2>
+              <h1 className="container-title text-start">
+                Study flexibly around your{" "}
+                <span style={{ color: "#046635" }}>life</span>
+              </h1>
+              <p className="container-p text-start">
                 Our online courses on our platform are always available, so you
                 can fit your studies into your busy schedule.
               </p>

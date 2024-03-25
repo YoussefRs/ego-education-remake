@@ -4,9 +4,16 @@ import "./HomeLecturers.css";
 export default function HomeLecturers() {
   return (
     <>
-      <h1 className="section-heading text-highlight content container mb-4">
-        <span className="line fw-bold">Lecturers</span>
+       <h2 class="container-heading">Lecturers</h2>
+      <h1 className="container-title">
+        meet our <span style={{ color: "#046635" }}>lecturers</span>
       </h1>
+      <p className="container-p">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor
+        laudantium illo aliquam ducimus possimus rerum iure provident. Eaque
+        odit est sit aliquid quisquam dolor vitae laborum accusamus sapiente
+        debitis.
+      </p>
       <section id="cards">
         <div className="container py-2">
           <div className="row">

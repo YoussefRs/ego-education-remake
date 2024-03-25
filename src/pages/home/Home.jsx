@@ -14,22 +14,24 @@ import Faq from "../faq/Faq";
 import HomeCourseSlider from "../../components/home/Home-course-slider/HomeCourseSlider";
 import HomeAbout from "../../components/home/home-about/HomeAbout";
 import HomeGraduate from "../../components/home/home-gradutae/HomeGraduate";
+import TeamMember from "../../components/team/team-member/TeamMember";
+import Categories from "../../components/home/courses-categories/Categories";
 
 export default function Home() {
   return (
     <main className="home-page">
       <div className="">
+        
         <Hero />
         <HomeHeading />
-        <HomeCourseSlider />
+        <Categories />
         <HomeAbout />
+        <HomeCourseSlider />
         {/* <NewsSection /> */}
         <HomeGraduate />
         <div className="row cols-wrapper">
           {/* <HomeEvents /> */}
-          <div className="col-lg-9 col-12">
-            {/* <HomeCourseFinder /> */}
-          </div>
+          <div className="col-lg-9 col-12">{/* <HomeCourseFinder /> */}</div>
           <div className="col-lg-3 col-12">
             {/* <HomeQuickLinks /> */}
             {/* <HomeTestimonials /> */}
@@ -37,7 +39,8 @@ export default function Home() {
         </div>
         <HomeInstitutes />
         <HomeLecturers />
-        <Dec2 />
+        {/* <Dec2 /> */}
+        <TeamMember />
         <Faq />
       </div>
     </main>
