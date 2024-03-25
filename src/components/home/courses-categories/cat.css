@@ -15,7 +15,7 @@
   font-family: "Gotham Medium", sans-serif;
 }
 .container-p {
-    text-align: center;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -58,11 +58,31 @@
   padding: 20px;
   border-radius: 5px;
   transition: transform 0.3s ease;
+  & button {
+    border: none;
+    /* background: white; */
+    line-height: normal;
+    text-transform: capitalize;
+    border-radius: 10px;
+    padding: clamp(0.5625rem, 0.5048rem + 0.2564vw, 0.8125rem)
+      clamp(1.25rem, 1.0481rem + 0.8974vw, 2.125rem);
+    background-color: #046635;
+  }
+  & a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
 .course:hover {
   transform: translateY(-5px);
   border: 1px solid #046635;
+  cursor: pointer;
+}
+
+.tab-content .course:hover {
+  transform: none;
   cursor: pointer;
 }
 

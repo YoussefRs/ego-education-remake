@@ -10,7 +10,6 @@
 }
 a:not(.ham) {
   text-decoration: none !important;
-  color: #046635;
   cursor: pointer;
 }
 html,
@@ -68,7 +67,6 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: gray !important;
 }
 a:focus {
   text-decoration: none;

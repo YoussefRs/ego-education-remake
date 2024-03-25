@@ -103,7 +103,7 @@ const TeamMember = ({ image, name, title, description }) => {
                     </div>
                   </div>
                 </div>
-                <div className="team-content">
+                <div className="team-content mt-3">
                   <div className="team-name">
                     <a href="#">
                       <h5>{member.name}</h5>
@@ -147,7 +147,7 @@ const TeamMember = ({ image, name, title, description }) => {
                   </div>
                 </div>
                 <div class="team-content">
-                  <div class="team-name">
+                  <div class="team-name mt-3">
                     <h5>{member.name}</h5>
                   </div>
                   <div class="team-role">{member.role}</div>

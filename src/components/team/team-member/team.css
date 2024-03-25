@@ -21,10 +21,15 @@
   color: #f24046;
 }
 .team {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & h5 {
+    color: #046635;
+    font-family: "Gotham Medium", sans-serif;
+  }
 }
 .team-role {
   color: #a4a7aa;

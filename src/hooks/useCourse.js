@@ -12,6 +12,7 @@ const useCourse = (req) => {
       startDate: "01 Jan 2023",
       duration: "2 years",
       location: "In Campus",
+      cur: "2",
       media: {
         type: "image",
         source:
@@ -142,6 +143,7 @@ const useCourse = (req) => {
       startDate: "05 Jun 2023",
       duration: "2 years",
       location: "Online",
+      cur: "8",
       media: {
         type: "image",
         source:
@@ -163,6 +165,7 @@ const useCourse = (req) => {
       startDate: "15 Feb 2023",
       duration: "3 years",
       location: "Online",
+      cur: "5",
       media: {
         type: "image",
         source:
@@ -183,6 +186,7 @@ const useCourse = (req) => {
       startDate: "18 Feb 2023",
       duration: "3 years",
       location: "Online",
+      cur: "9",
       media: {
         type: "image",
         source:
@@ -204,6 +208,7 @@ const useCourse = (req) => {
       startDate: "10 Mar 2023",
       duration: "2 years",
       location: "Online",
+      cur: "4",
       media: {
         type: "image",
         source:
