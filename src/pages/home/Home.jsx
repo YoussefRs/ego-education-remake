@@ -1,48 +1,23 @@
-import React from "react";
-import Hero from "../../components/home/hero/Hero";
-import HomeHeading from "../../components/home/home-heading/HomeHeading";
-import NewsSection from "../../components/home/home-news/NewsSection";
-import HomeEvents from "../../components/home/home-events/HomeEvents";
-import HomeCourseFinder from "../../components/home/home-course-finder/HomeCourseFinder";
-import HomeQuickLinks from "../../components/home/home-quick-links/HomeQuickLinks";
-import HomeTestimonials from "../../components/home/home-testimonials/HomeTestimonials";
-import HomeInstitutes from "../../components/home/home-institutes/HomeInstitutes";
-import ego from "../../assets/images/ego.png";
-import Dec2 from "../team/deck2";
-import HomeLecturers from "../../components/home/home-lecturers/HomeLecturers";
-import Faq from "../faq/Faq";
-import HomeCourseSlider from "../../components/home/Home-course-slider/HomeCourseSlider";
-import HomeAbout from "../../components/home/home-about/HomeAbout";
-import HomeGraduate from "../../components/home/home-gradutae/HomeGraduate";
-import TeamMember from "../../components/team/team-member/TeamMember";
-import Categories from "../../components/home/courses-categories/Categories";
+import React from 'react'
+import "./Home.css"
+import HomeHero from '../../components/Home/HomeHero'
+import HomeAbout from '../../components/Home/HomeAbout'
+import HomeFeatures from '../../components/Home/HomeFeatures'
+import HomeCourseSlider from '../../components/Home/HomeCourseSlider'
+import HomeFeatures_2 from '../../components/Home/HomeFeatures_2'
+import HomeLecturers from '../../components/Home/HomeLecturers'
 
-export default function Home() {
+function Home() {
   return (
-    <main className="home-page">
-      <div className="">
-        
-        <Hero />
-        <HomeHeading />
-        <Categories />
+    <>
+        <HomeHero />
         <HomeAbout />
+        <HomeFeatures />
         <HomeCourseSlider />
-        {/* <NewsSection /> */}
-        <HomeGraduate />
-        <div className="row cols-wrapper">
-          {/* <HomeEvents /> */}
-          <div className="col-lg-9 col-12">{/* <HomeCourseFinder /> */}</div>
-          <div className="col-lg-3 col-12">
-            {/* <HomeQuickLinks /> */}
-            {/* <HomeTestimonials /> */}
-          </div>
-        </div>
-        <HomeInstitutes />
+        <HomeFeatures_2 />
         <HomeLecturers />
-        {/* <Dec2 /> */}
-        <TeamMember />
-        <Faq />
-      </div>
-    </main>
-  );
+    </>
+  )
 }
+
+export default Home

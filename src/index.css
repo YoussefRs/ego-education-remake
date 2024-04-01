@@ -4,7 +4,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,60 +18,149 @@
 }
 
 * {
-  font-family: "Gotham Medium", sans-serif;
+  font-family: "Gotham Medium", sans-serif !important;
 }
 
-html {
-  scroll-behavior: smooth;
-
-  /* Variables For Storing Colors */
-  --primary-clr: #046635;
-  --primary-medium-clr: #d8e9df;
-  --primary-light-clr: #edfaf1;
-  --bg-clr-1: #ffffff;
-  --dark-heading-clr: #232d39;
-  --dark-text-clr: #6c757d;
-  --light-heading-clr: #efefef;
-  --light-text-clr: #cecece;
+a {
+  font-weight: 500;
+  color: #fff !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  width: max-content;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  pad: 0;
   min-width: 320px;
   min-height: 100vh;
-  font-family: "Gotham Medium", sans-serif !important;
 }
 
+h1 {
+  color: white;
+  font-size: clamp(1.875rem, 1.597rem + 1.5337vw, 3.4375rem);
+  text-transform: capitalize;
+  font-family: "Gotham Medium", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: clamp(1.2rem, 1.597rem + 1.5337vw, 2rem);
+}
+ul {
+  list-style: none;
+}
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  display: inline-block;
+  width: max-content;
+  font: 800 16px/24px "Gotham Medium", sans-serif !important;
+  background: #000;
+  border-radius: 10px !important;
+  color: #fff;
+  padding: 12px 28px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border: none;
 }
 button:hover {
-  border-color: #646cff;
+  transform: scale(0.9);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.button-green {
+  display: inline-block;
+  width: max-content;
+  font: 800 16px/24px "Gotham Medium", sans-serif !important;
+  background: #046635;
+  border-radius: 10px !important;
+  color: #fff;
+  padding: 12px 28px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border: none;
+}
+.button-green:hover {
+  /* border: 1px solid #046635;
+  background-color: #fff;
+  color: #046635 !important; */
+  transform: scale(0.9);
+
+}
+.button-green:focus,
+.button-green:focus-visible {
+  outline: none;
+}
+
+.container-heading {
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  margin: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Gotham Medium", sans-serif;
+}
+.container-heading::after {
+  content: "";
+  display: inline-block;
+  width: 3%;
+  height: 1px;
+  background-color: #fff;
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
+
+.container-heading::before {
+  content: "";
+  display: inline-block;
+  width: 3%;
+  height: 1px;
+  background-color: #fff;
+  position: relative;
+  right: 10px;
+  bottom: 5px;
+}
+
+.container-heading-green {
+  text-align: center;
+  font-size: 13px;
+  color: #046635;
+  margin: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Gotham Medium", sans-serif;
+}
+.container-heading-green::after {
+  content: "";
+  display: inline-block;
+  width: 3%;
+  height: 1px;
+  background-color: #046635;
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
+
+.container-heading-green::before {
+  content: "";
+  display: inline-block;
+  width: 3%;
+  height: 1px;
+  background-color: #046635;
+  position: relative;
+  right: 10px;
+  bottom: 5px;
 }

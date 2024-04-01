@@ -1,70 +1,24 @@
+import { useState } from "react";
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Navigation from "./globals/Navigation/Navigation";
 import Home from "./pages/home/Home";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
-import { useEffect, useState } from "react";
-
-import { Route, Routes, useLocation } from "react-router-dom";
-import Navbar from "./components/global/navbar/Navbar";
-import Footer from "./components/global/footer/Footer";
-import SideMenu from "./components/global/sidemenu/SideMenu";
-import About from "./pages/about/About";
-import Contact from "./pages/contact/Contact";
-import Privacy from "./pages/privacy/Privacy";
-import Terms from "./pages/terms/Terms";
-import Team from "./pages/team/Team";
-import Faq from "./pages/faq/Faq";
-import BackToTopButton from "./components/global/back-to-top/BackToTopButton";
-import CourseDetails from "./pages/course-details/CourseDetails";
+import SideBar from "./globals/Navigation/SideBar";
 import Courses from "./pages/courses/Courses";
-import Events from "./pages/event/Events";
-import News from "./pages/news/News";
-import NewDetails from "./pages/new-details/NewDetails";
-import RegistrationForm from "./pages/registration-form/RegistrationForm";
-import EnrollmentForm from "./pages/course-purchase/EnrollmentForm";
-import Dashboard from "./pages/dashboard/Dashboard";
-import CookiesBox from "./Cookies";
-import Elearning from "./pages/partners/Elearning";
-import Candidates from "./pages/dashboard/dashComponents/candidatesContent/Candidates";
+import CoursesDetails from "./pages/courses-details/CoursesDetails";
 
 function App() {
   const [showSideMenu, setShowSideMenu] = useState(false);
-  const location = useLocation();
-  
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-
   return (
-    <div className="app">
-      <CookiesBox />
-      <Navbar show={setShowSideMenu} />
-      <SideMenu show={showSideMenu} handleShow={setShowSideMenu} />
+    <>
+      <Navigation show={setShowSideMenu}/>
+      <SideBar show={showSideMenu} handleShow={setShowSideMenu}/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/team" element={<Team />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/register" element={<RegistrationForm />} />
-        <Route path="/course/:slug" element={<CourseDetails />} />
-        <Route path="/news/:slug" element={<NewDetails />} />
-        <Route path="/enrollment" element={<EnrollmentForm />} />
-        <Route path="/course/:slug/enrollment" element={<EnrollmentForm />} />
-        <Route path="/dashboard" element={<Dashboard />}>
-          <Route path="/dashboard/candidates" element={<Candidates />}/>
-        </Route>
-        <Route path="/elearning" element={<Elearning />} />
+        <Route path="/courses/:courseId" element={<CoursesDetails />} />
       </Routes>
-      <Footer />
-      {/* <BackToTopButton /> */}
-    </div>
+    </>
   );
 }
 
