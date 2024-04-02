@@ -1,23 +1,25 @@
 import React from "react";
 import IntroVideo from "../../assets/Home/finalIntro.mp4";
+import { useTranslation } from "react-i18next";
 
 function HomeHero() {
+  const { t } = useTranslation();
+  const {line1, line2, line3, button} = t("home.hero")
   return (
     <section id="home" data-stellar-background-ratio="0.5">
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-sm-12 d-flex align-items-center">
             <div className="d-flex flex-column text-white gap-3">
-              <h1>Accelerate your career with an online degree.</h1>
+              <h1>{line1} </h1>
               <h2 className="text-white">
-                Learn from anywhere. Advance faster.
+                {line2}
               </h2>
               <span className="mx-0">
-                Our accredited programs provide in-demand skills to expand your
-                opportunities
+              {line3}
               </span>
 
-              <button>Explore</button>
+              <button>{button}</button>
             </div>
           </div>
 

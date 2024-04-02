@@ -9,14 +9,14 @@ import HomeLecturers from '../../components/Home/HomeLecturers'
 
 function Home() {
   return (
-    <>
+    <div style={{overflowX: "hidden"}}>
         <HomeHero />
         <HomeAbout />
         <HomeFeatures />
         <HomeCourseSlider />
         <HomeFeatures_2 />
         <HomeLecturers />
-    </>
+    </div>
   )
 }
 

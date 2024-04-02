@@ -31,6 +31,7 @@ nav a {
   font-weight: 400;
   position: relative;
   white-space: nowrap;
+  text-transform: capitalize;
 }
 
 nav .active {
@@ -146,71 +147,77 @@ nav .ham:hover {
   align-items: center;
   justify-content: center;
 }
-
-.language-menu .select {
-  background-color: transparent;
-  /* background-image: transparent; */
-  font-size: 13px;
-  padding-right: 26px;
-  border: 2px solid white;
-  border-radius: 10px;
-  top: 0;
-  right: 0;
-  outline: none;
-  cursor: pointer;
-  font-weight: 400;
-}
-
-/* Icons alignment */
-.select-wrapper {
-  display: inline;
+.flag-switch {
   position: relative;
-}
-
-/* Custom Arrow Down Icon */
-.select-wrapper:after {
-  content: url(https://raw.githubusercontent.com/colombomf/netflix-select-dropdown/abea3c2907db444c550cfb553eb494a1825d6bb0/public/assets/img/caret-down-solid.svg);
-  filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(248deg)
-    brightness(106%) contrast(106%);
-  width: 10px;
-  height: 10px;
-  pointer-events: none;
-  position: absolute;
-  right: 19px;
-  top: 10px;
-}
-
-/* Globe w/ Meridians Icon */
-.select-wrapper:before {
-  content: url(https://raw.githubusercontent.com/colombomf/netflix-select-dropdown/abea3c2907db444c550cfb553eb494a1825d6bb0/public/assets/img/globe-solid.svg);
-  filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(248deg)
-    brightness(106%) contrast(106%);
-  width: 17px;
-  height: 17px;
-  pointer-events: none;
-  position: absolute;
-  left: 12px;
-  top: 12px;
-}
-
-/* Padding between the globe icon and selected language-menuuage */
-.select-wrapper .select {
-  padding-left: 40px;
-}
-
-/* Select border color and radius
-Hides default arrow */
-.select {
+  outline: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 1px solid #b3b3b3;
-  border-radius: 2px;
-
-  /* Font color | select padding and margin */
-  color: #fff;
-  padding: 5px;
-  margin-right: 0.5rem;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 60px;
+  height: 30px;
+  margin: 0 auto;
+}
+.flag-switch:before, .flag-switch:after {
+  position: absolute;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  top: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.flag-switch:before {
+  left: -19px;
+  content: attr(data-first-lang);
+}
+.flag-switch:after {
+  right: -17px;
+  content: attr(data-second-lang);
+}
+.flag-switch input {
+  display: none;
+}
+.flag-switch input + label {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 60px;
+}
+.flag-switch input + label:before, .flag-switch input + label:after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  transition: all 0.25s ease-in-out;
+}
+.flag-switch input + label:before {
+  height: 40px;
+  width: 60px;
+  background-color: #EE4B5E;
+}
+.flag-switch input + label:after {
+  top: 7px;
+  left: 3px;
+  border: 2px solid #DFDFDF;
+  width: 26px;
+  height: 26px;
+  background: #eb3 url(https://i.imgur.com/pxxUsQs.jpg) -26px center;
+  transform: translate(30px, 0);
+  -webkit-transform: translate(30px, 0);
+}
+.flag-switch input:checked + label:after {
+  background: #000233 url(https://i.imgur.com/pxxUsQs.jpg) -2px center;
+  transition: all 0.25s ease-in-out;
+  transform: translate(0, 0);
+}
+.flag-switch input:checked + label:before {
+  background-color: #1FA9D6;
 }
 
 /* MEDIA QUERIES */

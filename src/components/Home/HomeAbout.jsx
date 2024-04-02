@@ -1,23 +1,22 @@
 import React from "react";
 import girl from "../../assets/Home/ego-girl.jpg";
+import { useTranslation } from "react-i18next";
 
 function HomeAbout() {
+  const { t } = useTranslation();
+  const {line1, line2, line3, line4, button} = t("home.banner")
   return (
     <div className="container">
       <section className="special_section content container px-0">
         <div className="about-us" id="#about">
-          <h2>Why Ego Education?</h2>
+          <h2>{line1}</h2>
           <p>
-            eGO Education is a brand by the International E-Learning Institute
-            Ltd (IELI), a Higher Education Institute based in Malta, created
-            thanks to the decennial experience of its founders in the field of
-            online University education.
-            <br /> <br /> With our 100% online learning experience, you gain an
-            internationally recognized degree without putting your life on hold.
+            {line2}
+            <br /> <br /> {line3}
             <br /> <br />
-            Study on evenings and weekends, at your own pace.
+            {line4}
           </p>
-          <a href="/enrollment">Apply Now</a>
+          <a href="/enrollment">{button} </a>
           {/* <CustomBtn content={"Apply Now"} /> */}
         </div>
         <div className="image-wrapper">
