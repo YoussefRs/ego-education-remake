@@ -44,7 +44,6 @@ function CoursesDetails() {
   if (!course) {
     return null;
   }
-  console.log(course);
 
   return (
     <>
@@ -306,24 +305,55 @@ function CoursesDetails() {
                                 </span>
                               </li>
                             </ul>
-                            <h6 className="mb-3 fw-bold">
-                              <FontAwesomeIcon
-                                icon={faBriefcase}
-                                color="#046635"
-                              />{" "}
-                              Methodology
-                            </h6>
-                            <ul className="custom-list-style">
-                              <li className="d-flex mb-2">
-                                <FontAwesomeIcon
-                                  icon={faCheck}
-                                  color="#046635"
-                                  size={20}
-                                  style={{ paddingRight: 10, marginTop: 3 }}
-                                />
-                                <span>{course?.method}</span>
-                              </li>
-                            </ul>
+                            {course?.method && (
+                              <>
+                                <h6 className="mb-3 fw-bold">
+                                  <FontAwesomeIcon
+                                    icon={faBriefcase}
+                                    color="#046635"
+                                  />{" "}
+                                  Methodology
+                                </h6>
+                                <ul className="custom-list-style">
+                                  <li className="d-flex mb-2">
+                                    <FontAwesomeIcon
+                                      icon={faCheck}
+                                      color="#046635"
+                                      size={20}
+                                      style={{ paddingRight: 10, marginTop: 3 }}
+                                    />
+                                    <span>{course?.method}</span>
+                                  </li>
+                                </ul>
+                              </>
+                            )}
+                            {course?.outcome && (
+                              <>
+                                <h6 className="mb-3 fw-bold">
+                                  <FontAwesomeIcon
+                                    icon={faBriefcase}
+                                    color="#046635"
+                                  />{" "}
+                                  Learning Outcome
+                                </h6>
+                                <ul className="custom-list-style">
+                                  {course?.outcome.map((outcome, i) => (
+                                    <li className="d-flex mb-2" key={i}>
+                                      <FontAwesomeIcon
+                                        icon={faCheck}
+                                        color="#046635"
+                                        size={20}
+                                        style={{
+                                          paddingRight: 10,
+                                          marginTop: 3,
+                                        }}
+                                      />
+                                      <span>{outcome}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </>
+                            )}
                           </article>
                         </div>
                       </div>
@@ -415,7 +445,24 @@ function CoursesDetails() {
                     >
                       <h2 className="mb-4 fw-bold">Admission</h2>
                       <div className="tab">
-                        <main className="modules-container"></main>
+                        <main className="modules-container">
+                          <h6 className="fw-bold mb-4">
+                            {course?.admission?.desc}{" "}
+                          </h6>
+                          <ul className="custom-list-style mb-3">
+                            {course?.admission?.req?.map((reqq, i) => (
+                              <li key={i}>
+                                <FontAwesomeIcon
+                                  icon={faCheck}
+                                  color="#046635"
+                                  size={20}
+                                  style={{ paddingRight: 10, marginTop: 3 }}
+                                />
+                                {reqq}
+                              </li>
+                            ))}
+                          </ul>
+                        </main>
                       </div>
                     </div>
                     <div
@@ -433,7 +480,7 @@ function CoursesDetails() {
                 </div>
                 <div>
                   <h2 className="fw-bold mb-4 mt-5">
-                    You may also be interested in
+                    You May Also Be Interested In
                   </h2>
                   <CourseSliderDetails />
                 </div>

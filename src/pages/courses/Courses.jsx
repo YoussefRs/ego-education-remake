@@ -219,7 +219,7 @@ function Courses() {
                             <img src={crs.thumb} alt="HTML Course Image" />
                             <div className="description">
                               <h2>{crs.name} </h2>
-                              <p>{crs.slogan}</p>
+                              <p >{crs.slogan}</p>
                             </div>
                             <hr />
                             <div className="d-flex justify-content-end w-100">

@@ -8,6 +8,14 @@ const useCourse = (req) => {
       location: "In Campus",
       totalEtc: 90,
       cur: "2",
+      admission: {
+        desc: "Students are required to reach specific agreements with the host company and communicate the following data in writing to Ego Education to the mail: info@ego-education.com",
+        req: [
+          "three-year degree courses: 50 ECTS out of 90",
+          "master’s degree courses: 50 ECTS out of 90",
+          "one-year master degree course in Informatics: 20 ECTS out of 90",
+        ],
+      },
       media: {
         type: "image",
         source:
@@ -222,8 +230,18 @@ const useCourse = (req) => {
       id: "gH5iJ6kL",
       name: "Business Administration",
       startDate: "15 Feb 2023",
+      category: "business & commerce",
       duration: "3 years",
       location: "Online",
+      totalModules: 18,
+      admission: {
+        desc: "Students are required to reach specific agreements with the host company and communicate the following data in writing to Pegaso International to the mail: traineeship@pegasointernational.eu",
+        req: [
+          "three-year degree courses: 100 ECTS out of 180",
+          "master’s degree courses: 50 ECTS out of 120",
+          "one-year master degree course in Informatics: 20 ECTS out of 90",
+        ],
+      },
       cur: "5",
       media: {
         type: "image",
@@ -231,19 +249,152 @@ const useCourse = (req) => {
           "https://losalamos.unm.edu/degrees-certificates/certificates/business-banner--website-1.png",
       },
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum pellentesque urna. Phasellus adipiscing et massa et aliquam. Ut odio magna, interdum quis dolor non, tristique vestibulum nisi. Nam accumsan convallis venenatis. Nullam posuere risus odio, in interdum felis venenatis sagittis. Integer malesuada porta fermentum. Sed luctus nibh sed mi auctor imperdiet. Cras et sapien rhoncus, pulvinar dolor sed, tincidunt massa. Nullam fringilla mauris non risus ultricies viverra. Donec a turpis non lorem pulvinar posuere.",
+        "The 3-year Business Administration Degree Course offers students comprehensive training tailored to meet various business needs. Graduates acquire versatile skills that align well with workplace demands. The program covers diverse areas such as organizational management, finance, banking, and credit sectors. Students delve into key company functions like accounting, planning, legal, and tax activities, with a focus on small and medium-sized enterprises. They also have the option to specialize in corporate finance, financial markets, and the credit system. Career opportunities include administrative, financial, organizational, production, and marketing roles.",
       slogan:
         "Lead with Knowledge: Master the Science of Business Administration, Shaping Tomorrow's Business Landscape.",
       promo: null,
       thumb: "https://ibu.ca/wp-content/uploads/2024/01/m29.webp",
       degree: "Bachelor Degree",
       institute: "Pegaso",
+      totalEtc: 180,
+      price: 3000,
+      career: [
+        "Accountant",
+        "Condominium and Building Administrator",
+        "Organization and Management of Production Factors Technician",
+        "Insurance Agent",
+        "Sales and Distribution Technician",
+        "Marketing Technician",
+      ],
+      outcome: [
+        "Demonstrate managerial, consulting and business administration",
+        "Explain the difference between private and public organizations",
+        "Illustrate the functioning of modern business organizations and financial systems",
+        "Developing appropriate methods of analysis and critical interpretation of the structures and dynamics of companies",
+        "Express specific aspects of leadership, management and business administration",
+        "Identify specific types of businesses and financial intermediation",
+        "Develop appropriate methods of analysis and critical interpretation of the structures and dynamics of companies",
+        "Support the principles of sustainability",
+        "Combine the use of statistical tools and principles with the administration of businesses.",
+      ],
+      modules: [
+        {
+          title: "Economic History",
+          description:
+            "The Economic History module offers an in-depth exploration of the historical development of economic systems, institutions, and policies. It delves into the interplay between economic forces and historical events, examining how societies have organized their economies, allocated resources, and generated wealth over time. ects: 10",
+          ects: 10,
+        },
+        {
+          title: "Introduction to Accounting",
+          description:
+            "The Introduction to Accounting module serves as a foundational exploration into the fundamental principles, concepts, and practices of accounting. It provides students with a comprehensive understanding of the language of business, enabling them to interpret and analyze financial information essential for decision-making within organizations.",
+          ects: 10,
+        },
+        {
+          title: "Private Law",
+          description:
+            "Private law, also known as civil law, encompasses the legal rules and principles that govern the relationships between individuals and private entities. It primarily focuses on regulating interactions between private parties, such as individuals, corporations, and organizations, rather than addressing matters involving the government or public authorities.",
+          ects: 10,
+        },
+        {
+          title: "Tax Law",
+          description:
+            "Tax law refers to the body of legal rules and regulations that govern taxation, including the imposition, collection, and enforcement of taxes by governmental authorities. It encompasses a wide range of laws and statutes at the local, national, and international levels, designed to ensure compliance with tax obligations and to regulate the administration of tax systems.",
+          ects: 10,
+        },
+        {
+          title: "Statistics",
+          description:
+            "Statistics is a branch of mathematics that involves the collection, analysis, interpretation, presentation, and organization of numerical data. It provides methods and techniques for summarizing and understanding patterns and trends in data, making informed decisions, and drawing conclusions about populations or phenomena based on sample observations",
+          ects: 10,
+        },
+        {
+          title: "Financial accounting",
+          description:
+            "Financial accounting is a specialized branch of accounting that focuses on the recording, summarizing, and reporting of financial transactions of an organization to external stakeholders, such as investors, creditors, regulators, and the public. Its primary objective is to provide accurate and reliable financial information about the performance, financial position, and cash flows of the business.",
+          ects: 6,
+        },
+        {
+          title: "Business Communication Strategies",
+          description:
+            "Business communication strategies encompass the methods, techniques, and practices used by organizations to convey messages, exchange information, and build relationships with internal and external stakeholders. Effective communication is essential for achieving organizational objectives, fostering collaboration, enhancing productivity, and maintaining a positive corporate image.",
+          ects: 10,
+        },
+        {
+          title: "Commercial Law",
+          description:
+            "Commercial law, also known as business law or trade law, encompasses the legal rules and regulations that govern commercial transactions and business activities. It provides a framework for conducting business operations, resolving disputes, and ensuring fair competition in the marketplace.",
+          ects: 10,
+        },
+        {
+          title: "Economics And Management Of Financial Intermediaries",
+          description:
+            "The Economics and Management of Financial Intermediaries is a specialized field within finance and economics that focuses on the role, functions, and operations of financial intermediaries in the economy. ",
+          ects: 15,
+        },
+        {
+          title: "Administrative Law",
+          description:
+            "Administrative Law is a branch of public law that governs the activities of administrative agencies of government. It encompasses a wide range of legal principles and rules that regulate the exercise of administrative power, the decision-making processes of administrative bodies, and the rights and duties of individuals affected by administrative actions.",
+          ects: 10,
+        },
+        {
+          title: "Business Organization",
+          description:
+            "Business Organization refers to the structure and framework within which a business operates and conducts its activities. It encompasses various elements such as the legal structure, management hierarchy, decision-making processes, operational procedures, and relationships between different stakeholders.",
+          ects: 10,
+        },
+        {
+          title: "Economics and Business Management",
+          description:
+            "Economics and Business Management is a multidisciplinary field that combines principles of economics with management theories and practices to analyze and address business-related challenges.",
+          ects: 15,
+        },
+        {
+          title: "Statistics for Economics",
+          description:
+            "Statistics for Economics is a foundational course that introduces students to statistical methods and techniques used in economic analysis and decision-making. ",
+          ects: 10,
+        },
+        {
+          title: "Political Economics",
+          description:
+            "Political economics is a field of study that examines the interaction between politics and economics, focusing on how political institutions, processes, and decisions influence economic outcomes and vice versa.",
+          ects: 10,
+        },
+        {
+          title: "Informatics – Computing Skills",
+          description:
+            "Informatics – Computing Skills encompasses a broad range of competencies related to computer science, information technology, and computational thinking.",
+          ects: 5,
+        },
+        {
+          title: "Electives",
+          description:
+            "Electives are courses within an academic program that students can choose based on their interests, career goals, or academic requirements. These courses are typically offered in addition to the required core curriculum, allowing students to tailor their education to suit their individual needs and preferences.",
+          ects: 12,
+        },
+        {
+          title:
+            "For internships and placements in, public or private organizations, professional orders",
+          description: "",
+          ects: 3,
+        },
+        {
+          title: "Final dissertation",
+          description: "",
+          ects: 5,
+        },
+      ],
     },
     {
       id: "gH5iJ6km",
       name: "Civil Engineering",
       startDate: "18 Feb 2023",
       duration: "3 years",
+      totalEtc: 180,
+      totalModules: 18,
+      category: "Constructions",
       location: "Online",
       cur: "9",
       media: {
@@ -252,10 +403,24 @@ const useCourse = (req) => {
           "https://images.ctfassets.net/8bbwomjfix8m/3khjUHELqiZJVgdkpXSAZf/17faf9504845ad605296527fa90d8993/civil.jpg?fit=fill&w=1366&h=446&fm=jpg",
       },
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum pellentesque urna. Phasellus adipiscing et massa et aliquam. Ut odio magna, interdum quis dolor non, tristique vestibulum nisi. Nam accumsan convallis venenatis. Nullam posuere risus odio, in interdum felis venenatis sagittis. Integer malesuada porta fermentum. Sed luctus nibh sed mi auctor imperdiet. Cras et sapien rhoncus, pulvinar dolor sed, tincidunt massa. Nullam fringilla mauris non risus ultricies viverra. Donec a turpis non lorem pulvinar posuere.",
+        "The areas of interest related to this 3-year bachelor Degree course in Civil Engineering are: construction (civil and industrial buildings, remarkable construction projects such as bridges, dams, tunnels, etc.) and infrastructures (roads and transportation, supply, distribution and water supply systems, etc.). In this context, the Civil Engineer deals with the design and construction of works and handles with their operation, maintenance, detection and control. In recent years, with regard to the Civil Engineering sector, has been increasingly developing the demand for specialised professional profiles such as, for example, the environmental and land Engineer or the Construction Engineer, who are now provided with dedicated training offers. The study course in Civil Engineering finds its applicability in the continuous request of professional profiles with a solid and wide knowledge flexibility and updating skills, essential to face the diverse matters and the continuous development of technologies related to the world of buildings and civil infrastructures",
       slogan:
         "Build the Future: Master the Science of Civil Engineering, Creating Sustainable Infrastructure for Generations.",
       promo: null,
+      outcome: [
+        "Apply technical proficiency in the principles and methods essential to modern civil engineering practice.",
+        "Analyze emerging problems in educational situations through methods of discussion, reflexivity and professional writing, while paying attention to oral and written documentation of the experience.",
+        "Demonstrate understanding of global, societal, environmental, and sustainability issues related to civil engineering.",
+        "Exhibit effective communication, teamwork, entrepreneurial, and leadership skill.",
+        "Engage in ethical and responsible practice while pursuing professional growth.",
+        "Support the principles of sustainability.",
+      ],
+      career: [
+        "Structural Field",
+        "Environmental Field",
+        "Construction Field",
+        "Bridge Field",
+      ],
       thumb:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZPGmlllWI0tQ5LTlqqOeNO_8QsLSjegqUg&usqp=CAU",
       degree: "Bachelor Degree",
