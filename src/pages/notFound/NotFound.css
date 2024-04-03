@@ -34,11 +34,11 @@
   }
   .small_texts p {
     color: #046635;
-    animation: float 8s infinite;
+    animation: float2 8s infinite;
     transform: translatey(4rem);
   }
   
-  @keyframes float {
+  @keyframes float2 {
     0% {
       transition: translatey(0);
     }
