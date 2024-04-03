@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
       </footer> */}
 
-      <section class="footer mt-5" id="footer">
+      <section class="footer" id="footer">
         <div class="footer-contents">
           <div class="footer-col footer-col-1">
             <div class="col-title">

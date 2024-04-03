@@ -41,7 +41,7 @@ function CoursesDetails() {
         current={course.name}
       />
 
-      <div className="content container">
+      <div className="content container mb-5">
         <div className="page-content mt-5">
           <div className="row page-row gap-4">
             <section className="ban_sec">

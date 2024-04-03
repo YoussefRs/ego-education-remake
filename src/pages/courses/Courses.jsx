@@ -20,7 +20,7 @@ function Courses() {
         path={[{ url: "/", label: "Home" }]}
         current={"Courses"}
       />
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
         <div className="row page-row">
           <div className="courses-wrapper col-lg-8 col-md-8 col-12">
             <div className="featured-courses tabbed-info page-row">

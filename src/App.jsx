@@ -7,19 +7,55 @@ import SideBar from "./globals/Navigation/SideBar";
 import Courses from "./pages/courses/Courses";
 import CoursesDetails from "./pages/courses-details/CoursesDetails";
 import Footer from "./globals/Footer/Footer";
+import NotFound from "./pages/notFound/NotFound";
 
 function App() {
   const [showSideMenu, setShowSideMenu] = useState(false);
   return (
     <>
-      <Navigation show={setShowSideMenu} />
-      <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/courses/:courseId" element={<CoursesDetails />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navigation show={setShowSideMenu} />
+              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
+              <Home />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/courses"
+          element={
+            <>
+              <Navigation show={setShowSideMenu} />
+              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
+              <Courses />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/courses/:courseId"
+          element={
+            <>
+              <Navigation show={setShowSideMenu} />
+              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
+              <CoursesDetails />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <>
+              <NotFound />
+            </>
+          }
+        />
       </Routes>
-      <Footer />
     </>
   );
 }
