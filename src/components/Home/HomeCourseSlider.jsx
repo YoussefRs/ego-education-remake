@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CourseSlider from "../../globals/Sliders/CourseSlider";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function HomeCourseSlider() {
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      duration: 500,
+    });
+  }, []);
   const { t } = useTranslation();
   const { title, subtitle, specialWord } = t("home.courseSlider");
 
   return (
-    <div className="swiper-container">
+    <div className="swiper-container" data-aos={"zoom-in"}>
       <div className="container">
         <h2 className="container-heading-green" style={{ color: "#046635" }}>
           {title}{" "}

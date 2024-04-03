@@ -31,7 +31,7 @@ i18n
             nav: {
               home: "Home",
               courses: "Courses",
-              eLearning: "eLearning",
+              eLearning: "eLearn",
               partners: "Our Partners",
               research: "Ego Research",
               apply: "Apply",
@@ -672,7 +672,7 @@ i18n
             nav: {
               home: "Home",
               courses: "Cursos",
-              eLearning: "E-Aprendizado",
+              eLearning: "e-Aprender",
               partners: "parceiros",
               research: "Pesquisa Ego",
               apply: "Inscreva-se",

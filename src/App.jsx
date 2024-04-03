@@ -8,6 +8,8 @@ import Courses from "./pages/courses/Courses";
 import CoursesDetails from "./pages/courses-details/CoursesDetails";
 import Footer from "./globals/Footer/Footer";
 import NotFound from "./pages/notFound/NotFound";
+import About from "./pages/about/About";
+import Elearning from "./pages/eLearning/Elearning";
 
 function App() {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -21,6 +23,28 @@ function App() {
               <Navigation show={setShowSideMenu} />
               <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
               <Home />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <>
+              <Navigation show={setShowSideMenu} />
+              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
+              <About />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/elearn"
+          element={
+            <>
+              <Navigation show={setShowSideMenu} />
+              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
+              <Elearning/>
               <Footer />
             </>
           }
