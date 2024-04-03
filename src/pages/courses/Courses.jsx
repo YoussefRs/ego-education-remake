@@ -98,7 +98,8 @@ function Courses() {
                         .filter(
                           (course) =>
                             course.institute === "Pegaso" &&
-                            course.degree === "Bachelor Degree"
+                            (course.degree === "Bachelor Degree" ||
+                              course.degree === "Bacharelado")
                         )
                         .map((crs, i) => (
                           <div className="course" key={i}>
@@ -135,7 +136,8 @@ function Courses() {
                         .filter(
                           (course) =>
                             course.institute === "Pegaso" &&
-                            course.degree === "Master Degree"
+                            (course.degree === "Master Degree" ||
+                              course?.degree === "Mestrado")
                         )
                         .map((crs, i) => (
                           <div className="course" key={i}>
@@ -172,7 +174,8 @@ function Courses() {
                         .filter(
                           (course) =>
                             course.institute === "Pegaso" &&
-                            course.degree === "PhD"
+                            (course.degree === "PhD" ||
+                              course.degree === "Doutorado")
                         )
                         .map((crs) => (
                           <div className="course" key={crs.id}>
@@ -219,7 +222,7 @@ function Courses() {
                             <img src={crs.thumb} alt="HTML Course Image" />
                             <div className="description">
                               <h2>{crs.name} </h2>
-                              <p >{crs.slogan}</p>
+                              <p>{crs.slogan}</p>
                             </div>
                             <hr />
                             <div className="d-flex justify-content-end w-100">

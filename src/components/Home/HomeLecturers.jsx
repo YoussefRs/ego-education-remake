@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function HomeLecturers() {
+  const { t } = useTranslation();
+  const { title, subtitle, specialWord } = t("home.homeLecturers");
   return (
     <>
-      <h2 className="container-heading-green">Lecturers</h2>
+      <h2 className="container-heading-green">{title}</h2>
       <h1 className="container-title text-center fw-bold">
-        meet our <span style={{ color: "#046635" }}>lecturers</span>
+      {subtitle} <span style={{ color: "#046635" }}>{specialWord}</span>
       </h1>
 
       <section id="lecturers">

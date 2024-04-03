@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBoxes,
-  faBriefcase,
-  faArrowDown,
-  faListCheck,
-  faQuestionCircle,
-  faAngleDown,
-  faAngleUp,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faListCheck } from "@fortawesome/free-solid-svg-icons";
 import {
   faCalendarAlt,
   faCheck,
@@ -19,8 +11,6 @@ import "./CoursesDetails.css";
 import useCourse from "../../hooks/useCourses";
 import SubHeader from "../../globals/SubHeader/SubHeader";
 import InfoWidget from "../../globals/Widgets/InfoWidget";
-import HomeCourseSlider from "../../components/Home/HomeCourseSlider";
-import CourseSlider from "../../globals/Sliders/CourseSlider";
 import ContactWidget from "../../globals/Widgets/ContactWidget";
 import CourseSliderDetails from "../../globals/Sliders/CourseSliderDetails";
 
@@ -29,11 +19,6 @@ function CoursesDetails() {
   const [course, setCourse] = useState();
   const [activePane, setActivePane] = useState("Overview");
 
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
-  const toggleAnswer = (index) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
   useEffect(() => {
     if (courseId) {
       const res = useCourse({ type: "byId", param: courseId });
