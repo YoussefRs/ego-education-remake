@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./globals/Navigation/Navigation";
@@ -10,6 +10,7 @@ import Footer from "./globals/Footer/Footer";
 import NotFound from "./pages/notFound/NotFound";
 import About from "./pages/about/About";
 import Elearning from "./pages/eLearning/Elearning";
+import Loading from "./globals/Loading/Loading";
 
 function Layout({ children }) {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -25,50 +26,65 @@ function Layout({ children }) {
 }
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <Layout>
-            <Home />
-          </Layout>
-        }
-      />
-      <Route
-        path="/about"
-        element={
-          <Layout>
-            <About />
-          </Layout>
-        }
-      />
-      <Route
-        path="/elearn"
-        element={
-          <Layout>
-            <Elearning />
-          </Layout>
-        }
-      />
-      <Route
-        path="/courses"
-        element={
-          <Layout>
-            <Courses />
-          </Layout>
-        }
-      />
-      <Route
-        path="/courses/:courseId"
-        element={
-          <Layout>
-            <CoursesDetails />
-          </Layout>
-        }
-      />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <>
+      {loading ? (
+        <Loading />
+      ) : (
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <Home />
+              </Layout>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <Layout>
+                <About />
+              </Layout>
+            }
+          />
+          <Route
+            path="/elearn"
+            element={
+              <Layout>
+                <Elearning />
+              </Layout>
+            }
+          />
+          <Route
+            path="/courses"
+            element={
+              <Layout>
+                <Courses />
+              </Layout>
+            }
+          />
+          <Route
+            path="/courses/:courseId"
+            element={
+              <Layout>
+                <CoursesDetails />
+              </Layout>
+            }
+          />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      )}
+    </>
   );
 }
 

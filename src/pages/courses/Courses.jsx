@@ -13,6 +13,7 @@ function Courses() {
   const { t } = useTranslation();
   const { tab } = t("courseTab");
   const { d1, d2, d3 } = t("degrees");
+  const { button } = t("home.courseDetails");
 
   const courses = useCourse({
     type: "byProperties",
@@ -121,7 +122,7 @@ function Courses() {
                                     icon={faGraduationCap}
                                     className="me-1"
                                   />
-                                  Read More
+                                 {button }
                                 </Link>
                               </button>
                             </div>
@@ -161,7 +162,7 @@ function Courses() {
                                     icon={faGraduationCap}
                                     className="me-1"
                                   />
-                                  Read More
+                                  {button }
                                 </Link>
                               </button>
                             </div>
@@ -200,7 +201,7 @@ function Courses() {
                                     icon={faGraduationCap}
                                     className="me-1"
                                   />
-                                  Read More
+                                  {button }
                                 </Link>
                               </button>
                             </div>
@@ -245,7 +246,7 @@ function Courses() {
                                     icon={faGraduationCap}
                                     className="me-1"
                                   />
-                                  Read More
+                                  {button }
                                 </Link>
                               </button>
                             </div>

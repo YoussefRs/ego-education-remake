@@ -1,14 +1,13 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function ContactWidget() {
+  const { t } = useTranslation();
+  const { line1, line2, line3 } = t("widget.contact");
   return (
     <div className="contact-widget">
-      <h2 className="fw-bold">Stay In Touch</h2>
-      <p>
-        We value your feedback and inquiries, whether you have questions about
-        our services, need assistance with your order, or simply want to share
-        your thoughts, we're here to help.
-      </p>
+      <h2 className="fw-bold">{line1} </h2>
+      <p>{line2}</p>
       <div className="contact-img">
         <img
           src="https://lizza.wpengine.com/billaa/wp-content/uploads/sites/5/2023/09/contact-page-img-01.jpg"
@@ -32,7 +31,7 @@ function ContactWidget() {
           </div>
         </div>
         <div className="details-wrapper">
-          <div className="details-subtitle">24/7 contact support</div>
+          <div className="details-subtitle">{line3} </div>
           <div className="details-title">
             <h5>
               <a

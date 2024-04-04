@@ -81,7 +81,7 @@ function HomeFeatures() {
               </h2>
               <h1 className="container-title text-start text-white" data-aos={"slide-left"}>
                 {t("home.homeFeatures.sectionHeader.subtitle")}{" "}
-                <span style={{ color: "#046635" }}>life</span>
+                <span style={{ color: "#ffd23c" }}>life</span>
               </h1>
               <p className="container-p text-start text-white" data-aos={"slide-left"}>
                 {t("home.homeFeatures.sectionHeader.description")}

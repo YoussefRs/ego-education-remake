@@ -657,6 +657,15 @@ i18n
                   institute: "Pegaso",
                 },
               ],
+              button: "Read More",
+              title: "Overview",
+              title1 : "Career",
+              title2: "Course Info",
+              title3: "You May Also Be Interested In",
+              tab2 : "Entry Requirements",
+              tab3 : "Modules",
+              tab4: "Admission",
+              tab5: "Lecturer"
             },
           },
           widget: {
@@ -665,6 +674,18 @@ i18n
               line2:
                 "Advance your career through continuous learning. Expand your skillset, gain industry certifications, learn on your schedule, and do it all at a lower cost. Online education provides opportunities for career growth that will benefit you for years to come.",
               button: "Apply Now",
+            },
+            contact: {
+              line1: "Stay In Touch",
+              line2:
+                "We value your feedback and inquiries, whether you have questions about our services, need assistance with your order, or simply want to share your thoughts, we're here to help.",
+              line3: "24/7 Contact Support",
+            },
+            info: {
+              category: "Category",
+              modules: "Modules",
+              duration: "Duration",
+              price: "Price",
             },
           },
           degrees: {
@@ -1264,6 +1285,15 @@ i18n
                   institute: "Pegaso",
                 },
               ],
+              button: "Leer Más",
+              title: "Visão Geral",
+              title1 : "Carreira",
+              title2: "Informações do Curso",
+              title3: "Você Também Pode se Interessar Por",
+              tab2 : "Requisitos de entrada",
+              tab3 : "Módulos",
+              tab4: "Admissão",
+              tab5: "Palestrante"
             },
           },
           widget: {
@@ -1272,6 +1302,18 @@ i18n
               line2:
                 "Avance em sua carreira por meio de aprendizado contínuo. Amplie seu conjunto de habilidades, obtenha certificações da indústria, aprenda em seu próprio ritmo e faça tudo isso a um custo mais baixo. A educação online oferece oportunidades de crescimento profissional que beneficiarão você nos próximos anos.",
               button: "Inscreva-se",
+            },
+            contact: {
+              line1: "Permaneça em Contato",
+              line2:
+                "Valorizamos seus comentários e perguntas, seja para dúvidas sobre nossos serviços, necessidade de assistência com seu pedido, ou apenas para compartilhar suas ideias, estamos aqui para ajudar.",
+              line3: "Suporte de Contato 24/7",
+            },
+            info: {
+              category: "Categoria",
+              modules: "Módulos",
+              duration: "Duração",
+              price: "Preço",
             },
           },
           degrees: {
