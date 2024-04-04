@@ -11,76 +11,64 @@ import NotFound from "./pages/notFound/NotFound";
 import About from "./pages/about/About";
 import Elearning from "./pages/eLearning/Elearning";
 
-function App() {
+function Layout({ children }) {
   const [showSideMenu, setShowSideMenu] = useState(false);
+
   return (
     <>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Navigation show={setShowSideMenu} />
-              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
-              <Home />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <>
-              <Navigation show={setShowSideMenu} />
-              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
-              <About />
-              <Footer />
-            </>
-          }
-        />
-         <Route
-          path="/elearn"
-          element={
-            <>
-              <Navigation show={setShowSideMenu} />
-              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
-              <Elearning/>
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/courses"
-          element={
-            <>
-              <Navigation show={setShowSideMenu} />
-              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
-              <Courses />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/courses/:courseId"
-          element={
-            <>
-              <Navigation show={setShowSideMenu} />
-              <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
-              <CoursesDetails />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="*"
-          element={
-            <>
-              <NotFound />
-            </>
-          }
-        />
-      </Routes>
+      <Navigation show={setShowSideMenu} />
+      <SideBar show={showSideMenu} handleShow={setShowSideMenu} />
+      {children}
+      <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Layout>
+            <Home />
+          </Layout>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <Layout>
+            <About />
+          </Layout>
+        }
+      />
+      <Route
+        path="/elearn"
+        element={
+          <Layout>
+            <Elearning />
+          </Layout>
+        }
+      />
+      <Route
+        path="/courses"
+        element={
+          <Layout>
+            <Courses />
+          </Layout>
+        }
+      />
+      <Route
+        path="/courses/:courseId"
+        element={
+          <Layout>
+            <CoursesDetails />
+          </Layout>
+        }
+      />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

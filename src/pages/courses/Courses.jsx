@@ -6,8 +6,14 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import useCourse from "../../hooks/useCourses";
 import SubHeader from "../../globals/SubHeader/SubHeader";
 import ApplyWidget from "../../globals/Widgets/ApplyWidget";
+import { useTranslation } from "react-i18next";
+import ContactWidget from "../../globals/Widgets/ContactWidget";
 
 function Courses() {
+  const { t } = useTranslation();
+  const { tab } = t("courseTab");
+  const { d1, d2, d3 } = t("degrees");
+
   const courses = useCourse({
     type: "byProperties",
     param: ["name", "thumb", "id", "institute", "degree", "slogan"],
@@ -50,7 +56,7 @@ function Courses() {
                       />
                       <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
                     </svg>
-                    Our Courses
+                    {tab}
                   </Link>
                 </li>
                 <li
@@ -90,7 +96,46 @@ function Courses() {
                       className="col-12 fw-bold h4 mt-3"
                       style={{ color: "#046635" }}
                     >
-                      Bachelor's Degree
+                      {d1}
+                    </p>
+                    <div className="course-list">
+                      {courses
+                        .filter(
+                          (course) =>
+                            course.institute === "Pegaso" &&
+                            (course.degree === "Master Degree" ||
+                              course?.degree === "Mestrado")
+                        )
+                        .map((crs, i) => (
+                          <div className="course" key={i}>
+                            <img src={crs.thumb} alt="HTML Course " />
+                            <div className="description">
+                              <h2>{crs.name} </h2>
+                              <p>{crs.slogan}</p>
+                            </div>
+                            <hr />
+                            <div className="d-flex justify-content-end w-100">
+                              <button className="text-start">
+                                <Link to={`/courses/${crs.id}`}>
+                                  <FontAwesomeIcon
+                                    icon={faGraduationCap}
+                                    className="me-1"
+                                  />
+                                  Read More
+                                </Link>
+                              </button>
+                            </div>
+                          </div>
+                        ))}
+                    </div>
+                  </div>
+
+                  <div className="row course-list">
+                    <p
+                      className="col-12 fw-bold h4 mt-3"
+                      style={{ color: "#046635" }}
+                    >
+                      {d2}
                     </p>
 
                     <div className="course-list">
@@ -124,50 +169,13 @@ function Courses() {
                         ))}
                     </div>
                   </div>
+
                   <div className="row course-list">
                     <p
                       className="col-12 fw-bold h4 mt-3"
                       style={{ color: "#046635" }}
                     >
-                      Master's Degrees
-                    </p>
-                    <div className="course-list">
-                      {courses
-                        .filter(
-                          (course) =>
-                            course.institute === "Pegaso" &&
-                            (course.degree === "Master Degree" ||
-                              course?.degree === "Mestrado")
-                        )
-                        .map((crs, i) => (
-                          <div className="course" key={i}>
-                            <img src={crs.thumb} alt="HTML Course Image" />
-                            <div className="description">
-                              <h2>{crs.name} </h2>
-                              <p>{crs.slogan}</p>
-                            </div>
-                            <hr />
-                            <div className="d-flex justify-content-end w-100">
-                              <button className="text-start">
-                                <Link to={`/courses/${crs.id}`}>
-                                  <FontAwesomeIcon
-                                    icon={faGraduationCap}
-                                    className="me-1"
-                                  />
-                                  Read More
-                                </Link>
-                              </button>
-                            </div>
-                          </div>
-                        ))}
-                    </div>
-                  </div>
-                  <div className="row course-list">
-                    <p
-                      className="col-12 fw-bold h4 mt-3"
-                      style={{ color: "#046635" }}
-                    >
-                      PhD
+                       {d3}
                     </p>
                     <div className="course-list">
                       {courses
@@ -212,7 +220,7 @@ function Courses() {
                       className="col-12 fw-bold h4 mt-3"
                       style={{ color: "#046635" }}
                     >
-                      Master's Degree
+                       {d1}
                     </p>
                     <div className="course-list">
                       {courses
@@ -221,13 +229,18 @@ function Courses() {
                           <div className="course" key={crs.id}>
                             <img src={crs.thumb} alt="HTML Course Image" />
                             <div className="description">
+                              {console.log(crs.id)}
                               <h2>{crs.name} </h2>
                               <p>{crs.slogan}</p>
                             </div>
                             <hr />
                             <div className="d-flex justify-content-end w-100">
                               <button className="text-start">
-                                <Link to={`/courses/${crs.id}`}>
+                                <Link
+                                  to={{
+                                    pathname: `/courses/${crs.id}`,
+                                  }}
+                                >
                                   <FontAwesomeIcon
                                     icon={faGraduationCap}
                                     className="me-1"
@@ -245,10 +258,13 @@ function Courses() {
             </div>
           </div>
           <div className="page-sidebar  col-lg-3 offset-lg-1 col-md-3 offset-md-1">
-            <div className="right_box">
+            <div className="right_box mb-5">
               <div className="p-4">
                 <ApplyWidget />
               </div>
+            </div>
+            <div className="right_box">
+                <ContactWidget />
             </div>
           </div>
         </div>

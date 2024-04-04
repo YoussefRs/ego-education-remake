@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faListCheck } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -8,23 +8,39 @@ import {
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import "./CoursesDetails.css";
-import useCourse from "../../hooks/useCourses";
 import SubHeader from "../../globals/SubHeader/SubHeader";
 import InfoWidget from "../../globals/Widgets/InfoWidget";
 import ContactWidget from "../../globals/Widgets/ContactWidget";
 import CourseSliderDetails from "../../globals/Sliders/CourseSliderDetails";
+import { useTranslation } from "react-i18next";
+
+function extractIdFromPathname(pathname) {
+  // Split the pathname by '/'
+  const pathParts = pathname.split("/");
+  // The last part of the path should be the id
+  const id = pathParts[pathParts.length - 1];
+  return id;
+}
 
 function CoursesDetails() {
-  const { courseId } = useParams();
-  const [course, setCourse] = useState();
   const [activePane, setActivePane] = useState("Overview");
+  const { t } = useTranslation();
+  const location = useLocation();
+  const courseId = extractIdFromPathname(location.pathname);
+  const [course, setCourse] = useState(null);
 
   useEffect(() => {
     if (courseId) {
-      const res = useCourse({ type: "byId", param: courseId });
-      setCourse(res);
+      const { coursesData } = t("home.courseDetails");
+      const courseDetails = coursesData.find(
+        (course) => course.id === courseId
+      );
+      setCourse(courseDetails);
+    } else {
+      setCourse(null);
     }
-  }, [courseId]);
+  }, [courseId, t]);
+
 
   if (!course) {
     return null;
@@ -33,12 +49,12 @@ function CoursesDetails() {
   return (
     <>
       <SubHeader
-        title={course.name}
+        title={course?.name}
         path={[
           { url: "/", label: "Home" },
           { url: "/courses", label: "Courses" },
         ]}
-        current={course.name}
+        current={course?.name}
       />
 
       <div className="content container mb-5">

@@ -16,7 +16,7 @@ i18n
     lng: "en",
     fallbackLng: "en",
     returnObjects: true,
-    missingKey: 'ignore',
+    missingKey: "ignore",
     resources: {
       en: {
         translation: {
@@ -593,6 +593,8 @@ i18n
                   //   thumb: thumb1,
                   degree: "Master Degree",
                   institute: "Pegaso",
+                  thumb:
+                    "https://thumbs.dreamstime.com/b/programming-web-banner-best-languages-technology-process-software-development-157259186.jpg",
                 },
                 {
                   id: "uX3yZ4aB",
@@ -656,6 +658,22 @@ i18n
                 },
               ],
             },
+          },
+          widget: {
+            apply: {
+              line1: "Why Ego-Education ?",
+              line2:
+                "Advance your career through continuous learning. Expand your skillset, gain industry certifications, learn on your schedule, and do it all at a lower cost. Online education provides opportunities for career growth that will benefit you for years to come.",
+              button: "Apply Now",
+            },
+          },
+          degrees: {
+            d1: "Master's Degree",
+            d2: "Bachelor's Degree",
+            d3: "PhD",
+          },
+          courseTab: {
+            tab: "Our Courses",
           },
         },
       },
@@ -1168,6 +1186,8 @@ i18n
                   duration: "2 anos",
                   location: "Online",
                   cur: "4",
+                  thumb:
+                    "https://thumbs.dreamstime.com/b/programming-web-banner-best-languages-technology-process-software-development-157259186.jpg",
                   media: {
                     type: "imagem",
                     source:
@@ -1177,8 +1197,8 @@ i18n
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum pellentesque urna. Phasellus adipiscing et massa et aliquam. Ut odio magna, interdum quis dolor non, tristique vestibulum nisi. Nam accumsan convallis venenatis. Nullam posuere risus odio, in interdum felis venenatis sagittis. Integer malesuada porta fermentum. Sed luctus nibh sed mi auctor imperdiet. Cras et sapien rhoncus, pulvinar dolor sed, tincidunt massa. Nullam fringilla mauris non risus ultricies viverra. Donec a turpis non lorem pulvinar posuere.",
                   slogan:
                     "Transformando Dados em Insights: Dominando a Informática para a Era Digital.",
-                  grau: "Mestrado",
                   institute: "Pegaso",
+                  degree: "Mestrado",
                 },
                 {
                   id: "uX3yZ4aB",
@@ -1245,6 +1265,22 @@ i18n
                 },
               ],
             },
+          },
+          widget: {
+            apply: {
+              line1: "Por que Ego-Educação?",
+              line2:
+                "Avance em sua carreira por meio de aprendizado contínuo. Amplie seu conjunto de habilidades, obtenha certificações da indústria, aprenda em seu próprio ritmo e faça tudo isso a um custo mais baixo. A educação online oferece oportunidades de crescimento profissional que beneficiarão você nos próximos anos.",
+              button: "Inscreva-se",
+            },
+          },
+          degrees: {
+            d1: "Mestrado",
+            d2: "Bacharelado",
+            d3: "Doutorado",
+          },
+          courseTab: {
+            tab: "Nossos Cursos",
           },
         },
       },
