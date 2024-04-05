@@ -580,6 +580,10 @@ i18n
                   startDate: "10 Mar 2023",
                   duration: "2 years",
                   location: "Online",
+                  category: "Computer Science",
+                  totalModules: 11,
+                  price: "3000",
+                  totalEtc: 90,
                   cur: "4",
                   media: {
                     type: "image",
@@ -587,14 +591,95 @@ i18n
                       "https://uwm.edu/publichealth/wp-content/uploads/sites/571/2023/01/banner-certificate-health-care-informatics.jpg",
                   },
                   description:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum pellentesque urna. Phasellus adipiscing et massa et aliquam. Ut odio magna, interdum quis dolor non, tristique vestibulum nisi. Nam accumsan convallis venenatis. Nullam posuere risus odio, in interdum felis venenatis sagittis. Integer malesuada porta fermentum. Sed luctus nibh sed mi auctor imperdiet. Cras et sapien rhoncus, pulvinar dolor sed, tincidunt massa. Nullam fringilla mauris non risus ultricies viverra. Donec a turpis non lorem pulvinar posuere.",
+                    "Master of Science in Informatics is a 1-year master’s programme for those who wish to continue studying Informatics after completion of a bachelor’s degree programme. With the growing application of new technologies in the majority of industrial and non-industrial sectors, it is also growing the need of highly specialised profiles.The Master of Science in Informaticstrains students for approaching latest and emerging technologies in related to computer science, by deepening their theoretical knowledge and sharpening their soft skills. The curriculum is structured to provide the acquisition of a diverse set of skills that are applicable to a wide range of company departments and sectors.",
                   slogan:
                     "Transforming Data into Insights: Mastering Informatics for the Digital Age.",
-                  //   thumb: thumb1,
                   degree: "Master Degree",
                   institute: "Pegaso",
+                  career: [
+                    "System Application Designer and Developer",
+                    " IT Project Manager",
+                    "IT Development Leader",
+                  ],
                   thumb:
                     "https://thumbs.dreamstime.com/b/programming-web-banner-best-languages-technology-process-software-development-157259186.jpg",
+                  outcome: [
+                    "Demonstrate design, implementation, testing, and evaluation capabilities.",
+                    "Analyse the architecture of an information system",
+                    "Explain the difference between different information systems",
+                    "Illustrate the functioning of technologies within this context and understand how to utilize them",
+                    "Identify the information context of any organization",
+                    "Employ skills in programming",
+                    "Develop appropriate methods of analysis and critical interpretation of the structures and dynamics of such systems",
+                    "Express specific aspects of emerging technologies and understand what is in store in the near future",
+                    "Support the existent web standards and learn to use them",
+                    "Combine the use of different tools in order to provide advanced solutions",
+                  ],
+                  modules: [
+                    {
+                      title: "Informatics",
+                      description:
+                        "The Informatics module is designed to provide learners with a comprehensive understanding of information technology, computer systems, and their applications across various domains. ",
+                      ects: 5,
+                    },
+                    {
+                      title: "Programming",
+                      description:
+                        "The Programming module is a foundational component of computer science and software engineering curricula. It focuses on teaching students the principles and techniques of writing computer programs to solve problems efficiently and effectively. ",
+                      ects: 10,
+                    },
+                    {
+                      title: "Research Methods",
+                      description: "",
+                      ects: 5,
+                    },
+                    {
+                      title: "Software Engineering",
+                      description:
+                        "Software Engineering is a multidisciplinary field that focuses on the systematic development, maintenance, and management of software systems. It encompasses a wide range of activities, including software design, development, testing, deployment, and maintenance, with the goal of creating high-quality, reliable, and scalable software products.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Operating Systems",
+                      description:
+                        "An Operating System (OS) is a fundamental software component that manages hardware and software resources and provides essential services to computer programs. It acts as an intermediary between the hardware and the user applications, facilitating communication and coordination between various system components.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Artificial Intelligence",
+                      description:
+                        "An Artificial Intelligence (AI) module explores the theory, algorithms, and applications of creating intelligent systems that can mimic human-like cognitive functions.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Web Technologies",
+                      description:
+                        "A module on Web Technologies typically covers a wide range of concepts, tools, and techniques related to building and deploying web-based applications and services.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Human Computer Interaction",
+                      description:
+                        "A module on Human-Computer Interaction (HCI) focuses on the study of how people interact with computers and other technological devices. It combines elements of psychology, design, and computer science to understand and improve the usability, accessibility, and overall user experience of digital interfaces.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Databases",
+                      description:
+                        "A module on databases introduces students to the fundamental concepts, principles, and technologies used in managing and organizing data efficiently.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Stage",
+                      description: "",
+                      ects: 10,
+                    },
+                    {
+                      title: "Final dissertation",
+                      description: "",
+                      ects: 30,
+                    },
+                  ],
                 },
                 {
                   id: "uX3yZ4aB",
@@ -659,13 +744,15 @@ i18n
               ],
               button: "Read More",
               title: "Overview",
-              title1 : "Career",
+              title1: "Career",
               title2: "Course Info",
               title3: "You May Also Be Interested In",
-              tab2 : "Entry Requirements",
-              tab3 : "Modules",
+              title4: "Start Date",
+              title5: "Duration",
+              tab2: "Entry Requirements",
+              tab3: "Modules",
               tab4: "Admission",
-              tab5: "Lecturer"
+              tab5: "Lecturer",
             },
           },
           widget: {
@@ -1206,6 +1293,7 @@ i18n
                   startDate: "10 Mar 2023",
                   duration: "2 anos",
                   location: "Online",
+                  totalModules: 1,
                   cur: "4",
                   thumb:
                     "https://thumbs.dreamstime.com/b/programming-web-banner-best-languages-technology-process-software-development-157259186.jpg",
@@ -1220,6 +1308,90 @@ i18n
                     "Transformando Dados em Insights: Dominando a Informática para a Era Digital.",
                   institute: "Pegaso",
                   degree: "Mestrado",
+                  modules: [
+                    {
+                      title: "Informática",
+                      description:
+                        "O módulo de Informática é projetado para fornecer aos alunos uma compreensão abrangente da tecnologia da informação, sistemas de computadores e suas aplicações em diversos domínios. ",
+                      ects: 5,
+                    },
+                    {
+                      title: "Programação",
+                      description:
+                        "O módulo de Programação é um componente fundamental dos currículos de ciência da computação e engenharia de software. Ele se concentra em ensinar aos alunos os princípios e técnicas de escrita de programas de computador para resolver problemas de forma eficiente e eficaz. ",
+                      ects: 10,
+                    },
+                    {
+                      title: "Métodos de Pesquisa",
+                      description: "",
+                      ects: 5,
+                    },
+                    {
+                      title: "Engenharia de Software",
+                      description:
+                        "Engenharia de Software é uma área multidisciplinar que se concentra no desenvolvimento sistemático, manutenção e gerenciamento de sistemas de software. Abrange uma ampla gama de atividades, incluindo design, desenvolvimento, teste, implantação e manutenção de software, com o objetivo de criar produtos de software de alta qualidade, confiáveis e escaláveis.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Sistemas Operacionais",
+                      description:
+                        "Um Sistema Operacional (SO) é um componente fundamental do software que gerencia recursos de hardware e software e fornece serviços essenciais para programas de computador. Ele atua como intermediário entre o hardware e as aplicações do usuário, facilitando a comunicação e coordenação entre vários componentes do sistema.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Inteligência Artificial",
+                      description:
+                        "Um módulo de Inteligência Artificial (IA) explora a teoria, algoritmos e aplicações da criação de sistemas inteligentes que podem imitar funções cognitivas humanas.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Tecnologias Web",
+                      description:
+                        "Um módulo sobre Tecnologias Web geralmente abrange uma ampla gama de conceitos, ferramentas e técnicas relacionadas à construção e implantação de aplicativos e serviços baseados na web.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Interação Humano-Computador",
+                      description:
+                        "Um módulo sobre Interação Humano-Computador (IHC) concentra-se no estudo de como as pessoas interagem com computadores e outros dispositivos tecnológicos. Ele combina elementos de psicologia, design e ciência da computação para entender e melhorar a usabilidade, acessibilidade e experiência geral do usuário das interfaces digitais.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Bancos de Dados",
+                      description:
+                        "Um módulo sobre bancos de dados apresenta aos alunos os conceitos fundamentais, princípios e tecnologias usadas na gestão e organização eficiente de dados.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Estágio",
+                      description: "",
+                      ects: 10,
+                    },
+                    {
+                      title: "Dissertação Final",
+                      description: "",
+                      ects: 30,
+                    },
+                  ],
+                  price: "3000",
+                  totalEtc: 90,
+                  career: [
+                    "Designer e Desenvolvedor de Aplicações de Sistema",
+                    "Gerente de Projetos de TI",
+                    "Líder de Desenvolvimento de TI",
+                  ],
+                  outcome: [
+                    "Demonstrar habilidades de design, implementação, teste e avaliação.",
+                    "Analisar a arquitetura de um sistema de informação",
+                    "Explicar a diferença entre diferentes sistemas de informação",
+                    "Ilustrar o funcionamento das tecnologias dentro deste contexto e entender como utilizá-las",
+                    "Identificar o contexto de informação de qualquer organização",
+                    "Empregar habilidades de programação",
+                    "Desenvolver métodos apropriados de análise e interpretação crítica das estruturas e dinâmicas desses sistemas",
+                    "Expressar aspectos específicos de tecnologias emergentes e entender o que está por vir no futuro próximo",
+                    "Apoiar os padrões da web existentes e aprender a usá-los",
+                    "Combinar o uso de diferentes ferramentas para fornecer soluções avançadas",
+                  ],
                 },
                 {
                   id: "uX3yZ4aB",
@@ -1287,13 +1459,15 @@ i18n
               ],
               button: "Leer Más",
               title: "Visão Geral",
-              title1 : "Carreira",
+              title1: "Carreira",
               title2: "Informações do Curso",
               title3: "Você Também Pode se Interessar Por",
-              tab2 : "Requisitos de entrada",
-              tab3 : "Módulos",
+              title4: "Data De Início",
+              title5: "Duração",
+              tab2: "Requisitos de entrada",
+              tab3: "Módulos",
               tab4: "Admissão",
-              tab5: "Palestrante"
+              tab5: "Palestrante",
             },
           },
           widget: {

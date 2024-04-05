@@ -28,7 +28,7 @@ function CoursesDetails() {
   const location = useLocation();
   const courseId = extractIdFromPathname(location.pathname);
   const [course, setCourse] = useState(null);
-  const { title,title1, title2, title3, tab2, tab3, tab4, tab5 } = t("home.courseDetails");
+  const { title,title1, title2, title3,title4,title5, tab2, tab3, tab4, tab5 } = t("home.courseDetails");
 
   useEffect(() => {
     if (courseId) {
@@ -222,7 +222,7 @@ function CoursesDetails() {
                                     icon={faCalendarAlt}
                                     color="#046635"
                                   />{" "}
-                                  Start Date:
+                                  {title4}:
                                 </strong>{" "}
                                 <em>{course?.startDate}</em>
                               </li>
@@ -232,7 +232,7 @@ function CoursesDetails() {
                                     icon={faClock}
                                     color="#046635"
                                   />{" "}
-                                  Duration:
+                                  {title5}:
                                 </strong>{" "}
                                 <em>{course?.duration}</em>
                               </li>
