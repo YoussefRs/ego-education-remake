@@ -48,7 +48,7 @@ function CourseSlider() {
 
   return (
     <Slider {...settings} className="container">
-      {courses.map((course, index) => (
+      {courses?.map((course, index) => (
         <div className="swiper-slide" key={index}>
           <img src={course.imgSrc} className="slide-image" alt="" />
           <div className="container">
