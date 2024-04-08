@@ -36,7 +36,7 @@
     color: #fff;
     margin: 7px 0 25px;
   }
-  .ban_text a {
+  .ban_text a, .welcome a {
     display: inline-block;
     font: 800 19.39px/24px "Montserrat", sans-serif;
     background: #046635;
@@ -50,7 +50,7 @@
     transition: all 0.3s ease-in-out;
     text-decoration: none;
   }
-  .ban_text a:hover {
+  .ban_text a:hover, .welcome a:hover  {
     transform: scale(0.9);
   }
   
@@ -175,3 +175,10 @@
     }
   }
   
+
+  /* *********************ENTY REQ**************** */
+
+  .entry_inactive {
+    opacity: 0.5;
+    pointer-events: none;
+  }

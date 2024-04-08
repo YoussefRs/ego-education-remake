@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faGlobe, faUser } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/Logos/logo-ego-white.png";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-function Navigation({ show}) {
+function Navigation({ show }) {
   const navItems = [
     { key: "home", link: "/" },
     { key: "courses", link: "/courses" },
@@ -87,6 +87,13 @@ function Navigation({ show}) {
           />
           <label for="check2"></label>
         </div> */}
+        <a
+          className="ham"
+          href="https://ego-education.ispringlearn.eu/login"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faUser} />
+        </a>
         <a
           className="ham"
           onClick={() => {

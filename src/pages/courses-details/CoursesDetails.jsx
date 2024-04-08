@@ -28,6 +28,10 @@ function CoursesDetails() {
   const location = useLocation();
   const courseId = extractIdFromPathname(location.pathname);
   const [course, setCourse] = useState(null);
+  const [isChecked, setIsChecked] = useState(false);
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
   const {
     title,
     title1,
@@ -74,6 +78,7 @@ function CoursesDetails() {
   if (!course) {
     return null;
   }
+
 
   return (
     <>
@@ -135,31 +140,6 @@ function CoursesDetails() {
                     <li
                       className="nav-item"
                       onClick={() => {
-                        setActivePane("Entry");
-                      }}
-                    >
-                      <Link
-                        className={`nav-link ${
-                          activePane === "Entry" ? "active" : ""
-                        }`}
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          className="bi bi-file-earmark-check"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
-                          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
-                        </svg>
-                        {tab2}
-                      </Link>
-                    </li>
-                    <li
-                      className="nav-item"
-                      onClick={() => {
                         setActivePane("Modules");
                       }}
                     >
@@ -182,7 +162,8 @@ function CoursesDetails() {
                         {tab3}
                       </Link>
                     </li>
-                    <li
+
+                    {/* <li
                       className="nav-item"
                       onClick={() => {
                         setActivePane("Admission");
@@ -206,7 +187,7 @@ function CoursesDetails() {
                         </svg>
                         {tab4}
                       </Link>
-                    </li>
+                    </li> */}
                     <li
                       className="nav-item"
                       onClick={() => {
@@ -230,6 +211,31 @@ function CoursesDetails() {
                           <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm10.798 11c-.453-1.27-1.76-3-4.798-3-3.037 0-4.345 1.73-4.798 3H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1z" />
                         </svg>
                         {tab5}
+                      </Link>
+                    </li>
+                    <li
+                      className="nav-item"
+                      onClick={() => {
+                        setActivePane("Entry");
+                      }}
+                    >
+                      <Link
+                        className={`nav-link ${
+                          activePane === "Entry" ? "active" : ""
+                        }`}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          className="bi bi-file-earmark-check"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                        </svg>
+                        {tab2}
                       </Link>
                     </li>
                   </ul>
@@ -450,6 +456,70 @@ function CoursesDetails() {
                                 </ul>
                               </li>
                             </ul>
+                            To access the Bachelor’s, at least a{" "}
+                            <span className="fw-bold">B2</span> level of
+                            knowledge of the English or Italian language is
+                            required, while for the Master’s, at least a{" "}
+                            <span className="fw-bold">C1</span>
+                            level is <span className="fw-bold">required</span>.
+                            <br />
+                            <br />
+                            In the absence of a linguistic certification, at the
+                            time of enrolment there will be an entrance test to
+                            ascertain linguistic knowledge and general culture.
+                            In case of deficiency there will be foundation
+                            courses.
+                            <br />
+                            <br />
+                            To properly enrol, all educational qualifications
+                            (such as high school diploma, bachelor’s, master’s)
+                            should be apostilled through a{" "}
+                            <span className="fw-bold">
+                              certification of value at the Maltese or Italian
+                              embassies abroad
+                            </span>
+                            .
+                            <br />
+                            <br />
+                            In any case, while waiting for the apostille or to
+                            simply understand if one is eligible, a normal copy
+                            of the aforementioned qualifications is enough.
+                            <br />
+                            <br />
+                            Once registration is complete, our team will review
+                            your documents and information within 72 hours.
+                            We&#39;ll email you an update.
+                            <br />
+                            <br />
+                            Upon{" "}
+                            <span className="fw-bold">
+                              payment confirmation
+                            </span>
+                            , you&#39;ll get your username and password via
+                            email to start your online learning journey.
+                            <br />
+                            <br />
+                            <span className="fw-bold">
+                              Welcome to eGO Education.
+                            </span>
+                            <br />
+                            <br />
+                            <label>
+                              <input
+                                type="checkbox"
+                                checked={isChecked}
+                                onChange={handleCheckboxChange}
+                              />
+                              I confirm that I have thoroughly reviewed and
+                              understood all the entry requirements.
+                            </label>
+                            <Link
+                              className={`${isChecked ? "" : "entry_inactive"}`}
+                              to={`/enrollment/${course?.id}`}
+                              state={{ course: course.name }}
+                            >
+                              Apply
+                            </Link>
                           </article>
                         </div>
                       </div>
@@ -499,7 +569,7 @@ function CoursesDetails() {
                         </main>
                       </div>
                     </div>
-                    <div
+                    {/* <div
                       className={`tab-pane ${
                         activePane === "Admission" ? "active" : ""
                       }`}
@@ -526,7 +596,7 @@ function CoursesDetails() {
                           </ul>
                         </main>
                       </div>
-                    </div>
+                    </div> */}
                     <div
                       className={`tab-pane ${
                         activePane === "Lecturer" ? "active" : ""

@@ -11,6 +11,7 @@ import NotFound from "./pages/notFound/NotFound";
 import About from "./pages/about/About";
 import Elearning from "./pages/eLearning/Elearning";
 import Loading from "./globals/Loading/Loading";
+import EnrollementById from "./pages/enrollmentById/EnrollementById";
 
 function Layout({ children }) {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -78,6 +79,14 @@ function App() {
             element={
               <Layout>
                 <CoursesDetails />
+              </Layout>
+            }
+          />
+          <Route
+            path="/enrollment/:id"
+            element={
+              <Layout>
+                <EnrollementById />
               </Layout>
             }
           />
