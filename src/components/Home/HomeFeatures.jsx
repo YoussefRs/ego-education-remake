@@ -48,7 +48,7 @@ function HomeFeatures() {
                   data-aos={"fade-up"}
                 />
               </div>
-              <div className="job-ct-1 job-item">
+              {/* <div className="job-ct-1 job-item">
                 <div className="job-ct-icon">
                   <FontAwesomeIcon icon={faPersonChalkboard} color="black" data-aos={"flip-up"}/>
                 </div>
@@ -71,7 +71,7 @@ function HomeFeatures() {
                 <div className="job-ct-text" data-aos={"flip-up"}>
                   <h6>{b3}</h6>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-md-6 d-flex align-items-center flex-column justify-content-center gap-4">
@@ -89,7 +89,7 @@ function HomeFeatures() {
             </div>
 
             <div className="feature d-flex justify-content-between w-100" data-aos={"zoom-in"}>
-              <FontAwesomeIcon icon={faFlask} className="feature-icon" />
+              <FontAwesomeIcon icon={faFlask}  className="feature-icon" />
 
               <div className="feature-content">
                 <h4>{t("home.homeFeatures.features.0.title")}</h4>

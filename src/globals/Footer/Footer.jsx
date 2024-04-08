@@ -87,13 +87,13 @@ const Footer = () => {
         </div>
       </footer> */}
 
-      <section class="footer" id="footer">
-        <div class="footer-contents">
-          <div class="footer-col footer-col-1">
-            <div class="col-title">
+      <section className="footer" id="footer">
+        <div className="footer-contents">
+          <div className="footer-col footer-col-1">
+            <div className="col-title">
               <img src={logo} alt="ego-edication" />
             </div>
-            <div class="col-contents">
+            <div className="col-contents">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -105,35 +105,35 @@ const Footer = () => {
             </div>
           </div>
 
-          <div class="footer-col footer-col-2">
-            <div class="col-title">
+          <div className="footer-col footer-col-2">
+            <div className="col-title">
               <h3>Contact</h3>
             </div>
-            <div class="col-contents">
-              <div class="contact-row">
+            <div className="col-contents">
+              <div className="contact-row">
                 <span>Address</span>
                 <span>1234 Street, Colifornia, USA</span>
               </div>
-              <div class="contact-row">
+              <div className="contact-row">
                 <span>Phone</span>
                 <span>+012 987 23456</span>
               </div>
-              <div class="contact-row">
+              <div className="contact-row">
                 <span>Website</span>
                 <span>ego-education.com</span>
               </div>
-              <div class="contact-row">
+              <div className="contact-row">
                 <span>Email</span>
                 <span>info@ego-education.com</span>
               </div>
             </div>
           </div>
 
-          <div class="footer-col footer-col-3">
-            <div class="col-title">
+          <div className="footer-col footer-col-3">
+            <div className="col-title">
               <h3>Quick Links</h3>
             </div>
-            <div class="col-contents">
+            <div className="col-contents">
               <a href="#">Home</a>
               <a href="#">Services</a>
               <a href="#">Courses</a>
@@ -142,21 +142,21 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* <div class="footer-col footer-col-4">
-            <div class="col-title">
+          {/* <div className="footer-col footer-col-4">
+            <div className="col-title">
               <h3>Newsletter</h3>
             </div>
-            <div class="col-contents">
-              <form class="newsletter">
+            <div className="col-contents">
+              <form className="newsletter">
                 <input type="email" placeholder="Your Email" />
-                <button class="newsletter-btn btn" type="submit">
+                <button className="newsletter-btn btn" type="submit">
                   Subscribe
                 </button>
               </form>
             </div>
           </div> */}
         </div>
-        <div class="copy-rights">
+        <div className="copy-rights">
           <p>All Rights Reserved</p>
         </div>
       </section>

@@ -12,11 +12,10 @@ i18n
   .use(i18nextBrowserLanguagedetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     lng: "en",
     fallbackLng: "en",
     returnObjects: true,
-    missingKey: "ignore",
     resources: {
       en: {
         translation: {
@@ -49,7 +48,7 @@ i18n
             homeFeatures: {
               sectionHeader: {
                 title: "Features",
-                subtitle: "Study flexibly around your life",
+                subtitle: "Study flexibly around your",
                 description:
                   "Our online courses on our platform are always available, so you can fit your studies into your busy schedule.",
               },

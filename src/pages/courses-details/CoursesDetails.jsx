@@ -28,7 +28,36 @@ function CoursesDetails() {
   const location = useLocation();
   const courseId = extractIdFromPathname(location.pathname);
   const [course, setCourse] = useState(null);
-  const { title,title1, title2, title3,title4,title5, tab2, tab3, tab4, tab5 } = t("home.courseDetails");
+  const {
+    title,
+    title1,
+    title2,
+    title3,
+    title4,
+    title5,
+    tab2,
+    tab3,
+    tab4,
+    tab5,
+  } = t("home.courseDetails");
+
+  const requiredDocuments = {
+    english: {
+      options: [
+        "TOEFL IBT",
+        "IELTS",
+        "Cambridge Certificates",
+        "English Speaking Board (International) Ltd",
+        "Pearson English International Certificate",
+        "Trinity College London Certificates",
+        "City & Guilds International ESOL (IESOL)",
+      ],
+    },
+    italian: {
+      language: "Italian",
+      options: ["CELI", "CILS", "AIL", "PLIDA", "IT"],
+    },
+  };
 
   useEffect(() => {
     if (courseId) {
@@ -95,7 +124,7 @@ function CoursesDetails() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-view-stacked"
+                          className="bi bi-view-stacked"
                           viewBox="0 0 16 16"
                         >
                           <path d="M3 0h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm0 8h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
@@ -119,7 +148,7 @@ function CoursesDetails() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-file-earmark-check"
+                          className="bi bi-file-earmark-check"
                           viewBox="0 0 16 16"
                         >
                           <path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
@@ -144,7 +173,7 @@ function CoursesDetails() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-card-checklist"
+                          className="bi bi-card-checklist"
                           viewBox="0 0 16 16"
                         >
                           <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
@@ -169,7 +198,7 @@ function CoursesDetails() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-award"
+                          className="bi bi-award"
                           viewBox="0 0 16 16"
                         >
                           <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
@@ -194,7 +223,7 @@ function CoursesDetails() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-person-video"
+                          className="bi bi-person-video"
                           viewBox="0 0 16 16"
                         >
                           <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
@@ -275,6 +304,17 @@ function CoursesDetails() {
                               />{" "}
                               Entry Requirements
                             </h6>
+                            <h6>
+                              Around here, we know your time is valuable.
+                              That&#39;s why our enrolment process is simple,
+                              quick and is available all year round.
+                            </h6>{" "}
+                            On the next page you will be able to give us all the
+                            information necessary to complete your registration.
+                            You will be required to upload the following
+                            documents:
+                            <br />
+                            <br />
                             <ul className="custom-list-style">
                               <li className="d-flex mb-2">
                                 <FontAwesomeIcon
@@ -284,14 +324,9 @@ function CoursesDetails() {
                                   style={{ paddingRight: 10, marginTop: 3 }}
                                 />
                                 <span>
-                                  Minimum Level 6 qualification or equivalent in
-                                  either Computer Science, Electrical or
-                                  Electronic Engineering, Mathematics, Physics,
-                                  related disciplines with demonstrable exposure
-                                  to programming and mathematics or other
-                                  alternative subjects related to data analysis,
-                                  data science or informatics, or a recognized
-                                  equivalent international
+                                  Previous academic career (Exams + ECTS if you
+                                  have taken exams at other universities and
+                                  have not yet graduated).
                                 </span>
                               </li>
                               <li>
@@ -302,59 +337,119 @@ function CoursesDetails() {
                                   style={{ paddingRight: 10 }}
                                 />
                                 <span>
-                                  qualification. IELTS 6.0 or equivalent
+                                  Degree obtained. Qualifications issued in
+                                  English, Spanish, French, Italian are
+                                  accepted.
+                                </span>
+                              </li>
+                              <li>
+                                <FontAwesomeIcon
+                                  icon={faCheck}
+                                  color="#046635"
+                                  size={20}
+                                  style={{ paddingRight: 10 }}
+                                />
+                                <span>
+                                  For other languages, the qualification must be
+                                  translated into English or Italian.
+                                </span>
+                              </li>
+                              <li>
+                                <FontAwesomeIcon
+                                  icon={faCheck}
+                                  color="#046635"
+                                  size={20}
+                                  style={{ paddingRight: 10 }}
+                                />
+                                <span>Updated CV in English.</span>
+                              </li>
+                              <li>
+                                <FontAwesomeIcon
+                                  icon={faCheck}
+                                  color="#046635"
+                                  size={20}
+                                  style={{ paddingRight: 10 }}
+                                />
+                                <span>
+                                  Copy of a valid identification document.
                                 </span>
                               </li>
                             </ul>
-                            {course?.method && (
-                              <>
-                                <h6 className="mb-3 fw-bold">
-                                  <FontAwesomeIcon
-                                    icon={faBriefcase}
-                                    color="#046635"
-                                  />{" "}
-                                  Methodology
-                                </h6>
-                                <ul className="custom-list-style">
-                                  <li className="d-flex mb-2">
-                                    <FontAwesomeIcon
-                                      icon={faCheck}
-                                      color="#046635"
-                                      size={20}
-                                      style={{ paddingRight: 10, marginTop: 3 }}
-                                    />
-                                    <span>{course?.method}</span>
-                                  </li>
+                            Linguistic certifications held among the following:
+                            <ul className="custom-list-style">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                color="#046635"
+                                width="25"
+                                height="25"
+                                fill="currentColor"
+                                class="bi bi-dot"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                              </svg>
+                              <span style={{ fontWeight: 600 }}>English</span>
+                              <li className="d-flex mb-2">
+                                <ul className="custom-list-style d-flex flex-column">
+                                  {requiredDocuments?.english.options.map(
+                                    (option, i) => (
+                                      <span key={i}>
+                                        {" "}
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          color="#046635"
+                                          width="25"
+                                          height="10"
+                                          fill="currentColor"
+                                          class="bi bi-dot"
+                                          viewBox="0 0 16 16"
+                                        >
+                                          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                        </svg>
+                                        {option}
+                                      </span>
+                                    )
+                                  )}
                                 </ul>
-                              </>
-                            )}
-                            {course?.outcome && (
-                              <>
-                                <h6 className="mb-3 fw-bold">
-                                  <FontAwesomeIcon
-                                    icon={faBriefcase}
-                                    color="#046635"
-                                  />{" "}
-                                  Learning Outcome
-                                </h6>
-                                <ul className="custom-list-style">
-                                  {course?.outcome.map((outcome, i) => (
-                                    <li className="d-flex mb-2" key={i}>
-                                      <FontAwesomeIcon
-                                        icon={faCheck}
-                                        color="#046635"
-                                        size={20}
-                                        style={{
-                                          paddingRight: 10,
-                                          marginTop: 3,
-                                        }}
-                                      />
-                                      <span>{outcome}</span>
-                                    </li>
-                                  ))}
+                              </li>
+                            </ul>
+                            <ul className="custom-list-style">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                color="#046635"
+                                width="25"
+                                height="25"
+                                fill="currentColor"
+                                class="bi bi-dot"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                              </svg>
+                              <span style={{ fontWeight: 600 }}>Italian</span>
+                              <li className="d-flex mb-2">
+                                <ul className="custom-list-style d-flex flex-column">
+                                  {requiredDocuments?.italian.options.map(
+                                    (option, i) => (
+                                      <span key={i}>
+                                        {" "}
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          color="#046635"
+                                          width="25"
+                                          height="10"
+                                          fill="currentColor"
+                                          class="bi bi-dot"
+                                          viewBox="0 0 16 16"
+                                        >
+                                          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                        </svg>
+                                        {option}
+                                      </span>
+                                    )
+                                  )}
                                 </ul>
-                              </>
-                            )}
+                              </li>
+                            </ul>
                           </article>
                         </div>
                       </div>
@@ -368,9 +463,9 @@ function CoursesDetails() {
                       <h2 className="mb-4 fw-bold">Modules</h2>
                       <div className="tab">
                         <main className="modules-container">
-                          <section id="faq" class="faq">
-                            <div class="container">
-                              <div class="faq-list">
+                          <section id="faq" className="faq">
+                            <div className="container">
+                              <div className="faq-list">
                                 <ul>
                                   {course?.modules?.map((module, i) => (
                                     <li key={i}>

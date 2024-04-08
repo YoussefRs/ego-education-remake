@@ -3,10 +3,10 @@ import "./Navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/Logos/logo-ego-white.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-function Navigation({ show }) {
+function Navigation({ show}) {
   const navItems = [
     { key: "home", link: "/" },
     { key: "courses", link: "/courses" },
@@ -72,7 +72,7 @@ function Navigation({ show }) {
         ))}
       </section>
       <section className="flex_content d-flex alingn-items-center justify-content-between">
-        <div class="flag-switch">
+        {/* <div className="flag-switch">
           <input
             type="checkbox"
             id="check2"
@@ -86,7 +86,7 @@ function Navigation({ show }) {
             }}
           />
           <label for="check2"></label>
-        </div>
+        </div> */}
         <a
           className="ham"
           onClick={() => {

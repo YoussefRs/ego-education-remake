@@ -30,7 +30,7 @@ function HomeFeatures_2() {
           <div className="col-xl-6 col-lg-6 col-md-10">
             <div className="section-title mb-4">
               <div className="section-title mb-4 ">
-                <h2 className="container-heading text-start text-white" >
+                <h2 className="container-heading text-start" >
                   {title}
                 </h2>
                 <h1 className="container-title text-white fw-bold mb-4">
@@ -47,7 +47,7 @@ function HomeFeatures_2() {
             {features?.map((feature, i) => (
               <div className="single-video-box" key={i}>
                 <i>
-                  <FontAwesomeIcon icon={feature?.icon} />
+                  <FontAwesomeIcon icon={feature?.icon} color="#ffd23c"/>
                 </i>
                 <h5>{feature?.title} </h5>
                 <p>{feature?.description}</p>

@@ -106,7 +106,7 @@ button:focus-visible {
 .container-heading {
   text-align: center;
   font-size: 13px;
-  color: #fff;
+  color: #ffd23c;
   margin: 20px;
   font-weight: 500;
   text-transform: uppercase;
@@ -117,7 +117,7 @@ button:focus-visible {
   display: inline-block;
   width: 3%;
   height: 1px;
-  background-color: #fff;
+  background-color: #ffd23c;
   position: relative;
   left: 10px;
   bottom: 5px;
@@ -128,7 +128,7 @@ button:focus-visible {
   display: inline-block;
   width: 3%;
   height: 1px;
-  background-color: #fff;
+  background-color: #ffd23c;
   position: relative;
   right: 10px;
   bottom: 5px;

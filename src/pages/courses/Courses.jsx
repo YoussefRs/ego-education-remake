@@ -230,7 +230,6 @@ function Courses() {
                           <div className="course" key={crs.id}>
                             <img src={crs.thumb} alt="HTML Course Image" />
                             <div className="description">
-                              {console.log(crs.id)}
                               <h2>{crs.name} </h2>
                               <p>{crs.slogan}</p>
                             </div>
