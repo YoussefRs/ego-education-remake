@@ -122,7 +122,7 @@ function Courses() {
                                     icon={faGraduationCap}
                                     className="me-1"
                                   />
-                                 {button }
+                                  {button}
                                 </Link>
                               </button>
                             </div>
@@ -162,7 +162,7 @@ function Courses() {
                                     icon={faGraduationCap}
                                     className="me-1"
                                   />
-                                  {button }
+                                  {button}
                                 </Link>
                               </button>
                             </div>
@@ -176,7 +176,7 @@ function Courses() {
                       className="col-12 fw-bold h4 mt-3"
                       style={{ color: "#046635" }}
                     >
-                       {d3}
+                      {d3}
                     </p>
                     <div className="course-list">
                       {courses
@@ -201,7 +201,7 @@ function Courses() {
                                     icon={faGraduationCap}
                                     className="me-1"
                                   />
-                                  {button }
+                                  {button}
                                 </Link>
                               </button>
                             </div>
@@ -221,11 +221,11 @@ function Courses() {
                       className="col-12 fw-bold h4 mt-3"
                       style={{ color: "#046635" }}
                     >
-                       {d1}
+                      {d1}
                     </p>
                     <div className="course-list">
                       {courses
-                        .filter((course) => course.institute === "Ego")
+                        .filter((course) => course.institute === "Ego Education")
                         .map((crs) => (
                           <div className="course" key={crs.id}>
                             <img src={crs.thumb} alt="HTML Course Image" />
@@ -245,7 +245,7 @@ function Courses() {
                                     icon={faGraduationCap}
                                     className="me-1"
                                   />
-                                  {button }
+                                  {button}
                                 </Link>
                               </button>
                             </div>
@@ -264,7 +264,7 @@ function Courses() {
               </div>
             </div>
             <div className="right_box">
-                <ContactWidget />
+              <ContactWidget />
             </div>
           </div>
         </div>

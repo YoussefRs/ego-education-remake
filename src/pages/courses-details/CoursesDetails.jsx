@@ -79,7 +79,6 @@ function CoursesDetails() {
     return null;
   }
 
-
   return (
     <>
       <SubHeader
@@ -516,7 +515,11 @@ function CoursesDetails() {
                             <Link
                               className={`${isChecked ? "" : "entry_inactive"}`}
                               to={`/enrollment/${course?.id}`}
-                              state={{ course: course.name }}
+                              state={{
+                                course: course.name,
+                                degree: course.degree,
+                                inst: course.institute,
+                              }}
                             >
                               Apply
                             </Link>

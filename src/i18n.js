@@ -180,7 +180,7 @@ i18n
                   thumb:
                     "https://dce0qyjkutl4h.cloudfront.net/wp-content/webp-express/webp-images/uploads/2023/08/Java-enterprise-solutions.jpg.webp",
                   degree: "Master Degree",
-                  institute: "Ego",
+                  institute: "Ego Education",
                   modules: [
                     {
                       title: "Basic Java",
@@ -365,7 +365,7 @@ i18n
                       ects: 24,
                     },
                   ],
-                  institute: "Ego",
+                  institute: "Ego Education",
                   method:
                     "The programme comprises an online approach promoting the building of a community of practice via peer-to-peer learning which is asynchronous. Students have the freedom and flexibility to access the course at a time which is most convenient to them.",
                   price: 3000,

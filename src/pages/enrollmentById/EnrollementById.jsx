@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./enrollementById.css";
 import SubHeader from "../../globals/SubHeader/SubHeader";
 import { useLocation } from "react-router-dom";
 
 function EnrollementById() {
   const location = useLocation();
-  const { course } = location.state;
-  console.log(course);
+  const { course, degree, inst } = location.state;
+  const [fileName, setFileName] = useState("");
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setFileName(`${file.name} (${(file.size / 1048576).toFixed(3)}mb)`);
+    } else {
+      setFileName("");
+    }
+  };
   return (
     <>
       <SubHeader
@@ -26,6 +35,18 @@ function EnrollementById() {
             <select>
               <option value="option1">English </option>
               <option value="option2">Italian </option>
+            </select>
+          </div>
+        </div>
+        <div className="row mb-5">
+          <div className="col">
+            <select>
+              <option value="option8">{degree} </option>
+            </select>
+          </div>
+          <div className="col">
+            <select>
+              <option value="option3">{inst} </option>
             </select>
           </div>
         </div>
@@ -113,6 +134,68 @@ function EnrollementById() {
             </span>
           </div>
         </div>
+        <div className="row mb-5">
+          <div className="col d-flex justify-content-center">
+            <fieldset>
+              <legend>Academic career*</legend>
+
+              <label class="__lk-fileInput">
+                <span data-default="Choose file">
+                  {fileName || "Choose file"}
+                </span>
+                <input type="file" onChange={handleFileChange} />
+              </label>
+            </fieldset>
+          </div>
+          <div className="col d-flex justify-content-center">
+            <fieldset>
+              <legend>Degree obtained*</legend>
+
+              <label class="__lk-fileInput">
+                <span data-default="Choose file">Choose file</span>
+                <input type="file" />
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div className="row mb-5">
+          <div className="col d-flex justify-content-center">
+            <fieldset>
+              <legend>CV*</legend>
+
+              <label class="__lk-fileInput">
+                <span data-default="Choose file">
+                  {fileName || "Choose file"}
+                </span>
+                <input type="file" onChange={handleFileChange} />
+              </label>
+            </fieldset>
+          </div>
+          <div className="col d-flex justify-content-center">
+            <fieldset>
+              <legend>Copy of a valid identification document*</legend>
+
+              <label class="__lk-fileInput">
+                <span data-default="Choose file">Choose file</span>
+                <input type="file" />
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div className="row mb-5">
+          <div className="col-6 d-flex justify-content-center">
+            <fieldset>
+              <legend>Linguistic certification (if obtained)</legend>
+
+              <label class="__lk-fileInput">
+                <span data-default="Choose file">
+                  {fileName || "Choose file"}
+                </span>
+                <input type="file" onChange={handleFileChange} />
+              </label>
+            </fieldset>
+          </div>
+        </div>
         <h1 className="mt-5 mb-4">Additional Informations</h1>
         <div className="row mb-5">
           <div className="col">
@@ -161,6 +244,53 @@ function EnrollementById() {
                 name="address"
               />
             </span>
+          </div>
+        </div>
+        <div className="row mb-5">
+          <div className="col-6">
+            <span class="wpcf7-form-control-wrap" data-name="zip">
+              <input
+                size="40"
+                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Zip Code*"
+                type="text"
+                name="zip"
+              />
+            </span>
+          </div>
+        </div>
+        <h1 className="mt-5 mb-4">Privacy</h1>
+        <div className="row ">
+          <div className="col">
+            <label className="Check">
+              <input type="checkbox" />I hereby authorise the processing of my
+              personal data for purposes related to the performance of
+              institutional activities (Read more)
+            </label>
+          </div>
+        </div>
+        <div className="row ">
+          <div className="col">
+            <label className="Check">
+              <input type="checkbox" />
+              It is possible to exercise the right of withdrawal and receive a
+              refund of the fees paid within 7 days of registration
+            </label>
+          </div>
+        </div>
+        <div className="row ">
+          <div className="col">
+            <label className="Check">
+              <input type="checkbox" />I hereby authorise the processing of my
+              personal data for sending advertising material (Read more)
+            </label>
+          </div>
+        </div>
+        <div className="row mt-5 mb-5">
+          <div className="col">
+            <button>Confirm</button>
           </div>
         </div>
       </div>
