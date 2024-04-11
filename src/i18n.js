@@ -32,7 +32,7 @@ i18n
               courses: "Courses",
               eLearning: "eLearn",
               partners: "Our Partners",
-              research: "Ego Research",
+              research: "eGo Research",
               apply: "Apply",
               about: "About us",
             },

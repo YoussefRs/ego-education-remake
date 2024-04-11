@@ -61,8 +61,23 @@
       margin-bottom: 1.5rem;
     }
   }
+  & a {
+    color: black !important;
+  }
 }
 
+.course-logo-ctr {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 .course:hover {
   border: 1px solid #046635;
   cursor: pointer;

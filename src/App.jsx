@@ -12,6 +12,7 @@ import About from "./pages/about/About";
 import Elearning from "./pages/eLearning/Elearning";
 import Loading from "./globals/Loading/Loading";
 import EnrollementById from "./pages/enrollmentById/EnrollementById";
+import Enrollment from "./pages/enrollment/Enrollment";
 
 function Layout({ children }) {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -83,10 +84,18 @@ function App() {
             }
           />
           <Route
-            path="/enrollment/:id"
+            path="/apply/:id"
             element={
               <Layout>
                 <EnrollementById />
+              </Layout>
+            }
+          />
+          <Route
+            path="/apply"
+            element={
+              <Layout>
+                <Enrollment />
               </Layout>
             }
           />

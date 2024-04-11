@@ -27,11 +27,9 @@ nav a {
   padding: 0.8rem 0;
   color: #fff !important;
   margin: 0 1.5rem;
-  /* text-transform: capitalize; */
   font-weight: 400;
   position: relative;
   white-space: nowrap;
-  text-transform: capitalize;
 }
 
 nav .active {

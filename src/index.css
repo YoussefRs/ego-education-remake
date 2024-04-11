@@ -26,7 +26,7 @@ a {
   color: #fff !important;
   text-decoration: none !important;
   cursor: pointer;
-  width: max-content;
+  /* width: max-content; */
 }
 
 body {

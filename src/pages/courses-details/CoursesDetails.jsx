@@ -103,7 +103,7 @@ function CoursesDetails() {
                       <br />
                     </strong>
                     <p>{course?.slogan}</p>
-                    <Link to={`/course/${course?.id}/enrollment`}>Apply</Link>
+                    <Link to={`/course/${course?.id}/apply`}>Apply</Link>
                   </div>
                 </div>
               </div>
@@ -514,7 +514,7 @@ function CoursesDetails() {
                             </label>
                             <Link
                               className={`${isChecked ? "" : "entry_inactive"}`}
-                              to={`/enrollment/${course?.id}`}
+                              to={`/apply/${course?.id}`}
                               state={{
                                 course: course.name,
                                 degree: course.degree,

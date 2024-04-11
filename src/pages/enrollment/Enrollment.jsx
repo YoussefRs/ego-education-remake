@@ -1,16 +1,12 @@
 import React, { useState } from "react";
-import "./enrollementById.css";
 import SubHeader from "../../globals/SubHeader/SubHeader";
-import { useLocation } from "react-router-dom";
 
-function EnrollementById() {
-  const location = useLocation();
-  const { course, degree, inst } = location.state;
+function Enrollment() {
   const [formData, setFormData] = useState({
-    course: course,
-    lng: "english",
-    degree: degree,
-    inst: inst,
+    course: "",
+    lng: "",
+    degree: "",
+    inst: "",
     firstName: "",
     lastName: "",
     email: "",
@@ -31,7 +27,6 @@ function EnrollementById() {
     file4: null,
     file5: null,
   });
-  console.log(formData);
   // Function to handle form input changes
   const handleInputChange = (event) => {
     const { name, value, type, checked, files } = event.target;
@@ -49,22 +44,19 @@ function EnrollementById() {
     // Reset form after submission if needed
     // setFormData({...initialFormData});
   };
-
   return (
     <>
       <SubHeader
-        title={"Enrollment"}
-        path={[{ url: "/enrollment", label: "enrollment" }]}
-        current={`${course}`}
+        title={"Apply"}
+        path={[{ url: "/enrollment", label: "home" }]}
+        current={"Apply"}
       />
       <div className="container enrollment d-flex flex-column">
         <h1 className="mb-4">Enrollment Informations</h1>
         <div className="row mb-5">
           <div className="col">
             <select>
-              <option value="option1" onChange={handleInputChange}>
-                {course}{" "}
-              </option>
+              <option value="option1" onChange={handleInputChange}></option>
             </select>
           </div>
           <div className="col">
@@ -81,16 +73,12 @@ function EnrollementById() {
         <div className="row mb-5">
           <div className="col">
             <select>
-              <option value="option8" onChange={handleInputChange}>
-                {degree}{" "}
-              </option>
+              <option value="option8" onChange={handleInputChange}></option>
             </select>
           </div>
           <div className="col">
             <select>
-              <option value="option5" onChange={handleInputChange}>
-                {inst}{" "}
-              </option>
+              <option value="option5" onChange={handleInputChange}></option>
             </select>
           </div>
         </div>
@@ -368,4 +356,4 @@ function EnrollementById() {
   );
 }
 
-export default EnrollementById;
+export default Enrollment;

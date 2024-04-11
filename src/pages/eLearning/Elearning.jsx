@@ -13,16 +13,6 @@ function Elearning() {
       <div className="container">
         <div id="why-us" className="section">
           <div className="container ">
-            <h2 className="container-heading ">team</h2>
-            <h1 className="container-title ">
-              Answer You Need To <span style={{ color: "#046635" }}>Know</span>
-            </h1>
-            <p className="container-p ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-              dolor laudantium illo aliquam ducimus possimus rerum iure
-              provident. Eaque odit est sit aliquid quisquam dolor vitae laborum
-              accusamus sapiente debitis.
-            </p>
             <hr className="section-hr mt-5 mb-5" />
             <div className="row justify-content-between mt-5">
               <div className="col-md-6" id="content_">
