@@ -176,9 +176,41 @@
   }
   
 
-  /* *********************ENTY REQ**************** */
+  /* *********************ENTRY REQ**************** */
 
   .entry_inactive {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+
+  /********************** LECTURERS TAB ****************/
+  .lecturer-card {
+    width: 100%;
+    border-radius: 10px;
+    & img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+    & .lecturer-desc {
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #046635;
+      border-radius:  0 0 10px 10px;
+      & span {
+        font-size: clamp(1.25rem, 1.1944rem + 0.3067vw, 1.5625rem);
+        font-weight: 700;
+        color: #fff;
+        text-transform: capitalize;
+      }
+      & p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
   }

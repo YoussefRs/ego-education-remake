@@ -31,7 +31,7 @@ i18n
               home: "Home",
               courses: "Courses",
               eLearning: "eLearn",
-              partners: "Our Partners",
+              partners: "Partners",
               research: "eGo Research",
               apply: "Apply",
               about: "About us",
@@ -143,6 +143,29 @@ i18n
               title: "LECTURERS",
               subtitle: "Meet Our",
               specialWord: "Lecturers",
+              lecturers: [
+                {
+                  "name": "Antonio Minelli",
+                  "title": "Chief Technology Officer",
+                  "organization": "ETLForma",
+                  "description": "Antonio Minelli is the Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations. He has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia, and the Italian Ministry of the Environment. As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture."
+                  ,"img" : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg"
+                },
+                {
+                  "name": "Alessandro Iacuelli",
+                  "title": "Analyst and teacher",
+                  "organization": "ETLForma",
+                  "description": "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class."
+                  , img : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp"
+                },
+                {
+                  "name": "Manuele Monti",
+                  "title": "Founder and CEO",
+                  "organization": "TechBricks",
+                  "description": "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science. Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching."
+                  , img : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp"
+                }
+              ]
             },
             courseDetails: {
               coursesData: [
@@ -153,6 +176,12 @@ i18n
                   duration: "2 years",
                   location: "In Campus",
                   totalEtc: 90,
+                  lecturer : {
+                    name : "Antonio Minelli",
+                    speciality: "Chef Technology Officer",
+                    desc : "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment."
+                    , desc2 : "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture."
+                  },
                   cur: "2",
                   admission: {
                     desc: "Students are required to reach specific agreements with the host company and communicate the following data in writing to Ego Education to the mail: info@ego-education.com",
@@ -750,7 +779,7 @@ i18n
               title5: "Duration",
               tab2: "Entry Requirements",
               tab3: "Modules",
-              tab4: "Admission",
+              tab4: "Duration",
               tab5: "Lecturer",
             },
           },

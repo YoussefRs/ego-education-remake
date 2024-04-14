@@ -55,7 +55,7 @@ function Elearning() {
               </div>
 
               <div className="col-md-6">
-                <div id="content-text_">
+                <div id="content-text_" >
                   <h1>
                     <u>Collaborate </u>and Grow
                     <span> Together</span>

@@ -25,7 +25,7 @@ section.footer {
 }
 .footer-col .col-title h3 {
   font-size: 24px;
-  color: var(--light-heading-clr);
+  color: rgb(255, 210, 60);
 }
 .footer-col .col-contents {
   display: flex;

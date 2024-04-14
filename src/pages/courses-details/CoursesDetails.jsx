@@ -162,15 +162,15 @@ function CoursesDetails() {
                       </Link>
                     </li>
 
-                    {/* <li
+                    <li
                       className="nav-item"
                       onClick={() => {
-                        setActivePane("Admission");
+                        setActivePane("Duration");
                       }}
                     >
                       <Link
                         className={`nav-link ${
-                          activePane === "Admission" ? "active" : ""
+                          activePane === "Duration" ? "active" : ""
                         }`}
                       >
                         <svg
@@ -178,15 +178,15 @@ function CoursesDetails() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          className="bi bi-award"
+                          class="bi bi-clock"
                           viewBox="0 0 16 16"
                         >
-                          <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
-                          <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
                         </svg>
                         {tab4}
                       </Link>
-                    </li> */}
+                    </li>
                     <li
                       className="nav-item"
                       onClick={() => {
@@ -260,19 +260,9 @@ function CoursesDetails() {
                                 </strong>{" "}
                                 <em>{course?.startDate}</em>
                               </li>
-                              <li>
-                                <strong>
-                                  <FontAwesomeIcon
-                                    icon={faClock}
-                                    color="#046635"
-                                  />{" "}
-                                  {title5}:
-                                </strong>{" "}
-                                <em>{course?.duration}</em>
-                              </li>
                             </ul>
                           </div>
-                          <article className="welcome col-lg-8 col-md-7 col-12">
+                          <article className="welcome col-12">
                             <p className="mb-4">{course?.description}</p>
                             <h2 className="mb-4 fw-bold">{title1} </h2>
                             <ul className="custom-list-style mb-3">
@@ -301,7 +291,7 @@ function CoursesDetails() {
                       <h2 className="mb-4 fw-bold">Entry Requirements</h2>
                       <div className="tab row">
                         <div className="col">
-                          <article className="welcome col-lg-8 col-md-7 col-12">
+                          <article className="welcome col-12">
                             <h6 className="mb-3 fw-bold">
                               <FontAwesomeIcon
                                 icon={faListCheck}
@@ -572,14 +562,14 @@ function CoursesDetails() {
                         </main>
                       </div>
                     </div>
-                    {/* <div
+                    <div
                       className={`tab-pane ${
-                        activePane === "Admission" ? "active" : ""
+                        activePane === "Duration" ? "active" : ""
                       }`}
                       id="tab2"
                     >
-                      <h2 className="mb-4 fw-bold">Admission</h2>
-                      <div className="tab">
+                      <h2 className="mb-4 fw-bold">Duration</h2>
+                      {/* <div className="tab">
                         <main className="modules-container">
                           <h6 className="fw-bold mb-4">
                             {course?.admission?.desc}{" "}
@@ -598,8 +588,8 @@ function CoursesDetails() {
                             ))}
                           </ul>
                         </main>
-                      </div>
-                    </div> */}
+                      </div> */}
+                    </div>
                     <div
                       className={`tab-pane ${
                         activePane === "Lecturer" ? "active" : ""
@@ -608,7 +598,30 @@ function CoursesDetails() {
                     >
                       <h2 className="mb-4 fw-bold">Lecturer</h2>
                       <div className="tab">
-                        <main className="modules-container"></main>
+                        <main className="modules-container">
+                          <div className="row">
+                            <div className="col-sm-12 col-md-7">
+                              <p>
+                                {course?.lecturer?.desc}
+                                <br />
+                                <br />
+                                {course?.lecturer?.desc2}
+                              </p>
+                            </div>
+                            <div className="col-sm-12 col-md-5">
+                              <div className="lecturer-card">
+                                <img
+                                  src="https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg"
+                                  alt="lecturer"
+                                />
+                                <div className="lecturer-desc">
+                                  <span>{course?.lecturer?.name}</span>
+                                  <p>{course?.lecturer?.speciality} </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </main>
                       </div>
                     </div>
                   </div>
