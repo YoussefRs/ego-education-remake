@@ -4,6 +4,7 @@ import SubHeader from "../../globals/SubHeader/SubHeader";
 import PartnersSlider from "../../globals/Sliders/PartnersSlider";
 import CourseSlider from "../../globals/Sliders/CourseSlider";
 import { useTranslation } from "react-i18next";
+import girl from "../../assets/Home/Online-Education.png";
 
 function About() {
   const { t } = useTranslation();
@@ -60,11 +61,7 @@ function About() {
         <div className="container">
           <div className="row">
             <div className="col d-flex align-items-center">
-              <img
-                style={{ borderRadius: 10 }}
-                src="https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/02/Online-Education-Instagram-Story-680-x-1090-px.webp"
-                alt=""
-              />
+              <img style={{ borderRadius: 10 }} src={girl} alt="" />
             </div>
             <div className="col col d-flex align-items-start justify-content-center gap-5 text-left flex-column">
               <span class="wdt-heading-subtitle">OUR MISSION</span>
@@ -117,7 +114,7 @@ function About() {
           Our Lecturers
         </h2>
         <h1 className="container-title text-black fw-bold text-center mb-5">
-          Our Experienced 
+          Our Experienced
           <span style={{ color: "#046635" }}> Lecturers</span>
         </h1>
         <div className="container d-flex align-items-center justify-content-center">
