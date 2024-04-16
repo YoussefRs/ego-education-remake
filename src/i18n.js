@@ -145,27 +145,30 @@ i18n
               specialWord: "Lecturers",
               lecturers: [
                 {
-                  "name": "Antonio Minelli",
-                  "title": "Chief Technology Officer",
-                  "organization": "ETLForma",
-                  "description": "Antonio Minelli is the Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations. He has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia, and the Italian Ministry of the Environment. As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture."
-                  ,"img" : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg"
+                  name: "Antonio Minelli",
+                  title: "Chief Technology Officer",
+                  organization: "ETLForma",
+                  description:
+                    "Antonio Minelli is the Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations. He has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia, and the Italian Ministry of the Environment. As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture.",
+                  img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg",
                 },
                 {
-                  "name": "Alessandro Iacuelli",
-                  "title": "Analyst and teacher",
-                  "organization": "ETLForma",
-                  "description": "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class."
-                  , img : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp"
+                  name: "Alessandro Iacuelli",
+                  title: "Analyst and teacher",
+                  organization: "ETLForma",
+                  description:
+                    "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class.",
+                  img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp",
                 },
                 {
-                  "name": "Manuele Monti",
-                  "title": "Founder and CEO",
-                  "organization": "TechBricks",
-                  "description": "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science. Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching."
-                  , img : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp"
-                }
-              ]
+                  name: "Manuele Monti",
+                  title: "Founder and CEO",
+                  organization: "TechBricks",
+                  description:
+                    "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science. Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching.",
+                  img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp",
+                },
+              ],
             },
             courseDetails: {
               coursesData: [
@@ -176,11 +179,12 @@ i18n
                   duration: "2 years",
                   location: "In Campus",
                   totalEtc: 90,
-                  lecturer : {
-                    name : "Antonio Minelli",
+                  lecturer: {
+                    name: "Antonio Minelli",
                     speciality: "Chef Technology Officer",
-                    desc : "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment."
-                    , desc2 : "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture."
+                    desc: "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment.",
+                    desc2:
+                      "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture.",
                   },
                   cur: "2",
                   admission: {
@@ -810,6 +814,18 @@ i18n
           },
           courseTab: {
             tab: "Our Courses",
+          },
+          about: {
+            title: "ABOUTS US",
+            subtitle: "Remarkable Research & Outstanding Teaching",
+            specialWord: "Expertise",
+            egoWord: "eGO Education",
+            highlight:
+              "of highly professionalising education provided entirely online at an international level.",
+            s1: "was born with the motivation to enter the market of online education providers through an excellent training offer present in some residential universities, with all their limitation, but lacking or insufficient in the world of e-learning.",
+            s2: "is a project brand of the International E-Learning Institute (IELI) Ltd, an educational centre affiliated with Pegaso University the largest online university in Italy in terms of the number of students and turnover.",
+            s3 : "Since 2017, with more than 5,000 students enrolled overall through our network, IELI has guaranteed constant support to students during their training: from orientation to enrolment procedures, from technical support to study assistance.",
+            s4 : "is a new project that will extend the concept through a new Higher Education Institute based in Malta, focused on the provision."
           },
         },
       },
