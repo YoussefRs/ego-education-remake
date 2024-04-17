@@ -13,6 +13,8 @@ import InfoWidget from "../../globals/Widgets/InfoWidget";
 import ContactWidget from "../../globals/Widgets/ContactWidget";
 import CourseSliderDetails from "../../globals/Sliders/CourseSliderDetails";
 import { useTranslation } from "react-i18next";
+import Modal from "../../globals/Modal/Modal";
+import { useModal } from "../../globals/Modal/useModal";
 
 function extractIdFromPathname(pathname) {
   // Split the pathname by '/'
@@ -29,6 +31,7 @@ function CoursesDetails() {
   const courseId = extractIdFromPathname(location.pathname);
   const [course, setCourse] = useState(null);
   const [isChecked, setIsChecked] = useState(false);
+  const { showModal, openModal, closeModal } = useModal();
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -90,6 +93,12 @@ function CoursesDetails() {
         current={course?.name}
       />
 
+      <Modal
+        title="My Modal"
+        show={showModal}
+        onHide={closeModal}
+      ></Modal>
+
       <div className="content container mb-5">
         <div className="page-content mt-5">
           <div className="row page-row gap-4">
@@ -103,7 +112,7 @@ function CoursesDetails() {
                       <br />
                     </strong>
                     <p>{course?.slogan}</p>
-                    <Link to={`/course/${course?.id}/apply`}>Apply</Link>
+                    <Link onClick={openModal}>Apply</Link>
                   </div>
                 </div>
               </div>
@@ -504,7 +513,8 @@ function CoursesDetails() {
                             </label>
                             <Link
                               className={`${isChecked ? "" : "entry_inactive"}`}
-                              to={`/apply/${course?.id}`}
+                              // to={`/apply/${course?.id}`}
+                              onClick={openModal}
                               state={{
                                 course: course.name,
                                 degree: course.degree,

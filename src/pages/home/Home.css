@@ -329,7 +329,7 @@
 
 .swiper-slide-nocontent .slide-image {
   display: block;
-  object-fit: cover;
+  /* object-fit: cover; */
   height: 400px;
   position: relative;
   width: 100%;

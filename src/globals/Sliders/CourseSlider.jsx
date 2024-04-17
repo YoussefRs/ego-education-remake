@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import coursepic from "../../assets/Courses/New-blue-modern-website-programming-online-tutorials-youtube-thumbnail-1.jpg";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function CourseSlider() {
   const { t } = useTranslation();
   const { curriculum, readMore, courses } = t("home.courseSlider");
+  const [shuffledCourses, setShuffledCourses] = useState([]);
+
+  useEffect(() => {
+    // Shuffle the courses array
+    const shuffled = [...courses].sort(() => Math.random() - 0.5);
+    setShuffledCourses(shuffled);
+  }, []);
 
   const settings = {
     dots: true,
@@ -48,7 +56,7 @@ function CourseSlider() {
 
   return (
     <Slider {...settings} className="container">
-      {courses?.map((course, index) => (
+      {shuffledCourses?.map((course, index) => (
         <div className="swiper-slide" key={index}>
           <img src={course.imgSrc} className="slide-image" alt="" />
           <div className="container">
@@ -102,7 +110,9 @@ function CourseSlider() {
               </div>
               <hr />
               <div className="course_icon_btn mt-4 d-flex align-items-center justify-content-end">
-                <button>{readMore} </button>
+                <Link to={course.link}>
+                  <button>{readMore} </button>
+                </Link>
               </div>
             </div>
           </div>

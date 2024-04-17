@@ -27,7 +27,7 @@ function SideBar({ show, handleShow }) {
       className="side_menu"
       style={{ right: show ? 0 : "-400px" }}
     >
-      <div className="d-flex justify-content-between align-items-center w-100">
+      <div className="d-flex justify-content-end align-items-center w-100">
         <a
           className="close"
           onClick={() => {
@@ -36,9 +36,6 @@ function SideBar({ show, handleShow }) {
         >
           <FontAwesomeIcon icon={faTimes} />
         </a>
-        <strong className="fixed_flex logo">
-          <img src={Logo} alt="Summit" loading="lazy" />
-        </strong>
       </div>
       <br />
       <ul className="px-0">
@@ -50,97 +47,9 @@ function SideBar({ show, handleShow }) {
           <Link>Governance Structure</Link>
         </li>
         <li className="dropdown">
-          <a onClick={toggleDropdown}>
-            Policies
-            <FontAwesomeIcon
-              icon={faCaretRight}
-              style={{
-                marginLeft: 28,
-                marginTop: 5,
-                transform: dropdownVisible ? "rotate(90deg)" : "none",
-              }}
-            />
+          <a >
+            Policies & Privacy
           </a>
-          {dropdownVisible && (
-            <aside>
-              <a href="#" className="d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCircle}
-                  style={{ marginRight: 4, height: 5 }}
-                />
-                item 1
-              </a>
-              <a href="#" className="d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCircle}
-                  style={{ marginRight: 4, height: 5 }}
-                />
-                item 2
-              </a>
-            </aside>
-          )}
-        </li>
-        <li className="dropdown">
-          <a onClick={toggleDropdown1}>
-            Resources
-            <FontAwesomeIcon
-              icon={faCaretRight}
-              style={{
-                marginLeft: 8,
-                marginTop: 5,
-                transform: dropdownVisible1 ? "rotate(90deg)" : "none",
-              }}
-            />
-          </a>
-          {dropdownVisible1 && (
-            <aside>
-              <a href="#" className="d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCircle}
-                  style={{ marginRight: 4, height: 5 }}
-                />
-                item 1
-              </a>
-              <a href="#" className="d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCircle}
-                  style={{ marginRight: 4, height: 5 }}
-                />
-                item 2
-              </a>
-            </aside>
-          )}
-        </li>
-        <li className="dropdown">
-          <a onClick={toggleDropdown2}>
-            Admission
-            <FontAwesomeIcon
-              icon={faCaretRight}
-              style={{
-                marginLeft: 10,
-                marginTop: 5,
-                transform: dropdownVisible2 ? "rotate(90deg)" : "none",
-              }}
-            />
-          </a>
-          {dropdownVisible2 && (
-            <aside>
-              <a href="#" className="d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCircle}
-                  style={{ marginRight: 4, height: 5 }}
-                />
-                item 1
-              </a>
-              <a href="#" className="d-flex align-items-center">
-                <FontAwesomeIcon
-                  icon={faCircle}
-                  style={{ marginRight: 4, height: 5 }}
-                />
-                item 2
-              </a>
-            </aside>
-          )}
         </li>
         <li>
           <Link to={"/contact"}>Contact Us</Link>
