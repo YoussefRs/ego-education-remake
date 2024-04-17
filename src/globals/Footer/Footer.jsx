@@ -1,11 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCaretRight,
-  faMapMarkerAlt,
-  faPhone,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons"; // Import necessary icons
 import { Link } from "react-router-dom";
 import logo from "../../assets/Logos/logo-ego-white.png";
 import "./Footer.css";
@@ -21,11 +14,12 @@ const Footer = () => {
             </div>
             <div className="col-contents">
               <p>
-                <strong>eGO Education</strong> was born with the motivation to
-                enter the market of online education providers through an
-                excellent training offer present in some residential
-                universities, with all their limitation, but lacking or
-                insufficient in the world of e-learning.
+                <strong>eGO Education</strong> is a brand by the
+                International E-Learning Institute Ltd (IELI), a company
+                established in 2017 in Malta, by deed C83113.<br/> <br/> <strong>IELI</strong> has been
+                accredited by the Malta Further &amp; Higher Education Authority
+                (MFHEA) as a Higher Education Institute in 2023 with licence n.
+                2023-015.
               </p>
             </div>
           </div>

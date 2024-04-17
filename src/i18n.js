@@ -5,6 +5,11 @@ import MsvJava from "./assets/Courses/MSCJAVA.png";
 import MsvCS from "./assets/Courses/MSCINFORMATIONSECURITY.png";
 import BscBA from "./assets/Courses/BScinBusinessAdministration.png";
 import Civil from "./assets/Courses/BScinCivilEngineering.png";
+import Administration from "./assets/Home/banner/Administration.png"
+import JAVA from "./assets/Home/banner/JAVA.png"
+import Engineering from "./assets/Home/banner/Engineering.png"
+import SECURITY from "./assets/Home/banner/SECURITY.png"
+import INFORMATICS from "./assets/Home/banner/INFORMATICS.png"
 import {
   faLaptopCode,
   faPersonChalkboard,
@@ -212,7 +217,7 @@ i18n
                   media: {
                     type: "image",
                     source:
-                      "https://t4.ftcdn.net/jpg/06/87/83/03/360_F_687830359_0gDt5GdOpAE51LqpgxgrNGhlH9Jb2TBm.jpg",
+                    JAVA,
                   },
                   career: [
                     "Java Programmer",
@@ -358,7 +363,7 @@ i18n
                   media: {
                     type: "image",
                     source:
-                      "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                    SECURITY,
                   },
                   description:
                     "The aim of the course is to acquire critical and in deep knowledge and skills needed to define IT security strategy, to implement corporate asset protection programs, and to develop and implement processes about IT risks mitigation. Students will develop an advanced knowledge of information security and an awareness of the context in which information security operates in terms of safety, environmental, social, and economic aspects. They will also gain a wide range of intellectual, practical and transferable skills, enabling them to develop a flexible professional career in IT and IS.",
@@ -439,7 +444,7 @@ i18n
                   media: {
                     type: "image",
                     source:
-                      "https://losalamos.unm.edu/degrees-certificates/certificates/business-banner--website-1.png",
+                    Administration,
                   },
                   description:
                     "The 3-year Business Administration Degree Course offers students comprehensive training tailored to meet various business needs. Graduates acquire versatile skills that align well with workplace demands. The program covers diverse areas such as organizational management, finance, banking, and credit sectors. Students delve into key company functions like accounting, planning, legal, and tax activities, with a focus on small and medium-sized enterprises. They also have the option to specialize in corporate finance, financial markets, and the credit system. Career opportunities include administrative, financial, organizational, production, and marketing roles.",
@@ -594,7 +599,7 @@ i18n
                   media: {
                     type: "image",
                     source:
-                      "https://images.ctfassets.net/8bbwomjfix8m/3khjUHELqiZJVgdkpXSAZf/17faf9504845ad605296527fa90d8993/civil.jpg?fit=fill&w=1366&h=446&fm=jpg",
+                    Engineering,
                   },
                   description:
                     "The areas of interest related to this 3-year bachelor Degree course in Civil Engineering are: construction (civil and industrial buildings, remarkable construction projects such as bridges, dams, tunnels, etc.) and infrastructures (roads and transportation, supply, distribution and water supply systems, etc.). In this context, the Civil Engineer deals with the design and construction of works and handles with their operation, maintenance, detection and control. In recent years, with regard to the Civil Engineering sector, has been increasingly developing the demand for specialised professional profiles such as, for example, the environmental and land Engineer or the Construction Engineer, who are now provided with dedicated training offers. The study course in Civil Engineering finds its applicability in the continuous request of professional profiles with a solid and wide knowledge flexibility and updating skills, essential to face the diverse matters and the continuous development of technologies related to the world of buildings and civil infrastructures",
@@ -634,7 +639,7 @@ i18n
                   media: {
                     type: "image",
                     source:
-                      "https://uwm.edu/publichealth/wp-content/uploads/sites/571/2023/01/banner-certificate-health-care-informatics.jpg",
+                    INFORMATICS,
                   },
                   description:
                     "Master of Science in Informatics is a 1-year master’s programme for those who wish to continue studying Informatics after completion of a bachelor’s degree programme. With the growing application of new technologies in the majority of industrial and non-industrial sectors, it is also growing the need of highly specialised profiles.The Master of Science in Informaticstrains students for approaching latest and emerging technologies in related to computer science, by deepening their theoretical knowledge and sharpening their soft skills. The curriculum is structured to provide the acquisition of a diverse set of skills that are applicable to a wide range of company departments and sectors.",
