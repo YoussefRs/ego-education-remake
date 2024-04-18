@@ -497,7 +497,7 @@
 .partners-img-container .partners-img {
   height: 100%;
   width: 200%;
-  background: transparent url(../../assets/Home/partners.png) repeat-x 50% 0;
+  background: transparent url(../../assets/Home/logos.jpg) repeat-x 50% 0;
   -webkit-animation: slideleft 5000s linear infinite;
   animation: slideleft 5000s linear infinite;
   cursor: grab;
