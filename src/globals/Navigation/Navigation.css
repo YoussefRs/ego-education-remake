@@ -116,7 +116,7 @@ nav .ham:hover {
       color: white;
     }
     & a:hover {
-      color: var(--white);
+      color: #046635 !important;
     }
   }
   & ul:last-child li:not(:last-child) a:hover:before {
@@ -133,10 +133,19 @@ nav .ham:hover {
     padding: 0.5rem 1rem;
     z-index: 999;
   }
-  .nav_content {
+  .nav_content  {
     display: none;
   }
+  #_mobile-nav {
+    display: block !important;
+  }
 }
+
+#_mobile-nav {
+  display: none;
+}
+
+
 
 /* ************* LANGUAGE CSS **************** */
 

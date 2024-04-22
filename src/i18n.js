@@ -116,17 +116,17 @@ i18n
                   date: "25/10/24",
                   curriculum: 18,
                   featured: true,
-                  link: "/courses/gH5iJ6kL",
+                  link: "/courses/JZhfbff4",
                 },
                 {
                   title: "Civil Engineering",
                   description:
                     "Build the Future: Master the Science of Civil Engineering, Creating Sustainable Infrastructure for Generations.",
                   imgSrc: Civil,
-                  date: "25/10/24",
+                  date: "10/10/24",
                   curriculum: 18,
                   featured: true,
-                  link: "/courses/gH5iJ6kL",
+                  link: "/courses/ZZFfge4",
                 },
               ],
             },
@@ -200,6 +200,7 @@ i18n
                   totalEtc: 90,
                   lecturer: {
                     name: "Antonio Minelli",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg",
                     speciality: "Chef Technology Officer",
                     desc: "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment.",
                     desc2:
@@ -216,8 +217,7 @@ i18n
                   },
                   media: {
                     type: "image",
-                    source:
-                    JAVA,
+                    source: JAVA,
                   },
                   career: [
                     "Java Programmer",
@@ -351,6 +351,14 @@ i18n
                   duration: "2 years",
                   location: "Online",
                   totalModules: 7,
+                  lecturer: {
+                    name: "Alessandro Iacuelli",
+                    title: "Analyst and teacher",
+                    organization: "ETLForma",
+                    desc:
+                      "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp",
+                  },
                   career: [
                     "Information Security Manager",
                     "Information Security Officer",
@@ -362,8 +370,7 @@ i18n
                   ],
                   media: {
                     type: "image",
-                    source:
-                    SECURITY,
+                    source: SECURITY,
                   },
                   description:
                     "The aim of the course is to acquire critical and in deep knowledge and skills needed to define IT security strategy, to implement corporate asset protection programs, and to develop and implement processes about IT risks mitigation. Students will develop an advanced knowledge of information security and an awareness of the context in which information security operates in terms of safety, environmental, social, and economic aspects. They will also gain a wide range of intellectual, practical and transferable skills, enabling them to develop a flexible professional career in IT and IS.",
@@ -425,13 +432,22 @@ i18n
                   category: "computer sicence",
                 },
                 {
-                  id: "gH5iJ6kL",
+                  id: "JZhfbff4",
                   name: "Business Administration",
                   startDate: "15 Feb 2023",
                   category: "business & commerce",
                   duration: "3 years",
                   location: "Online",
                   totalModules: 18,
+                  lecturer: {
+                    name: "Manuele Monti",
+                    title: "Founder and CEO",
+                    organization: "TechBricks",
+                    desc:
+                      "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science.",
+                      desc2 : "Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp",
+                  },
                   admission: {
                     desc: "Students are required to reach specific agreements with the host company and communicate the following data in writing to Pegaso International to the mail: traineeship@pegasointernational.eu",
                     req: [
@@ -443,8 +459,7 @@ i18n
                   cur: "5",
                   media: {
                     type: "image",
-                    source:
-                    Administration,
+                    source: Administration,
                   },
                   description:
                     "The 3-year Business Administration Degree Course offers students comprehensive training tailored to meet various business needs. Graduates acquire versatile skills that align well with workplace demands. The program covers diverse areas such as organizational management, finance, banking, and credit sectors. Students delve into key company functions like accounting, planning, legal, and tax activities, with a focus on small and medium-sized enterprises. They also have the option to specialize in corporate finance, financial markets, and the credit system. Career opportunities include administrative, financial, organizational, production, and marketing roles.",
@@ -587,7 +602,7 @@ i18n
                   ],
                 },
                 {
-                  id: "gH5iJ6km",
+                  id: "ZZFfge4",
                   name: "Civil Engineering",
                   startDate: "18 Feb 2023",
                   duration: "3 years",
@@ -595,11 +610,18 @@ i18n
                   totalModules: 18,
                   category: "Constructions",
                   location: "Online",
+                  lecturer: {
+                    name: "Alessandro Iacuelli",
+                    title: "Analyst and teacher",
+                    organization: "ETLForma",
+                    desc:
+                      "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp",
+                  },
                   cur: "9",
                   media: {
                     type: "image",
-                    source:
-                    Engineering,
+                    source: Engineering,
                   },
                   description:
                     "The areas of interest related to this 3-year bachelor Degree course in Civil Engineering are: construction (civil and industrial buildings, remarkable construction projects such as bridges, dams, tunnels, etc.) and infrastructures (roads and transportation, supply, distribution and water supply systems, etc.). In this context, the Civil Engineer deals with the design and construction of works and handles with their operation, maintenance, detection and control. In recent years, with regard to the Civil Engineering sector, has been increasingly developing the demand for specialised professional profiles such as, for example, the environmental and land Engineer or the Construction Engineer, who are now provided with dedicated training offers. The study course in Civil Engineering finds its applicability in the continuous request of professional profiles with a solid and wide knowledge flexibility and updating skills, essential to face the diverse matters and the continuous development of technologies related to the world of buildings and civil infrastructures",
@@ -633,13 +655,20 @@ i18n
                   location: "Online",
                   category: "Computer Science",
                   totalModules: 11,
+                  lecturer: {
+                    name: "Antonio Minelli",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg",
+                    speciality: "Chef Technology Officer",
+                    desc: "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment.",
+                    desc2:
+                      "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture.",
+                  },
                   price: "3000",
                   totalEtc: 90,
                   cur: "4",
                   media: {
                     type: "image",
-                    source:
-                    INFORMATICS,
+                    source: INFORMATICS,
                   },
                   description:
                     "Master of Science in Informatics is a 1-year master’s programme for those who wish to continue studying Informatics after completion of a bachelor’s degree programme. With the growing application of new technologies in the majority of industrial and non-industrial sectors, it is also growing the need of highly specialised profiles.The Master of Science in Informaticstrains students for approaching latest and emerging technologies in related to computer science, by deepening their theoretical knowledge and sharpening their soft skills. The curriculum is structured to provide the acquisition of a diverse set of skills that are applicable to a wide range of company departments and sectors.",
@@ -741,6 +770,15 @@ i18n
                   category: "Sports",
                   totalModules: 26,
                   price: "3000",
+                  lecturer: {
+                    name: "Manuele Monti",
+                    title: "Founder and CEO",
+                    organization: "TechBricks",
+                    desc:
+                      "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science.",
+                      desc2 : "Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp",
+                  },
                   totalEtc: 185,
                   media: {
                     type: "image",
@@ -931,6 +969,15 @@ i18n
                   startDate: "18 Oct 2023",
                   duration: "1 year",
                   location: "Online",
+                  lecturer: {
+                    name: "Manuele Monti",
+                    title: "Founder and CEO",
+                    organization: "TechBricks",
+                    desc:
+                      "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science.",
+                      desc2 : "Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp",
+                  },
                   career: [
                     "Educational Consultant",
                     "Educational Mentor",
@@ -1058,6 +1105,14 @@ i18n
                   location: "Online",
                   category: "Science",
                   totalModules: 26,
+                  lecturer: {
+                    name: "Antonio Minelli",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg",
+                    speciality: "Chef Technology Officer",
+                    desc: "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment.",
+                    desc2:
+                      "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture.",
+                  },
                   price: "3000",
                   totalEtc: 185,
                   media: {

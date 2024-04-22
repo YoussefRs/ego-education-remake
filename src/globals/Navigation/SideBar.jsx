@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logos/logo-ego-white-2.png";
 
 function SideBar({ show, handleShow }) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -38,6 +35,50 @@ function SideBar({ show, handleShow }) {
         </a>
       </div>
       <br />
+      
+      <ul className="px-0" id="_mobile-nav">
+        <li>
+        <a href="/">
+          Home
+          </a>
+        </li>
+
+        <li>
+        <a href="/courses">
+          Courses
+          </a>
+        </li>
+        <li className="dropdown">
+          <a href="/elearn">
+            eLearn
+          </a>
+        </li>
+        <li>
+        <a href="/partners">
+          Partners
+          </a>
+        </li>
+        <li>
+        <a href="/research">
+          eGO Research
+          </a>
+        </li>
+        <li>
+        <a href="/apply">
+          Apply
+          </a>
+        </li>
+        <li>
+        <a href="/about">
+          About Us
+          </a>
+        </li>
+        {/* <li className="fixed_flex">
+        <Link className="_btn btn_1 chat_popup">SignUp/LogIn</Link>
+        <Link className="_btn btn_2 chat_popup">Admission</Link>
+      </li> */}
+      </ul>
+
       <ul className="px-0">
         <li>
           <Link>Events</Link>
@@ -59,6 +100,7 @@ function SideBar({ show, handleShow }) {
         <Link className="_btn btn_2 chat_popup">Admission</Link>
       </li> */}
       </ul>
+
     </menu>
   );
 }
