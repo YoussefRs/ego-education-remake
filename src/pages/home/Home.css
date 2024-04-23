@@ -314,6 +314,7 @@
 
 .swiper-slide,
 .swiper-slide-nocontent {
+  cursor: grab;
   overflow: hidden;
   position: relative;
   border-radius: 20px;

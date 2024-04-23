@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   color: #22281e !important;
-  font-size: 16px;
+  font-size: clamp(12px, 1vw, 16px);
   font-weight: 600;
   margin: 0;
   padding: 0 20px;
@@ -73,9 +73,10 @@
   align-items: center;
   justify-content: center;
   & img {
-    width: 100%;
-    height: 100%;
+    width: clamp(70%, 3vw, 100%);
+    height: clamp(70%, 3vw, 100%);
     object-fit: cover;
+   
   }
 }
 .course:hover {

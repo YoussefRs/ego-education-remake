@@ -57,9 +57,9 @@ function CourseSlider() {
   return (
     <Slider {...settings} className="container">
       {shuffledCourses?.map((course, index) => (
-        <Link to={course.link}>
-          <div className="swiper-slide" key={index}>
+        <div className="swiper-slide" key={index}>
             <img src={course.imgSrc} className="slide-image" alt="" />
+            <Link to={course.link}>
             <div className="container">
               <div className="slide-content w-100">
                 <div className="course_icon_ d-flex align-items-center gap-5 mb-4">
@@ -115,8 +115,8 @@ function CourseSlider() {
                 </div>
               </div>
             </div>
-          </div>
         </Link>
+          </div>
       ))}
     </Slider>
   );
