@@ -13,6 +13,8 @@ import Elearning from "./pages/eLearning/Elearning";
 import Loading from "./globals/Loading/Loading";
 import EnrollementById from "./pages/enrollmentById/EnrollementById";
 import Enrollment from "./pages/enrollment/Enrollment";
+import Research from "./pages/reseach/Research";
+import Partners from "./pages/partners/Partners";
 
 function Layout({ children }) {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -92,7 +94,27 @@ function App() {
             }
           />
           <Route
+            path="/research"
+            element={
+              <Research />
+            }
+          />
+          <Route
+            path="/partners"
+            element={
+              <Partners />
+            }
+          />
+          <Route
             path="/apply"
+            element={
+              <Layout>
+                <Enrollment />
+              </Layout>
+            }
+          />
+          <Route
+            path="/events"
             element={
               <Layout>
                 <Enrollment />

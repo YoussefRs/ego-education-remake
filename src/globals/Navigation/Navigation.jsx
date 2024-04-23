@@ -11,7 +11,7 @@ function Navigation({ show }) {
     { key: "home", link: "/" },
     { key: "courses", link: "/courses" },
     { key: "eLearning", link: "/elearn" },
-    { key: "partners", link: "#" },
+    { key: "partners", link: "/partners" },
     { key: "research", link: "/research" },
     { key: "apply", link: "/apply" },
     { key: "about", link: "/about" },

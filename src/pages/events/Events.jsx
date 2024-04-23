@@ -1,11 +1,10 @@
 import React from 'react'
-import "./Partners.css"
 import Research from '../reseach/Research'
 
-function Partners() {
+function Events() {
   return (
     <Research />
   )
 }
 
-export default Partners
+export default Events
