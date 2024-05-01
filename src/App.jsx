@@ -93,16 +93,13 @@ function App() {
               </Layout>
             }
           />
-          <Route
-            path="/research"
-            element={
-              <Research />
-            }
-          />
+          <Route path="/research" element={<Research />} />
           <Route
             path="/partners"
             element={
-              <Partners />
+              <Layout>
+                <Partners />
+              </Layout>
             }
           />
           <Route

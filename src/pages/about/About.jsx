@@ -4,13 +4,6 @@ import SubHeader from "../../globals/SubHeader/SubHeader";
 import PartnersSlider from "../../globals/Sliders/PartnersSlider";
 import CourseSlider from "../../globals/Sliders/CourseSlider";
 import { useTranslation } from "react-i18next";
-import girl from "../../assets/Home/Online-Education.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faComments,
-  faFlask,
-  faUsers,
-} from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

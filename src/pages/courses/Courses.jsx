@@ -156,7 +156,7 @@ function Courses() {
                     </div>
                   </div>
 
-                  <div className="row course-list">
+                  {/* <div className="row course-list">
                     <p
                       className="col-12 fw-bold h4 mt-3"
                       style={{ color: "#046635" }}
@@ -193,7 +193,7 @@ function Courses() {
                           </div>
                         ))}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div
                   className={`tab-pane ${

@@ -1,0 +1,22 @@
+.partners {
+    & span {
+        font-weight: 700;
+        font-size: clamp(20px, 5vw, 22px);
+    }
+    & a {
+        color: #046635 !important;
+        font-weight: 600;
+    }
+    & p {
+        
+    }
+}
+.partners-row {
+    max-height: 100%;
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 20px;
+    }
+}
