@@ -29,7 +29,7 @@ function Courses() {
       />
       <div className="container mt-5 mb-5">
         <div className="row page-row">
-          <div className="courses-wrapper col-lg-8 col-md-8 col-12">
+          <div className="courses-wrapper col-lg-8 col-md-12 col-12">
             <div className="featured-courses tabbed-info page-row">
               <ul className="nav nav-tabss">
                 <li
@@ -156,7 +156,7 @@ function Courses() {
                     </div>
                   </div>
 
-                  <div className="row course-list">
+                  {/* <div className="row course-list">
                     <p
                       className="col-12 fw-bold h4 mt-3"
                       style={{ color: "#046635" }}
@@ -193,7 +193,7 @@ function Courses() {
                           </div>
                         ))}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div
                   className={`tab-pane ${
@@ -244,7 +244,7 @@ function Courses() {
               </div>
             </div>
           </div>
-          <div className="page-sidebar  col-lg-3 offset-lg-1 col-md-3 offset-md-1">
+          <div className="page-sidebar  col-lg-4 col-md-12">
             <div className="right_box mb-5">
               <div className="p-4">
                 <ApplyWidget />

@@ -1,7 +1,15 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import i18nextBrowserLanguagedetector from "i18next-browser-languagedetector";
-import coursePic from "./assets/Courses/New-blue-modern-website-programming-online-tutorials-youtube-thumbnail-1.jpg";
+import MsvJava from "./assets/Courses/MSCJAVA.png";
+import MsvCS from "./assets/Courses/MSCINFORMATIONSECURITY.png";
+import BscBA from "./assets/Courses/BScinBusinessAdministration.png";
+import Civil from "./assets/Courses/BScinCivilEngineering.png";
+import Administration from "./assets/Home/banner/Administration.png"
+import JAVA from "./assets/Home/banner/JAVA.png"
+import Engineering from "./assets/Home/banner/Engineering.png"
+import SECURITY from "./assets/Home/banner/SECURITY.png"
+import INFORMATICS from "./assets/Home/banner/INFORMATICS.png"
 import {
   faLaptopCode,
   faPersonChalkboard,
@@ -86,28 +94,39 @@ i18n
                   title: "Master of Science in Java Programming",
                   description:
                     "Master the Art of Software Development with our Comprehensive Java Programming Master's Program.",
-                  imgSrc: coursePic,
+                  imgSrc: MsvJava,
                   date: "12/08/24",
-                  curriculum: 3,
+                  curriculum: 7,
+                  link: "/courses/aB3cD4eF",
                 },
                 {
                   title: "Master of Science in Information Security",
                   description:
                     "Secure Your Future with Expertise: Master the Science of Information Security, Safeguarding Tomorrow's Digital Landscape.",
-                  imgSrc:
-                    "https://www.ipsr.org/uploads/2024/01/cybersecurity-thumb-copy-1.jpg",
+                  imgSrc: MsvCS,
                   date: "12/09/24",
                   curriculum: 8,
+                  link: "/courses/tU1vW2xY",
                 },
                 {
                   title: "Business Administration",
                   description:
                     "Lead with Knowledge: Master the Science of Business Administration, Shaping Tomorrow's Business Landscape.",
-                  imgSrc:
-                    "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2022/11/New-Green-Modern-Business-YouTube-Thumbnail-1.webp",
+                  imgSrc: BscBA,
                   date: "25/10/24",
-                  curriculum: 2,
+                  curriculum: 18,
                   featured: true,
+                  link: "/courses/JZhfbff4",
+                },
+                {
+                  title: "Civil Engineering",
+                  description:
+                    "Build the Future: Master the Science of Civil Engineering, Creating Sustainable Infrastructure for Generations.",
+                  imgSrc: Civil,
+                  date: "10/10/24",
+                  curriculum: 18,
+                  featured: true,
+                  link: "/courses/ZZFfge4",
                 },
               ],
             },
@@ -145,27 +164,30 @@ i18n
               specialWord: "Lecturers",
               lecturers: [
                 {
-                  "name": "Antonio Minelli",
-                  "title": "Chief Technology Officer",
-                  "organization": "ETLForma",
-                  "description": "Antonio Minelli is the Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations. He has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia, and the Italian Ministry of the Environment. As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture."
-                  ,"img" : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg"
+                  name: "Antonio Minelli",
+                  title: "Chief Technology Officer",
+                  organization: "ETLForma",
+                  description:
+                    "Antonio Minelli is the Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations. He has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia, and the Italian Ministry of the Environment. As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture.",
+                  img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg",
                 },
                 {
-                  "name": "Alessandro Iacuelli",
-                  "title": "Analyst and teacher",
-                  "organization": "ETLForma",
-                  "description": "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class."
-                  , img : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp"
+                  name: "Alessandro Iacuelli",
+                  title: "Analyst and teacher",
+                  organization: "ETLForma",
+                  description:
+                    "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class.",
+                  img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp",
                 },
                 {
-                  "name": "Manuele Monti",
-                  "title": "Founder and CEO",
-                  "organization": "TechBricks",
-                  "description": "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science. Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching."
-                  , img : "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp"
-                }
-              ]
+                  name: "Manuele Monti",
+                  title: "Founder and CEO",
+                  organization: "TechBricks",
+                  description:
+                    "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science. Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching.",
+                  img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp",
+                },
+              ],
             },
             courseDetails: {
               coursesData: [
@@ -176,11 +198,13 @@ i18n
                   duration: "2 years",
                   location: "In Campus",
                   totalEtc: 90,
-                  lecturer : {
-                    name : "Antonio Minelli",
+                  lecturer: {
+                    name: "Antonio Minelli",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg",
                     speciality: "Chef Technology Officer",
-                    desc : "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment."
-                    , desc2 : "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture."
+                    desc: "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment.",
+                    desc2:
+                      "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture.",
                   },
                   cur: "2",
                   admission: {
@@ -193,8 +217,7 @@ i18n
                   },
                   media: {
                     type: "image",
-                    source:
-                      "https://t4.ftcdn.net/jpg/06/87/83/03/360_F_687830359_0gDt5GdOpAE51LqpgxgrNGhlH9Jb2TBm.jpg",
+                    source: JAVA,
                   },
                   career: [
                     "Java Programmer",
@@ -328,6 +351,14 @@ i18n
                   duration: "2 years",
                   location: "Online",
                   totalModules: 7,
+                  lecturer: {
+                    name: "Alessandro Iacuelli",
+                    title: "Analyst and teacher",
+                    organization: "ETLForma",
+                    desc:
+                      "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp",
+                  },
                   career: [
                     "Information Security Manager",
                     "Information Security Officer",
@@ -339,8 +370,7 @@ i18n
                   ],
                   media: {
                     type: "image",
-                    source:
-                      "https://www.tees.ac.uk/Images/CommonImages/prospectus/PG/course_images/Cybersecurity.jpg",
+                    source: SECURITY,
                   },
                   description:
                     "The aim of the course is to acquire critical and in deep knowledge and skills needed to define IT security strategy, to implement corporate asset protection programs, and to develop and implement processes about IT risks mitigation. Students will develop an advanced knowledge of information security and an awareness of the context in which information security operates in terms of safety, environmental, social, and economic aspects. They will also gain a wide range of intellectual, practical and transferable skills, enabling them to develop a flexible professional career in IT and IS.",
@@ -402,13 +432,22 @@ i18n
                   category: "computer sicence",
                 },
                 {
-                  id: "gH5iJ6kL",
+                  id: "JZhfbff4",
                   name: "Business Administration",
                   startDate: "15 Feb 2023",
                   category: "business & commerce",
                   duration: "3 years",
                   location: "Online",
                   totalModules: 18,
+                  lecturer: {
+                    name: "Manuele Monti",
+                    title: "Founder and CEO",
+                    organization: "TechBricks",
+                    desc:
+                      "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science.",
+                      desc2 : "Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp",
+                  },
                   admission: {
                     desc: "Students are required to reach specific agreements with the host company and communicate the following data in writing to Pegaso International to the mail: traineeship@pegasointernational.eu",
                     req: [
@@ -420,8 +459,7 @@ i18n
                   cur: "5",
                   media: {
                     type: "image",
-                    source:
-                      "https://losalamos.unm.edu/degrees-certificates/certificates/business-banner--website-1.png",
+                    source: Administration,
                   },
                   description:
                     "The 3-year Business Administration Degree Course offers students comprehensive training tailored to meet various business needs. Graduates acquire versatile skills that align well with workplace demands. The program covers diverse areas such as organizational management, finance, banking, and credit sectors. Students delve into key company functions like accounting, planning, legal, and tax activities, with a focus on small and medium-sized enterprises. They also have the option to specialize in corporate finance, financial markets, and the credit system. Career opportunities include administrative, financial, organizational, production, and marketing roles.",
@@ -564,7 +602,7 @@ i18n
                   ],
                 },
                 {
-                  id: "gH5iJ6km",
+                  id: "ZZFfge4",
                   name: "Civil Engineering",
                   startDate: "18 Feb 2023",
                   duration: "3 years",
@@ -572,11 +610,18 @@ i18n
                   totalModules: 18,
                   category: "Constructions",
                   location: "Online",
+                  lecturer: {
+                    name: "Alessandro Iacuelli",
+                    title: "Analyst and teacher",
+                    organization: "ETLForma",
+                    desc:
+                      "Alessandro Iacuelli is an Analyst and teacher at ETLForma, where he shares his expertise gained from working with companies such as Thales Alenia Space, a global leader in the space industry and second industrial partner in the International Space Station. Alessandro also conducted research as a data scientist with the Italian National Research Council, studying algorithms using artificial intelligence. His passion for solving complex problems inspires every class.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-8.webp",
+                  },
                   cur: "9",
                   media: {
                     type: "image",
-                    source:
-                      "https://images.ctfassets.net/8bbwomjfix8m/3khjUHELqiZJVgdkpXSAZf/17faf9504845ad605296527fa90d8993/civil.jpg?fit=fill&w=1366&h=446&fm=jpg",
+                    source: Engineering,
                   },
                   description:
                     "The areas of interest related to this 3-year bachelor Degree course in Civil Engineering are: construction (civil and industrial buildings, remarkable construction projects such as bridges, dams, tunnels, etc.) and infrastructures (roads and transportation, supply, distribution and water supply systems, etc.). In this context, the Civil Engineer deals with the design and construction of works and handles with their operation, maintenance, detection and control. In recent years, with regard to the Civil Engineering sector, has been increasingly developing the demand for specialised professional profiles such as, for example, the environmental and land Engineer or the Construction Engineer, who are now provided with dedicated training offers. The study course in Civil Engineering finds its applicability in the continuous request of professional profiles with a solid and wide knowledge flexibility and updating skills, essential to face the diverse matters and the continuous development of technologies related to the world of buildings and civil infrastructures",
@@ -610,13 +655,20 @@ i18n
                   location: "Online",
                   category: "Computer Science",
                   totalModules: 11,
+                  lecturer: {
+                    name: "Antonio Minelli",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg",
+                    speciality: "Chef Technology Officer",
+                    desc: "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment.",
+                    desc2:
+                      "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture.",
+                  },
                   price: "3000",
                   totalEtc: 90,
                   cur: "4",
                   media: {
                     type: "image",
-                    source:
-                      "https://uwm.edu/publichealth/wp-content/uploads/sites/571/2023/01/banner-certificate-health-care-informatics.jpg",
+                    source: INFORMATICS,
                   },
                   description:
                     "Master of Science in Informatics is a 1-year master’s programme for those who wish to continue studying Informatics after completion of a bachelor’s degree programme. With the growing application of new technologies in the majority of industrial and non-industrial sectors, it is also growing the need of highly specialised profiles.The Master of Science in Informaticstrains students for approaching latest and emerging technologies in related to computer science, by deepening their theoretical knowledge and sharpening their soft skills. The curriculum is structured to provide the acquisition of a diverse set of skills that are applicable to a wide range of company departments and sectors.",
@@ -715,19 +767,201 @@ i18n
                   startDate: "12 Aug 2023",
                   duration: "3 years",
                   location: "Online",
+                  category: "Sports",
+                  totalModules: 26,
+                  price: "3000",
+                  lecturer: {
+                    name: "Manuele Monti",
+                    title: "Founder and CEO",
+                    organization: "TechBricks",
+                    desc:
+                      "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science.",
+                      desc2 : "Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp",
+                  },
+                  totalEtc: 185,
                   media: {
                     type: "image",
                     source:
                       "https://www.gicafd.ua.es/imageresizer.php?src=https://www.gicafd.ua.es/plantillas/gicafd/imagen/carousel/dp131956166.jpg&w=1024&h=512&mode=stretch",
                   },
                   description:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum pellentesque urna. Phasellus adipiscing et massa et aliquam. Ut odio magna, interdum quis dolor non, tristique vestibulum nisi. Nam accumsan convallis venenatis. Nullam posuere risus odio, in interdum felis venenatis sagittis. Integer malesuada porta fermentum. Sed luctus nibh sed mi auctor imperdiet. Cras et sapien rhoncus, pulvinar dolor sed, tincidunt massa. Nullam fringilla mauris non risus ultricies viverra. Donec a turpis non lorem pulvinar posuere.",
+                    "The 3-year Degree Course in Sport Sciences aims to provide students with knowledge and skills suitable for managing, performing and assessing sport individual and group activities of a compensatory, adapted, educational, recreational and playful nature. The course programme provides a first academic year aimed at the acquisition of anatomical, biochemical and physiological knowledge needed to understand how basically the human body in motion works. The second academic year is, instead, focused on the teaching of motor and sports activities, as well as the knowledge of sport sciences and its connections with health. The activities of the third academic year are aimed at understanding theoretical and practical aspects of sport training, as well as the functional and nutritional assessment of the athlete and the subject trained, or of the leisure-time motor and sport activities , the environmental quality and safety in sports facilities, of orthopedics and traumatology of sport and movement, and all the legal and economic foundations of the structure and sports organisations.",
                   slogan:
                     "Pushing Boundaries, Achieving Excellence: The Science of Sports Mastery.",
+                  career: [
+                    "Trainers of non-competitive sport disciplines.",
+                    " Organizers of events and sports facilities",
+                    "Sports observers",
+                    "Sport coaches and technicians",
+                    "Personal and team trainer",
+                    "Operator in sports communication and information management",
+                  ],
                   thumb:
                     "https://acpe.edu.au/uploads/2023/05/ACPE-Careers-in-Sport-thumbnail.jpg",
                   degree: "Bachelor Degree",
                   institute: "Pegaso",
+                  modules: [
+                    {
+                      title: "Human Anatomy",
+                      description:
+                        "Human anatomy in sports science refers to the study of the structure and organization of the human body as it relates to physical activity, exercise, and sports performance. It encompasses understanding the bones, muscles, joints, organs, and systems of the body, and how they function during movement and athletic activities.",
+                      ects: 10,
+                    },
+                    {
+                      title: "Promotion of Physical Activity",
+                      description:
+                        "Promotion of physical activity involves encouraging individuals, communities, and societies to adopt and maintain active lifestyles for improved health and well-being.",
+                      ects: 10,
+                    },
+                    {
+                      title: "Economics and Management of Sport Enterprises",
+                      description:
+                        "The economics and management of sport enterprises encompass the principles, strategies, and practices involved in running sports-related businesses and organizations. ",
+                      ects: 6,
+                    },
+                    {
+                      title:
+                        "Methodologies and technologies for the didactic and sporting research",
+                      description:
+                        "Methodologies and technologies for didactic and sporting research encompass a wide range of approaches and tools used to investigate and enhance various aspects of sports education, training, performance, and development.",
+                      ects: 6,
+                    },
+                    {
+                      title: "Training Theories and Methodologies",
+                      description:
+                        "Training theories and methodologies in sports science encompass a diverse range of approaches and principles aimed at optimizing athletic performance, enhancing physical fitness, and promoting skill development.",
+                      ects: 6,
+                    },
+                    {
+                      title: "General and applied hygiene",
+                      description:
+                        "General and applied hygiene encompasses principles and practices aimed at promoting health, preventing disease transmission, and maintaining optimal hygiene standards in various settings, including homes, workplaces, schools, healthcare facilities, and community settings.",
+                      ects: 5,
+                    },
+                    {
+                      title: "General and Sports Sociology",
+                      description:
+                        "General sociology and sports sociology are two interconnected fields that examine social phenomena, structures, and interactions within society.",
+                      ects: 6,
+                    },
+                    {
+                      title: "English Language",
+                      description:
+                        "English Language is a global lingua franca spoken by millions of people around the world, serving as a primary or secondary language in many countries.",
+                      ects: 3,
+                    },
+                    {
+                      title: "Computer Skills",
+                      description:
+                        "Computer skills encompass a broad range of abilities and competencies related to using computers effectively for various purposes.",
+                      ects: 3,
+                    },
+                    {
+                      title: "Introduction to Sports Psychology",
+                      description:
+                        "Sports psychology is a field that explores how psychological factors influence sports performance, exercise, and physical activity. It examines the mental processes and behaviors of athletes and individuals engaged in physical activities, aiming to enhance performance, motivation, and overall well-being. ",
+                      ects: 5,
+                    },
+                    {
+                      title: "Physiology of Human Movement",
+                      description:
+                        "The physiology of human movement is a multidisciplinary field that explores the biological mechanisms underlying human motion and physical activity. It encompasses various aspects of anatomy, biomechanics, neuroscience, and exercise physiology to understand how the body functions during movement.",
+                      ects: 9,
+                    },
+                    {
+                      title: "Body and Sports Pedagogy",
+                      description:
+                        "Body and sports pedagogy is a field of study that focuses on the educational aspects of physical activity, sports, and movement. It encompasses the theories, methods, and practices used to teach and facilitate learning in physical education settings, sports coaching, and recreational sports programs. ",
+                      ects: 6,
+                    },
+                    {
+                      title: "Industrial Medicine",
+                      description:
+                        "Industrial medicine, also known as occupational medicine, is a branch of medicine that focuses on the health and safety of workers in the workplace. It involves the prevention, diagnosis, and treatment of work-related injuries, illnesses, and health hazards.",
+                      ects: 9,
+                    },
+                    {
+                      title:
+                        "Methods and didactics of individual and team sports",
+                      description:
+                        "This area focuses on the instructional strategies and techniques used in teaching individual and team sports. It includes planning and organizing training sessions, developing skill progressions, designing drills and exercises, and employing teaching methods that cater to the specific needs and abilities of athletes. ",
+                      ects: 5,
+                    },
+                    {
+                      title: "Biomechanical Basis of Human Movements",
+                      description:
+                        "Biomechanics is the study of the mechanical principles governing human movement. This field examines the forces, motions, and interactions within the body and between the body and its external environment during physical activities. Understanding biomechanical principles is crucial for optimizing athletic performance, preventing injuries, and designing equipment and training programs tailored to individual athletes.",
+                      ects: 12,
+                    },
+                    {
+                      title: "Advanced Sports Psychology",
+                      description:
+                        "Advanced sports psychology delves into the psychological factors that impact athletes' performance, motivation, and well-being at an advanced level. It explores topics such as goal setting, mental imagery, self-confidence, concentration, arousal regulation, resilience, and psychological skills training.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Applied dietary technical sciences",
+                      description:
+                        "This area involves the practical application of scientific knowledge in nutrition and dietetics to optimize athletic performance, promote health, and support specific training goals. It encompasses meal planning, nutrient analysis, dietary counseling, supplementation strategies, and the integration of nutritional principles into sports training and recovery protocols.",
+                      ects: 9,
+                    },
+                    {
+                      title:
+                        "Internships in Companies, Public or Private Bodies, Professional Orders",
+                      description:
+                        "Internships provide students with hands-on experience in real-world settings related to their field of study. These placements may occur in various organizations, including sports companies, government agencies, healthcare institutions, professional associations, and regulatory bodies.",
+                      ects: 5,
+                    },
+                    {
+                      title:
+                        "Didactics, Sports Activities, and Functional Re-education",
+                      description:
+                        "This aspect focuses on teaching methodologies, instructional techniques, and educational strategies employed in sports and functional rehabilitation settings. It covers the planning, delivery, and evaluation of educational programs designed to enhance physical activity, movement proficiency, and functional performance for individuals of all ages and abilities.",
+                      ects: 10,
+                    },
+                    {
+                      title: "Methodology of Sports Evaluation",
+                      description:
+                        "The methodology of sports evaluation involves the systematic assessment of athletic performance, physical fitness, skill acquisition, and training outcomes. It includes the selection and use of appropriate evaluation methods, such as performance tests, biomechanical analysis, physiological measurements, and qualitative observation, to gather data and inform decision-making in sports coaching, talent identification, and program development.",
+                      ects: 6,
+                    },
+                    {
+                      title: "Community Law",
+                      description:
+                        "Community law refers to the legal framework established by supranational entities such as the European Union (EU). In the context of sports science, it may encompass regulations, directives, and policies governing various aspects of sports participation, governance, funding, and administration within EU member states. Understanding community law is essential for ensuring compliance, promoting fairness, and addressing legal issues in sports-related activities and organizations.",
+                      ects: 6,
+                    },
+                    {
+                      title: "Methods and didactics of motor activity",
+                      description:
+                        "This field explores the principles and practices of teaching and learning motor skills across different populations and settings. It includes the design and implementation of motor learning programs, movement analysis, feedback techniques, skill progression strategies, and pedagogical approaches aimed at optimizing motor performance, physical development, and participation in physical activity.",
+                      ects: 7,
+                    },
+                    {
+                      title: "Second Language",
+                      description:
+                        "Proficiency in a second language is valuable for sports science professionals working in multicultural environments or collaborating with international colleagues, athletes, and organizations. ",
+                      ects: 3,
+                    },
+                    {
+                      title: "Applied Sports Psychology",
+                      description:
+                        "Applied sports psychology involves the practical application of psychological principles and techniques to enhance athletic performance, mental well-being, and overall resilience. It encompasses interventions such as goal setting, imagery, self-talk, relaxation techniques, coping strategies, and team cohesion exercises tailored to the unique needs and challenges of athletes, coaches, and sports teams.",
+                      ects: 5,
+                    },
+                    {
+                      title: "Internship",
+                      description:
+                        "An internship provides students with supervised practical training and professional experience in a specific area of sports science or related field. It allows students to apply theoretical knowledge in real-world contexts, gain practical skills, explore career paths, and establish professional connections.",
+                      ects: 13,
+                    },
+                    {
+                      title: "Final Dissertation",
+                      description: "",
+                      ects: 10,
+                    },
+                  ],
                 },
                 {
                   id: "gH7iJ8kL",
@@ -735,13 +969,127 @@ i18n
                   startDate: "18 Oct 2023",
                   duration: "1 year",
                   location: "Online",
+                  lecturer: {
+                    name: "Manuele Monti",
+                    title: "Founder and CEO",
+                    organization: "TechBricks",
+                    desc:
+                      "Manuele Monti is the Founder and CEO of TechBricks, a pioneering accelerator and startup studio focused solely on next-generation technologies like blockchain, distributed ledger, AI, big data, and data science.",
+                      desc2 : "Prior to launching TechBricks, Manuele was a computational researcher at the University of Leicester as well as a portfolio manager for global energy giant GDF Suez (now Engie). Manuele's entrepreneurial spirit and vision of technology's potential for positive change energizes all of his teaching.",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-3.webp",
+                  },
+                  career: [
+                    "Educational Consultant",
+                    "Educational Mentor",
+                    "Human Sciences Educator",
+                    "Community Education Coordinator",
+                    "Socio-Cultural Policy Planner",
+                    "Intercultural Mediator",
+                  ],
+                  modules: [
+                    {
+                      title: "General Pedagogy",
+                      description: "",
+                      ects: 12,
+                    },
+                    {
+                      title: "General Didactics",
+                      description: "",
+                      ects: 12,
+                    },
+                    {
+                      title: "History of Educational Institutions",
+                      description: "",
+                      ects: 9,
+                    },
+                    {
+                      title: "Motor Skills-Theory and Methods",
+                      description: "",
+                      ects: 9,
+                    },
+                    {
+                      title: "English",
+                      description: "",
+                      ects: 6,
+                    },
+                    {
+                      title: "Special Needs Education",
+                      description: "",
+                      ects: 2,
+                    },
+                    {
+                      title: "General Psychology",
+                      description: "",
+                      ects: 12,
+                    },
+                    {
+                      title: "Education for Adults",
+                      description: "",
+                      ects: 9,
+                    },
+                    {
+                      title: "Administrative Law",
+                      description: "",
+                      ects: 10,
+                    },
+                    {
+                      title: "Docimology",
+                      description: "",
+                      ects: 9,
+                    },
+                    {
+                      title: "Intercultural Pedagogy",
+                      description: "",
+                      ects: 6,
+                    },
+                    {
+                      title: "Theory And Techniques of Mass Communication",
+                      description: "",
+                      ects: 6,
+                    },
+                    {
+                      title: "Elective",
+                      description: "",
+                      ects: 9,
+                    },
+                    {
+                      title: "Modern History",
+                      description: "",
+                      ects: 10,
+                    },
+                    {
+                      title: "Education Technology",
+                      description: "",
+                      ects: 10,
+                    },
+                    {
+                      title: "Communication and Language Philosophy",
+                      description: "",
+                      ects: 13,
+                    },
+                    {
+                      title: "Computer Skills",
+                      description: "",
+                      ects: 6,
+                    },
+                    {
+                      title: "Electives",
+                      description: "",
+                      ects: 10,
+                    },
+                    {
+                      title: "FINAL DISSERTATION",
+                      description: "",
+                      ects: 10,
+                    },
+                  ],
                   media: {
                     type: "image",
                     source:
                       "https://cognizant.scene7.com/is/image/cognizant/gmp-manufacturing-hero-banner",
                   },
                   description:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum pellentesque urna. Phasellus adipiscing et massa et aliquam. Ut odio magna, interdum quis dolor non, tristique vestibulum nisi. Nam accumsan convallis venenatis. Nullam posuere risus odio, in interdum felis venenatis sagittis. Integer malesuada porta fermentum. Sed luctus nibh sed mi auctor imperdiet. Cras et sapien rhoncus, pulvinar dolor sed, tincidunt massa. Nullam fringilla mauris non risus ultricies viverra. Donec a turpis non lorem pulvinar posuere.",
+                    "The Course in Educational Sciences aims to provide knowledge and develop skills and competences in the fundamental fields of study and educational research, in both the theoretical and applied perspective, with a largely interdisciplinary approach. The degree course is divided into a three-year curriculum centred on methodological and general objectives in the sciences of education, also oriented on the teaching of human sciences in secondary education.The specific competencies provided by this course are ensured by the use of various evaluation methods that are adequate for the knowledge and skills to be certified, including the transversal competences that are an integral part of the outgoing profile. Internships are also envisaged, in the form of stays abroad for contact with the territory and work contexts in which educational/training professional skills are required, in order to practice under the guidance of tutors who check the ability of graduates in practice. The three-year course is aimed at acquiring educational knowledge and skills in Educational Sciences that enable the analysis of educational issues and management of the sector, together with teachings focused on historical grounds of the basic disciplines, as well as on the crucial and remarkable issues of diverse investigation sectors that constitute them. Particular attention is given to the appraisal of educational phenomena, by prioritising on the reflection on the diversity and distinction of the processes, the protagonists and the training demand, also in a design and operational sense. Furthermore, the student, following this curriculum, has the opportunity to acquire the necessary credits to access the specialisation for upper secondary education in Human Sciences.",
                   slogan:
                     "Fostering Minds, Shaping Futures: A Journey in Educational Science.",
                   thumb:
@@ -755,6 +1103,18 @@ i18n
                   startDate: "18 Oct 2023",
                   duration: "1 year",
                   location: "Online",
+                  category: "Science",
+                  totalModules: 26,
+                  lecturer: {
+                    name: "Antonio Minelli",
+                    img: "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg",
+                    speciality: "Chef Technology Officer",
+                    desc: "Chief Technology Officer at ETLForma, one of Italy's leading IT training organizations, Antonio has overseen technology projects for major clients including Telecom Italia, Vodafone, IBM Italia, Nespresso, Finmeccanica, Sony Italia and the Italian Ministry of the Environment.",
+                    desc2:
+                      "As a seasoned technology veteran, Antonio brings a wealth of real-world experience to every lecture.",
+                  },
+                  price: "3000",
+                  totalEtc: 185,
                   media: {
                     type: "image",
                     source:
@@ -810,6 +1170,18 @@ i18n
           },
           courseTab: {
             tab: "Our Courses",
+          },
+          about: {
+            title: "ABOUTS US",
+            subtitle: "Remarkable Research & Outstanding Teaching",
+            specialWord: "Expertise",
+            egoWord: "eGO Education",
+            highlight:
+              "of highly professionalising education provided entirely online at an international level.",
+            s1: "was born with the motivation to enter the market of online education providers through an excellent training offer present in some residential universities, with all their limitation, but lacking or insufficient in the world of e-learning.",
+            s2: "is a project brand of the International E-Learning Institute (IELI) Ltd, an educational centre affiliated with Pegaso University the largest online university in Italy in terms of the number of students and turnover.",
+            s3: "Since 2017, with more than 5,000 students enrolled overall through our network, IELI has guaranteed constant support to students during their training: from orientation to enrolment procedures, from technical support to study assistance.",
+            s4: "is a new project that will extend the concept through a new Higher Education Institute based in Malta, focused on the provision.",
           },
         },
       },
@@ -912,7 +1284,7 @@ i18n
                   title: "Mestrado em Programação Java",
                   description:
                     "Domine a arte do desenvolvimento de software com nosso programa abrangente de mestrado em Programação Java.",
-                  imgSrc: coursePic,
+                  imgSrc: MsvJava,
                   date: "12/08/24",
                   curriculum: 3,
                 },
@@ -920,8 +1292,7 @@ i18n
                   title: "Mestrado em Segurança da Informação",
                   description:
                     "Garanta seu futuro com expertise: domine a ciência da Segurança da Informação, protegendo a paisagem digital de amanhã.",
-                  imgSrc:
-                    "https://www.ipsr.org/uploads/2024/01/cybersecurity-thumb-copy-1.jpg",
+                  imgSrc: MsvCS,
                   date: "12/09/24",
                   curriculum: 8,
                 },
@@ -929,8 +1300,7 @@ i18n
                   title: "Administração de Empresas",
                   description:
                     "Lidere com conhecimento: domine a ciência da Administração de Empresas, moldando o cenário empresarial de amanhã.",
-                  imgSrc:
-                    "https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2022/11/New-Green-Modern-Business-YouTube-Thumbnail-1.webp",
+                  imgSrc: BscBA,
                   date: "25/10/24",
                   curriculum: 2,
                   featured: true,

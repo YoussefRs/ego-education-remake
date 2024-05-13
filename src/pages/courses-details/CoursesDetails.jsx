@@ -13,6 +13,8 @@ import InfoWidget from "../../globals/Widgets/InfoWidget";
 import ContactWidget from "../../globals/Widgets/ContactWidget";
 import CourseSliderDetails from "../../globals/Sliders/CourseSliderDetails";
 import { useTranslation } from "react-i18next";
+import Modal from "../../globals/Modal/Modal";
+import { useModal } from "../../globals/Modal/useModal";
 
 function extractIdFromPathname(pathname) {
   // Split the pathname by '/'
@@ -29,6 +31,7 @@ function CoursesDetails() {
   const courseId = extractIdFromPathname(location.pathname);
   const [course, setCourse] = useState(null);
   const [isChecked, setIsChecked] = useState(false);
+  const { showModal, openModal, closeModal } = useModal();
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -78,7 +81,7 @@ function CoursesDetails() {
   if (!course) {
     return null;
   }
-
+console.log(course)
   return (
     <>
       <SubHeader
@@ -89,6 +92,8 @@ function CoursesDetails() {
         ]}
         current={course?.name}
       />
+
+      <Modal title="My Modal" show={showModal} onHide={closeModal}></Modal>
 
       <div className="content container mb-5">
         <div className="page-content mt-5">
@@ -103,7 +108,7 @@ function CoursesDetails() {
                       <br />
                     </strong>
                     <p>{course?.slogan}</p>
-                    <Link to={`/course/${course?.id}/apply`}>Apply</Link>
+                    <Link onClick={openModal}>Apply</Link>
                   </div>
                 </div>
               </div>
@@ -504,7 +509,8 @@ function CoursesDetails() {
                             </label>
                             <Link
                               className={`${isChecked ? "" : "entry_inactive"}`}
-                              to={`/apply/${course?.id}`}
+                              // to={`/apply/${course?.id}`}
+                              onClick={openModal}
                               state={{
                                 course: course.name,
                                 degree: course.degree,
@@ -589,6 +595,54 @@ function CoursesDetails() {
                           </ul>
                         </main>
                       </div> */}
+                      <p>
+                        Programme can be delivered full and/or part time
+                        depending on the availability of students.
+                      </p>
+                      <div className="row">
+                        <div className="col mb-2">
+                          {" "}
+                          <div class="outer">
+                            <div class="progress dark">
+                              <div class="left">
+                                <div className="fw-bold">Part Time</div>
+                                <div>Semester 1</div>
+                                <div>Semester 2</div>
+                                <div>Semester 3</div>
+                                <div>Semester 4</div>
+                                <div>Semester 5</div>
+                              </div>
+                              <div class="right">
+                                <div className="fw-bold">32 Months</div>
+                                <div>Module 1, 2</div>
+                                <div>Module 3, 4</div>
+                                <div>Module 5</div>
+                                <div>Module 6 + Dissertation kick off</div>
+                                <div>complete dissertation</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col">
+                          {" "}
+                          <div class="outer">
+                            <div class="progress dark">
+                            <div class="left">
+                                <div className="fw-bold">Full-Time</div>
+                                <div>Semester 1</div>
+                                <div>Semester 2</div>
+                                <div>Semester 3</div>
+                              </div>
+                              <div class="right">
+                                <div className="fw-bold">18 Months</div>
+                                <div>Module 1, 2, 3, 4</div>
+                                <div>Module 5, 6 + Dissertation kick off</div>
+                                <div>complete dissertation</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div
                       className={`tab-pane ${
@@ -611,7 +665,7 @@ function CoursesDetails() {
                             <div className="col-sm-12 col-md-5">
                               <div className="lecturer-card">
                                 <img
-                                  src="https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2024/03/New-01.jpg"
+                                  src={course?.lecturer?.img}
                                   alt="lecturer"
                                 />
                                 <div className="lecturer-desc">

@@ -9,9 +9,9 @@ function HomeHero() {
   const { line1, line2, line3, button } = t("home.hero");
   return (
     <section id="home" data-stellar-background-ratio="0.5">
-      <div className="container" data-aos={"zoom-in"} >
+      <div className="container mt-5" data-aos={"zoom-in"} >
         <div className="row">
-          <div className="col-md-4 col-sm-12 d-flex align-items-center">
+          <div className="col-md-12 col-lg-4 col-sm-12 d-flex align-items-center">
             <div className="d-flex flex-column text-white gap-3">
               <h1>{line1} </h1>
               <h2 className="text-white">{line2}</h2>
@@ -21,7 +21,7 @@ function HomeHero() {
             </div>
           </div>
 
-          <div className="col-md-8 col-sm-12">
+          <div className="col-md-12 col-lg-8 col-sm-12 d-flex align-items-center" id="video_container">
             <div className="embed-responsive embed-responsive-16by9">
               <video
                 muted

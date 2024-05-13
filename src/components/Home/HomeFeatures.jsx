@@ -48,30 +48,6 @@ function HomeFeatures() {
                   data-aos={"fade-up"}
                 />
               </div>
-              {/* <div className="job-ct-1 job-item">
-                <div className="job-ct-icon">
-                  <FontAwesomeIcon icon={faPersonChalkboard} color="black" data-aos={"flip-up"}/>
-                </div>
-                <div className="job-ct-text" data-aos={"flip-up"}>
-                  <h6>{b1} </h6>
-                </div>
-              </div>
-              <div className="job-ct-2 job-item">
-                <div className="job-ct-icon">
-                  <FontAwesomeIcon icon={faBookOpenReader} color="black" data-aos={"flip-up"}/>
-                </div>
-                <div className="job-ct-text" data-aos={"flip-up"}>
-                  <h6>{b2}</h6>
-                </div>
-              </div>
-              <div className="job-ct-3 job-item">
-                <div className="job-ct-icon">
-                  <FontAwesomeIcon icon={faUserGraduate} color="black" data-aos={"flip-up"}/>
-                </div>
-                <div className="job-ct-text" data-aos={"flip-up"}>
-                  <h6>{b3}</h6>
-                </div>
-              </div> */}
             </div>
           </div>
           <div className="col-md-6 d-flex align-items-center flex-column justify-content-center gap-4">

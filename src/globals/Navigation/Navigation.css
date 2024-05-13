@@ -87,14 +87,14 @@ nav .ham:hover {
 /* *****************SIDE MENU CSS**************** */
 
 .side_menu {
-  width: min(300px, 100%);
+  width: min(250px, 100%);
   background-color: #000;
   z-index: 999;
   position: fixed;
-  top: 0;
+  top: 75px;
   right: -400px;
   overflow: hidden;
-  height: 100vh;
+  height: auto;
   overflow-y: auto;
   transition: 0.5s;
   padding: 2rem 2rem;
@@ -116,7 +116,7 @@ nav .ham:hover {
       color: white;
     }
     & a:hover {
-      color: var(--white);
+      color: #046635 !important;
     }
   }
   & ul:last-child li:not(:last-child) a:hover:before {
@@ -133,10 +133,19 @@ nav .ham:hover {
     padding: 0.5rem 1rem;
     z-index: 999;
   }
-  .nav_content {
+  .nav_content  {
     display: none;
   }
+  #_mobile-nav {
+    display: block !important;
+  }
 }
+
+#_mobile-nav {
+  display: none;
+}
+
+
 
 /* ************* LANGUAGE CSS **************** */
 

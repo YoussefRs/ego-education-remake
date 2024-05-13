@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import coursepic from "../../assets/Courses/New-blue-modern-website-programming-online-tutorials-youtube-thumbnail-1.jpg";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function CourseSliderDetails() {
+  const { t } = useTranslation();
+  const { courses } = t("home.courseSlider");
+
+  const [shuffledCourses, setShuffledCourses] = useState([]);
+
+  useEffect(() => {
+    // Shuffle the courses array
+    const shuffled = [...courses].sort(() => Math.random() - 0.5);
+    setShuffledCourses(shuffled);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -43,23 +55,13 @@ function CourseSliderDetails() {
   };
   return (
     <Slider {...settings} className="container">
-      <div className="swiper-slide-nocontent">
-        <img src={coursepic} className="slide-image" alt="" />
-      </div>
-      <div className="swiper-slide-nocontent">
-        <img
-          src="https://www.ipsr.org/uploads/2024/01/cybersecurity-thumb-copy-1.jpg"
-          className="slide-image"
-          alt=""
-        />
-      </div>
-      <div className="swiper-slide-nocontent">
-        <img
-          src="https://lizza.wpengine.com/lms/wp-content/uploads/sites/12/2022/11/New-Green-Modern-Business-YouTube-Thumbnail-1.webp"
-          className="slide-image"
-          alt=""
-        />
-      </div>
+      {shuffledCourses?.map((course, i) => (
+        <Link to={course?.link}>
+          <div className="swiper-slide-nocontent">
+            <img src={course.imgSrc} className="slide-image" alt="" />
+          </div>
+        </Link>
+      ))}
     </Slider>
   );
 }

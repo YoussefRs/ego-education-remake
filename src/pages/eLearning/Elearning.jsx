@@ -74,7 +74,7 @@ function Elearning() {
               <div className="col-md-6" id="content_">
                 <div id="content-text_">
                   <h1>
-                    <u>Join </u>a global community of like-minded
+                    <u>Join </u>a global community of 
                     <span> learners</span>
                   </h1>
                   <h2>

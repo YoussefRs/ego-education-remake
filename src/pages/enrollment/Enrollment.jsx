@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import SubHeader from "../../globals/SubHeader/SubHeader";
+import Modal from "../../globals/Modal/Modal";
+import { useModal } from "../../globals/Modal/useModal";
 
 function Enrollment() {
+  const { showModal, openModal, closeModal } = useModal();
   const [formData, setFormData] = useState({
     course: "",
     lng: "",
@@ -51,6 +54,11 @@ function Enrollment() {
         path={[{ url: "/enrollment", label: "home" }]}
         current={"Apply"}
       />
+      <Modal
+        title="My Modal"
+        show={showModal}
+        onHide={closeModal}
+      ></Modal>
       <div className="container enrollment d-flex flex-column">
         <h1 className="mb-4">Enrollment Informations</h1>
         <div className="row mb-5">
@@ -348,7 +356,7 @@ function Enrollment() {
         </div>
         <div className="row mt-5 mb-5">
           <div className="col">
-            <button onClick={handleSubmit}>Confirm</button>
+            <button onClick={openModal}>Confirm</button>
           </div>
         </div>
       </div>
