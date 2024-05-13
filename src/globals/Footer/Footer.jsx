@@ -42,10 +42,10 @@ const Footer = () => {
                   XBX 1095, Malta
                 </span>
               </div>
-              <div className="contact-row">
+              {/* <div className="contact-row">
                 <span>Phone</span>
                 <span>+012 987 23456</span>
-              </div>
+              </div> */}
               <div className="contact-row">
                 <span>Website</span>
                 <a>www.ego-education.com</a>
