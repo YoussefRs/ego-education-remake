@@ -78,7 +78,7 @@ function Partners() {
             className="container-heading-green"
             style={{ fontSize: 25, fontWeight: 700 }}
           >
-            Acedemic Partnerships
+            Academic Partnerships
           </h2>
         </div>
         <div className="row p-5">
