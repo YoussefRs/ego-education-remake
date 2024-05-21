@@ -60,7 +60,7 @@ function Enrollment() {
         onHide={closeModal}
       ></Modal>
       <div className="container enrollment d-flex flex-column">
-        <h1 className="mb-4">Enrollment Informations</h1>
+        <h1 className="mb-4">Enrollment Information</h1>
         <div className="row mb-5">
           <div className="col">
             <select>

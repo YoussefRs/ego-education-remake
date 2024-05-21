@@ -81,7 +81,6 @@ function CoursesDetails() {
   if (!course) {
     return null;
   }
-console.log(course)
   return (
     <>
       <SubHeader
@@ -454,7 +453,7 @@ console.log(course)
                             <span className="fw-bold">B2</span> level of
                             knowledge of the English or Italian language is
                             required, while for the Master’s, at least a{" "}
-                            <span className="fw-bold">C1</span>
+                            <span className="fw-bold">C1 </span> 
                             level is <span className="fw-bold">required</span>.
                             <br />
                             <br />
@@ -548,7 +547,7 @@ console.log(course)
                                             {module?.title}{" "}
                                           </div>
                                           <div className="col-4 text-end">
-                                            ECT : {module?.ects}
+                                            ECTS : {module?.ects}
                                           </div>
                                         </div>
                                       </a>
