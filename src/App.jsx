@@ -15,6 +15,7 @@ import EnrollementById from "./pages/enrollmentById/EnrollementById";
 import Enrollment from "./pages/enrollment/Enrollment";
 import Research from "./pages/reseach/Research";
 import Partners from "./pages/partners/Partners";
+import ConfirmPolicy from "./pages/enrollment/ConfirmPolicy";
 
 function Layout({ children }) {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -103,7 +104,15 @@ function App() {
             }
           />
           <Route
-            path="/apply"
+            path="/confirm"
+            element={
+              <Layout>
+                <ConfirmPolicy />
+              </Layout>
+            }
+          />
+          <Route
+            path="/apply-enrollement"
             element={
               <Layout>
                 <Enrollment />

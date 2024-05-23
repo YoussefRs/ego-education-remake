@@ -64,7 +64,7 @@ function SideBar({ show, handleShow }) {
           </a>
         </li>
         <li>
-        <a href="/apply">
+        <a href="/confirm">
           Apply
           </a>
         </li>

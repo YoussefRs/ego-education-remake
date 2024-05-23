@@ -245,7 +245,7 @@ function Enrollment() {
             </fieldset>
           </div>
         </div>
-        <h1 className="mt-5 mb-4">Additional Informations</h1>
+        <h1 className="mt-5 mb-4">Additional Information</h1>
         <div className="row mb-5">
           <div className="col">
             <span class="wpcf7-form-control-wrap" data-name="country">

@@ -502,6 +502,7 @@ function CoursesDetails() {
                                 type="checkbox"
                                 checked={isChecked}
                                 onChange={handleCheckboxChange}
+                                style={{marginRight: 10, marginBottom: 10}}
                               />
                               I confirm that I have thoroughly reviewed and
                               understood all the entry requirements.

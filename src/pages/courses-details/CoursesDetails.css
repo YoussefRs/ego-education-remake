@@ -11,6 +11,14 @@
     max-height: 500px;
     border-radius: 20px;
   }
+  .apply-btn {
+    display: inline-block;
+    font: 800 19.39px / 24px "Gotham Medium", sans-serif;
+    background: #046635;
+    border-radius: 10px;
+    color: #fff;
+    padding: 12px 28px;
+  }
   .ban_text {
     position: absolute;
     top: 50%;

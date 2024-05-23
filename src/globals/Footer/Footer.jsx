@@ -60,7 +60,7 @@ const Footer = () => {
               <a href="/courses">Courses</a>
               <a href="/elearn">eLearn</a>
               <a href="/partners">Partners</a>
-              <a href="/apply">Apply</a>
+              <a href="/confirm">Apply</a>
               <a href="/about">About Us</a>
               <a href="/policy">Policy & Privacy</a>
             </div>

@@ -13,7 +13,7 @@ function Navigation({ show }) {
     { key: "eLearning", link: "/elearn" },
     { key: "partners", link: "/partners" },
     { key: "research", link: "/research" },
-    { key: "apply", link: "/apply" },
+    { key: "apply", link: "/confirm" },
     { key: "about", link: "/about" },
   ];
 
