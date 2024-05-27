@@ -450,11 +450,11 @@ function CoursesDetails() {
                               </li>
                             </ul>
                             To access the Bachelor’s, at least a{" "}
-                            <span className="fw-bold">B2</span> level of
+                            <span className="fw-bold ego-green">B2</span> level of
                             knowledge of the English or Italian language is
                             required, while for the Master’s, at least a{" "}
-                            <span className="fw-bold">C1 </span> 
-                            level is <span className="fw-bold">required</span>.
+                            <span className="fw-bold ego-green">C1 </span> 
+                            level is <span className="fw-bold ego-green">required</span>.
                             <br />
                             <br />
                             In the absence of a linguistic certification, at the
@@ -467,7 +467,7 @@ function CoursesDetails() {
                             To properly enrol, all educational qualifications
                             (such as high school diploma, bachelor’s, master’s)
                             should be apostilled through a{" "}
-                            <span className="fw-bold">
+                            <span className="fw-bold ego-green">
                               certification of value at the Maltese or Italian
                               embassies abroad
                             </span>
@@ -485,14 +485,14 @@ function CoursesDetails() {
                             <br />
                             <br />
                             Upon{" "}
-                            <span className="fw-bold">
+                            <span className="fw-bold ego-green">
                               payment confirmation
                             </span>
                             , you&#39;ll get your username and password via
                             email to start your online learning journey.
                             <br />
                             <br />
-                            <span className="fw-bold">
+                            <span className="fw-bold ego-green">
                               Welcome to eGO Education.
                             </span>
                             <br />

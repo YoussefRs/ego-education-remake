@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Navigation from "./globals/Navigation/Navigation";
 import Home from "./pages/home/Home";
 import SideBar from "./globals/Navigation/SideBar";
@@ -33,6 +33,16 @@ function Layout({ children }) {
 function App() {
   const [loading, setLoading] = useState(true);
 
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
@@ -42,6 +52,7 @@ function App() {
   }, []);
   return (
     <>
+        <ScrollToTop />
       {loading ? (
         <Loading />
       ) : (

@@ -18,10 +18,10 @@ function ConfirmPolicy() {
       <div className="p-5 row">
         <div className="col-lg-8 mb-5">
           To access the Bachelor’s, at least a{" "}
-          <span className="fw-bold">B2</span> level of knowledge of the English
+          <span className="fw-bold ego-green">B2</span> level of knowledge of the English
           or Italian language is required, while for the Master’s, at least a{" "}
-          <span className="fw-bold">C1 </span>
-          level is <span className="fw-bold">required</span>.
+          <span className="fw-bold ego-green">C1 </span>
+          level is <span className="fw-bold ego-green">required</span>.
           <br />
           <br />
           In the absence of a linguistic certification, at the time of enrolment
@@ -32,7 +32,7 @@ function ConfirmPolicy() {
           <br />
           To properly enrol, all educational qualifications (such as high school
           diploma, bachelor’s, master’s) should be apostilled through a{" "}
-          <span className="fw-bold">
+          <span className="fw-bold ego-green">
             certification of value at the Maltese or Italian embassies abroad
           </span>
           .
@@ -47,12 +47,12 @@ function ConfirmPolicy() {
           information within 72 hours. We&#39;ll email you an update.
           <br />
           <br />
-          Upon <span className="fw-bold">payment confirmation</span>
+          Upon <span className="fw-bold ego-green">payment confirmation</span>
           , you&#39;ll get your username and password via email to start your
           online learning journey.
           <br />
           <br />
-          <span className="fw-bold">Welcome to eGO Education.</span>
+          <span className="fw-bold ego-green">Welcome to eGO Education.</span>
           <br />
           <br />
           <label>

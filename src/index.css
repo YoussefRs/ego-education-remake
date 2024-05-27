@@ -28,7 +28,9 @@ a {
   cursor: pointer;
   /* width: max-content; */
 }
-
+.ego-green {
+  color : #046635
+}
 body {
   margin: 0;
   pad: 0;
