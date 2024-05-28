@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/Logos/logo-ego-white.png";
 import "./Footer.css";
+import ieli from "../../assets/Logos/Ego_ieli.png"
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className="footer-contents">
           <div className="footer-col footer-col-1">
             <div className="col-title">
-              <img src={logo} alt="ego-edication" />
+              <img src={ieli} alt="ego-edication" />
             </div>
             <div className="col-contents">
               <p>
@@ -81,7 +82,7 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="copy-rights">
-          <p>All Rights Reserved</p>
+          <p>All Rights Reserved, 2024</p>
         </div>
       </section>
     </>
