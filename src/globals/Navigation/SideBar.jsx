@@ -88,13 +88,13 @@ function SideBar({ show, handleShow }) {
           <Link>Governance Structure</Link>
         </li>
         <li className="dropdown">
-          <a >
+          <a href="/policies-privacy">
             Policies & Privacy
           </a>
         </li>
-        <li>
+        {/* <li>
           <Link to={"/contact"}>Contact Us</Link>
-        </li>
+        </li> */}
         {/* <li className="fixed_flex">
         <Link className="_btn btn_1 chat_popup">SignUp/LogIn</Link>
         <Link className="_btn btn_2 chat_popup">Admission</Link>

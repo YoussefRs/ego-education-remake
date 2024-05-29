@@ -1,0 +1,15 @@
+.privacy-page {
+  ul {
+    list-style: circle;
+  }
+  .special {
+    list-style: decimal;
+  }
+  .special-li {
+    list-style: disc;
+    margin-left: 5rem !important;
+  }
+  .circle-li {
+    list-style: circle;
+  }
+}

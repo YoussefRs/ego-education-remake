@@ -16,6 +16,7 @@ import Enrollment from "./pages/enrollment/Enrollment";
 import Research from "./pages/reseach/Research";
 import Partners from "./pages/partners/Partners";
 import ConfirmPolicy from "./pages/enrollment/ConfirmPolicy";
+import Policy from "./pages/policy/Policy";
 
 function Layout({ children }) {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -35,11 +36,11 @@ function App() {
 
   const ScrollToTop = () => {
     const { pathname } = useLocation();
-  
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [pathname]);
-  
+
     return null;
   };
 
@@ -52,7 +53,7 @@ function App() {
   }, []);
   return (
     <>
-        <ScrollToTop />
+      <ScrollToTop />
       {loading ? (
         <Loading />
       ) : (
@@ -62,6 +63,14 @@ function App() {
             element={
               <Layout>
                 <Home />
+              </Layout>
+            }
+          />
+          <Route
+            path="/policies-privacy"
+            element={
+              <Layout>
+                <Policy />
               </Layout>
             }
           />
