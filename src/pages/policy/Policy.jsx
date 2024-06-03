@@ -327,6 +327,48 @@ function Policy() {
             promotional, marketing and recruiting purposes.
           </p>
         </ul>
+        <h7 className="fw-bold">
+          {" "}
+          Documents to download :
+          <ul className="special">
+            <li className="mx-5 my-2 circle-li">
+              ACADEMIC INTEGRITY PLEDGE <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI Academic Integrity and Misconduct Policy{" "}
+              <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI Equality Policy <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI Complaints Handling Policy <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI Assessment Policy <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI Feedback Policy <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI Periodic Programme Review Policy <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI – Student Support Policy <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI – Verification of Student Identity in Online Education Policy{" "}
+              <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              ILELI - Technological Infrastructure Policy{" "}
+              <a href="#">Download</a>
+            </li>
+            <li className="mx-5 my-2 circle-li">
+              IELI Internal Quality Assurance Policy <a href="#">Download</a>
+            </li>
+          </ul>
+        </h7>{" "}
       </div>
     </>
   );

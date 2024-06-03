@@ -4,6 +4,10 @@
   }
   .special {
     list-style: decimal;
+    a {
+      color: blue !important;
+      text-decoration: underline !important;
+    }
   }
   .special-li {
     list-style: disc;
