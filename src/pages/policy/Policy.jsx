@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Policy.css";
 import SubHeader from "../../globals/SubHeader/SubHeader";
+import acp from "../../assets/privacy/acp.png";
+import aimp from "../../assets/privacy/aimp.png";
+import chp from "../../assets/privacy/chp.png";
+import ap from "../../assets/privacy/ap.png";
+import end from "../../assets/privacy/end.png";
+import fp from "../../assets/privacy/fp.png";
+import prp from "../../assets/privacy/prp.png";
+import ssp from "../../assets/privacy/ssp.png";
+import tip from "../../assets/privacy/tip.png";
+import vsio from "../../assets/privacy/vsio.png";
+import iqa from "../../assets/privacy/iqa.png";
 
 function Policy() {
+  // State to manage the current image
+  const [currentImage, setCurrentImage] = useState(acp);
+  // State to manage the active list item
+  const [activeItem, setActiveItem] = useState(acp);
+
+  // Function to handle list item click
+  const handleListClick = (image) => {
+    setCurrentImage(image);
+    setActiveItem(image);
+  };
+
   return (
     <>
       <SubHeader
@@ -11,364 +33,106 @@ function Policy() {
         current={"Privacy & Policy"}
       />
       <div className="container privacy-page my-5">
-        <h7 className="fw-bold">
-          {" "}
-          (EU) REGULATION no. 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE
-          COUNCIL OF 27 APRIL 2016 ON THE PROCESSING AND PROTECTION OF PERSONAL
-          DATA.
-        </h7>{" "}
-        <br />
-        <br />
-        <p>
-          Pursuant to and for the purposes of Article 13 and Article 14 of
-          Regulation no. 2016/679 of the European parliament and of the Council
-          of 27 April 2016 on the protection of natural persons with regard to
-          the processing of Personal Data and on the free flow of such data, and
-          repealing Directive 95/46/EC (General Data Protection Regulation,
-          hereafter also &quot;Regulation&quot; or &quot;GDPR&quot;), we hereby
-          inform you that the Personal Data you voluntarily provided to
-          International e-Learning Institute (hereafter also &quot;IELI&quot;)
-          will be processed in compliance with the regulations in force and with
-          regard to the protection of Personal Data as well as Data- protection
-          principles in pursuit of its legitimate activities as a University.
-        </p>
-        <ul>
-          <span className="fw-bold">
-            1. The Categories of processed Personal Data
-          </span>
-          <p className="px-4 py-2">
-            International e-Learning Institute will process the following
-            Personal Data provided by the data subject:
-          </p>
-          <li className="mx-5">
-            Personal Data (such as: Name, Surname, date and place of birth,
-            gender), password, e-mail, telephone number, address and
-            nationality, qualifications (hereafter also &quot;Personal
-            Data&quot; or &quot;Data&quot;)
-          </li>
-          <li className="mx-5  my-2">
-            Sensitive Data regarding both possible disability rating determined
-            and accreditation body.
-          </li>
-        </ul>
-        <br />
-        <ol type="a">
-          <span className="fw-bold">2. Purposes of the processing</span>
-          <p className="px-4 py-2">
-            The Personal Data you provided to International e-Learning Institute
-            may be processed for the following purposes:
-          </p>
-          <li className="mx-5  my-2">
-            To enable and manage the enrollment of the subject at IELI.
-          </li>
-          <li className="mx-5  my-2">
-            To enable the subject to benefit from specific, necessary, essential
-            and instrumental services, to carry out the studies and the online
-            academic life, as well as to carry out the tasks reserved to you for
-            the enrolment of the Subject at IELI, such as, in an illustrative
-            and non- exhaustive way, the access to the didactic platform, the
-            technological e-learning tools, the Apps, the interaction service
-            with Tutors and among students, the monitoring of learning, reports
-            about educational activities carried out by students, administrative
-            office services, social networking, videoconference and chat tools.
-            c) Accounting and administration purposes in compliance with the
-            obligations provided by current regulations;
-          </li>
-          <li className="mx-5  my-2">
-            Accounting and administration purposes in compliance with the
-            obligations provided by current regulations.
-          </li>
-          <li className="mx-5  my-2">
-            For marketing purposes, whereas is given specific and valid consent
-            from the subject, such as informative and promotional communications
-            (including the University’s newsletter), advertising materials
-            and/or educational offers, transmitted by any means, including, in
-            an illustrative and non-exhaustive way, postal service, Internet,
-            telephone, e-mail, MMS, SMS from IELI or from educational partners
-            of IELI.
-          </li>
-          <li className="mx-5  my-2">
-            For professional profiles research purposes, as a result of
-            recruiting processes carried out by companies or by societies
-            appointed by them.
-          </li>
-          <li className="mx-5  my-2">
-            For the dissemination of photos and videos in order to promote the
-            didactic and teaching methods of IELI.
-          </li>
-        </ol>
-        <ul>
-          <p className="px-4">
-            We remind you that, with reference to the purposes defined in points
-            (a), (b) and (c), the data subject is obliged to provide the
-            personal data. Any refusal and/or incomplete information may
-            prevent:
-          </p>
-        </ul>
-        <ul>
-          <li className="mx-5  my-2">
-            {" "}
-            With reference to the purpose defined in point (a): the subscription
-            and enrolment at IELI.
-          </li>
-          <li className="mx-5  my-2">
-            {" "}
-            With reference to the purpose defined in point (b): to benefit from
-            services , as well as to carry out the tasks reserved for the
-            enrolment of the Subject at IELI.
-          </li>
-          <li className="mx-5  my-2">
-            {" "}
-            With reference to the purpose defined in point (c): to perform the
-            accounting and administration activities and the right compliance to
-            the current regulations.
-          </li>
-        </ul>
-        <ul>
-          <p className="px-4">
-            With reference to further purposes defined in points (d), (e) and
-            (f), both the provision and the consent to the processing of
-            personal data for the above mentioned purposes, is optional and
-            subject to explicit consent.
-          </p>
-        </ul>
-        <ul>
-          <span className="fw-bold">
-            3. Personal Data processing Modalities
-          </span>
-          <p className="px-4 py-2">
-            The processing of the subject’s Personal Data may be implemented
-            through suitable paper, electronic and/or online documents, with
-            logics strictly connected to the aforementioned purposes and, in
-            such a way as to guarantee the protection of privacy and
-            confidentiality of the Data itself.
-          </p>
-          <p className="px-4">
-            The Personal Data of the subject are processed with the aid of IT
-            tools, fairly and lawfully, for the fulfilment of the aforementioned
-            purposes, including the safeguarding of confidentiality, integrity,
-            authenticity, availability and updating, and are safeguarded with
-            proper safety measures. Personal Data may be stored for the period
-            of time necessary for the archiving purposes for which they were
-            collected to or later processed.
-          </p>
-          <p className="px-4">
-            If the user (i) logs in or signs up to the online platform of IELI
-            using the social network credentials (such as Facebook or Twitter,
-            hereafter also as &quot;Social Network&quot;) or (ii) he/she
-            associates his/her account to a Social Network account of the same
-            user, the subject may receive personal Data from the aforementioned
-            Social Network, in compliance with the Terms and security policy of
-            the Social Network itself. IELI may add information to the user’s
-            Data already collected through its services. Whenever the user
-            intends to share information through these Social Networks, he/she
-            may receive the Data from the latter in accordance with the consent
-            options provided by the user. The Personal Data possibly
-            communicated from the Social Network will be subject to the Terms
-            and Conditions of use of the Social Network.
-          </p>
-        </ul>
-        <ul>
-          <span className="fw-bold">
-            4. Addressee or Categories of Addressee of Personal Data
-          </span>
-          <p className="px-4 py-2">
-            Data may be communicated to business partners, members of the board
-            of directors or other administrative body, Responsible for Data
-            protection, and the Heads designated by IELI and the persons in
-            charge of the processing of Personal Data appointed by International
-            e-Learning Institute in the execution of their duties.
-          </p>
-          <p className="px-4">
-            The Personal Data of the subject may be communicated to any third
-            Party who provides IELI with services or instrumental services for
-            the purposes indicated in the previous par. 2 such as, tin an
-            illustrative and not-exhaustive way, dominating societies,
-            subsidiaries, investees and/or affiliates. The Personal Data of the
-            subject may be also communicated to suppliers, contractors,
-            subcontractors, banking and insurance groups and/or other subjects
-            and/or bodies acting on behalf of International e-Learning Institute
-            for:
-          </p>
-          <li className="mx-5  my-2">
-            The management and/or maintenance of Internet websites and
-            electronic and/or online tools used by IELI.
-          </li>
-          <li className="mx-5  my-2">
-            The management of subscription/enrolment at IELI.
-          </li>
-          <li className="mx-5  my-2">
-            The sending of informative and promotional communications,
-            advertising materials and/or educational offers.
-          </li>
-          <p className="px-4">
-            The Personal Data of the subject may be eventually transferred to
-            companies or societies which work as recruiting centers on behalf of
-            companies for International e-Learning Institute. The Personal Data
-            of the subject may be potentially transferred abroad, in compliance
-            with the current regulations, also to non-EU Countries, whereas the
-            University possibly pursues its interests. The transfer to countries
-            outside the EU is carried out in order to provide appropriate
-            guarantees pursuant to Art. 46 or 47 or 49 of the Regulations, in
-            addition to cases in which this is guaranteed by the adequacy
-            decisions of the European Commission.
-          </p>
-        </ul>
-        <ul className="special">
-          <span className="fw-bold">
-            5. Duration of the processing and criteria used for Personal Data
-            storage
-          </span>
-          <li className="mx-5 my-2 fw-bold">Duration</li>
-          <p className="px-5">
-            For the purposes referred to in points a), b) and c) of the previous
-            paragraph 2 &quot;Purposes of Processing&quot; of this Regulation,
-            your Personal Data will be processed only for the period needed. For
-            the purposes referred to in points d), e) and f) of paragraph 2
-            &quot;Purposes of Processing&quot; of this Regulation, your Personal
-            Data will be processed until the possible revocation of consent by
-            the interested Party.
-          </p>
-          <li className="mx-5 my-2 fw-bold">Storage</li>
-          <p className="px-5">
-            The Data will be stored according to the following criteria:
-          </p>
-          <li className="special-li">
-            {" "}
-            The Data processed for registration / enrollment at IELI pursuant to
-            points a), b) and c) of paragraph 2 &quot;Purposes of
-            Processing&quot; of this Regulations, will be stored for the entire
-            period of your registration and for a period of 10 years following
-            the interruption of the agreement, except in the case in which there
-            is a need of a further preservation, in order to allow International
-            e-Learning Institute to defend its rights;
-          </li>
-          <li className="special-li my-2">
-            {" "}
-            the Data processed for the purposes referred to in points d), e) and
-            f) of paragraph 2 &quot;Purposes of Processing&quot; of this
-            Regulations, will be stored for a maximum of 24 months.
-          </li>
-        </ul>
-        <ul className="special">
-          <span className="fw-bold">6. Rights of the interested Party</span>
-          <p className="px-4 pt-2">
-            We inform you that at any time, with regard to your Data, you may
-            exercise the rights provided within the limits and conditions set
-            forth in articles 7 and 15-22 of the Regulations. In order to
-            exercise the rights as described below, please contact the
-            Controller of Personal Data Processing through the Privacy office
-            the e-mail address privacy@pegasointernational.eu. A feedback will
-            be provided within the timing established by the GDPR.
-          </p>
-          <p className="px-4">
-            In detail, the interested Party has the right to:
-          </p>
-          <li className="mx-5 my-2 circle-li">
-            Revoke the consent previously given, without compromising the
-            lawfulness of the processing based on consent before the revocation.
-          </li>
-          <li className="mx-5 my-2 circle-li">
-            Request to the Personal Data Controller to access, amend and erase
-            (so- called &quot;right to be forgotten&quot;) the Personal Data or
-            restrict the processing of his/her personal Data or to oppose the
-            processing of the personal data.
-          </li>
-          <li className="mx-5 my-2 circle-li">To obtain Data portability.</li>
-          <li className="mx-5 my-2 circle-li">
-            Lodge a complaint to the Guarantor for the Protection of Personal
-            Data if it considers that its rights have been violated.
-          </li>
-        </ul>
-        <ul>
-          <span className="fw-bold">
-            7. Processing Controller, Person and Responsible for the Protection
-            of Personal Data
-          </span>
-          <p className="px-4 py-2">
-            The processing Controller of your Data is International e-Learning
-            Institute, with registered office in 40, Villa Fairholme, Sir
-            Augustus Bartolo Street, Ta’ Xbiex, XBX 1095, Malta, in the person
-            of the Legal Representative. Any request relating to your personal
-            Data processed by the University may be sent to the University&#39;s
-            registered office, or via e-mail to the address: privacy@ieli.eu.
-          </p>
-          <p className="px-4">
-            The updated list of persons appointed as Responsible pursuant to
-            article 28 of the GDPR is available at IELI and may be consulted
-            upon specific request via the modalities indicated above.
-          </p>
-          <p className="px-4">
-            The contact of the Responsible of the Personal Data Protection is
-            dpo@ieli.eu. This information will be subjected to updates.
-            International e-Learning Institute invites, therefore, the Users who
-            intend to know the processing Personal Data collected by the
-            University, to periodically visit this webpage.
-          </p>
-        </ul>
-        <ul>
-          <span className="fw-bold">8. Data Processing Controller</span>
-          <p className="px-4 py-2">
-            As indicated in the information provided pursuant to Regulation (EU)
-            no. 2016/679 of the European Parliament and Council of 27 April
-            2016, You are aware that the carrying out of activities related to
-            the processing of Personal Data, referred to in points a), b) and c)
-            indicated in par. 2 of the aforementioned information, does not
-            require the consent to processing.
-          </p>
-          <p className="px-4">
-            The consent is optional for the processing of Personal Data referred
-            to in points d), e) and f) indicated in paragraph 2 of the
-            aforementioned Regulation.
-          </p>
-          <p className="px-4">
-            We invite you to send an e-mail to: privacy@ieli.eu if you intend
-            not to authorize the processing of your Personal Data for
-            promotional, marketing and recruiting purposes.
-          </p>
-        </ul>
-        <h7 className="fw-bold">
-          {" "}
-          Documents to download :
-          <ul className="special">
-            <li className="mx-5 my-2 circle-li">
-              ACADEMIC INTEGRITY PLEDGE <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI Academic Integrity and Misconduct Policy{" "}
-              <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI Equality Policy <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI Complaints Handling Policy <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI Assessment Policy <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI Feedback Policy <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI Periodic Programme Review Policy <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI – Student Support Policy <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI – Verification of Student Identity in Online Education Policy{" "}
-              <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              ILELI - Technological Infrastructure Policy{" "}
-              <a href="#">Download</a>
-            </li>
-            <li className="mx-5 my-2 circle-li">
-              IELI Internal Quality Assurance Policy <a href="#">Download</a>
-            </li>
-          </ul>
-        </h7>{" "}
+        <div className="row justify-content-between w-100 gap-2">
+          <div className="col-12 col-md-3 privacy-list">
+            <ul>
+              <li
+                className={activeItem === acp ? "active" : ""}
+                onClick={() => handleListClick(acp)}
+              >
+                Academic Integrity Pledge
+              </li>
+              <li
+                className={activeItem === aimp ? "active" : ""}
+                onClick={() => handleListClick(aimp)}
+              >
+                Academic Integrity And Misconduct Policy
+              </li>
+              <li
+                className={activeItem === ap ? "active" : ""}
+                onClick={() => handleListClick(ap)}
+              >
+                Assessment Policy
+              </li>
+              <li
+                className={activeItem === chp ? "active" : ""}
+                onClick={() => handleListClick(chp)}
+              >
+                Complaints Handling Policy
+              </li>
+              <li
+                className={activeItem === end ? "active" : ""}
+                onClick={() => handleListClick(end)}
+              >
+                Equality Policy
+              </li>
+              <li
+                className={activeItem === fp ? "active" : ""}
+                onClick={() => handleListClick(fp)}
+              >
+                Feedback Policy
+              </li>
+              <li
+                className={activeItem === iqa ? "active" : ""}
+                onClick={() => handleListClick(iqa)}
+              >
+                Internal Quality Assurance Policy
+              </li>
+              <li
+                className={activeItem === prp ? "active" : ""}
+                onClick={() => handleListClick(prp)}
+              >
+                Periodic Programme Review Policy
+              </li>
+              <li
+                className={activeItem === prp ? "active" : ""}
+                onClick={() => handleListClick(prp)}
+              >
+                Privacy Policy
+              </li>
+              <li
+                className={activeItem === ssp ? "active" : ""}
+                onClick={() => handleListClick(ssp)}
+              >
+                Student Support Policy
+              </li>
+              <li
+                className={activeItem === tip ? "active" : ""}
+                onClick={() => handleListClick(tip)}
+              >
+                Technological Infrastructure Policy
+              </li>
+              <li
+                className={activeItem === vsio ? "active" : ""}
+                onClick={() => handleListClick(vsio)}
+              >
+                Verification of Student Identity in Online
+              </li>
+            </ul>
+          </div>
+          <div className="col-12 col-md-8 img-box">
+            <img src={currentImage} alt="document" />
+            <button>
+              <svg
+                width="20"
+                height="18"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.7557 11.2686C18.5734 11.2686 18.3985 11.341 18.2696 11.4699C18.1407 11.5989 18.0682 11.7737 18.0682 11.9561V14.3039C18.0682 14.8573 17.8484 15.388 17.4571 15.7793C17.0658 16.1706 16.5351 16.3904 15.9817 16.3904H4.01918C3.46579 16.3904 2.93506 16.1706 2.54376 15.7793C2.15245 15.388 1.93262 14.8573 1.93262 14.3039V11.9561C1.93262 11.7737 1.86018 11.5989 1.73125 11.4699C1.60232 11.341 1.42745 11.2686 1.24512 11.2686C1.06278 11.2686 0.887913 11.341 0.758981 11.4699C0.63005 11.5989 0.557617 11.7737 0.557617 11.9561V14.3039C0.558527 15.2217 0.923519 16.1016 1.57249 16.7506C2.22146 17.3995 3.1014 17.7645 4.01918 17.7654H15.9817C16.8995 17.7645 17.7794 17.3995 18.4284 16.7506C19.0773 16.1016 19.4423 15.2217 19.4432 14.3039V11.9561C19.4432 11.7737 19.3708 11.5989 19.2419 11.4699C19.1129 11.341 18.9381 11.2686 18.7557 11.2686Z"
+                  fill="white"
+                />
+                <path
+                  d="M9.51234 13.2762C9.57625 13.3407 9.65229 13.3918 9.73606 13.4267C9.81984 13.4616 9.9097 13.4796 10.0005 13.4796C10.0912 13.4796 10.1811 13.4616 10.2649 13.4267C10.3486 13.3918 10.4247 13.3407 10.4886 13.2762L14.4005 9.36438C14.5096 9.23304 14.566 9.06578 14.5586 8.89517C14.5512 8.72456 14.4805 8.56281 14.3604 8.44142C14.2403 8.32003 14.0793 8.24768 13.9088 8.23846C13.7383 8.22924 13.5705 8.28382 13.438 8.39156L10.688 11.1416V0.921875C10.688 0.739539 10.6155 0.56467 10.4866 0.435739C10.3577 0.306808 10.1828 0.234375 10.0005 0.234375C9.81812 0.234375 9.64326 0.306808 9.51433 0.435739C9.38539 0.56467 9.31296 0.739539 9.31296 0.921875V11.1313L6.56296 8.38125C6.43396 8.25225 6.25899 8.17977 6.07655 8.17977C5.89412 8.17977 5.71915 8.25225 5.59015 8.38125C5.46115 8.51025 5.38867 8.68522 5.38867 8.86766C5.38867 9.05009 5.46115 9.22506 5.59015 9.35406L9.51234 13.2762Z"
+                  fill="white"
+                />
+              </svg>
+              Download
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );

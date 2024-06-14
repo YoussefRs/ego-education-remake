@@ -1,4 +1,8 @@
 .privacy-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   ul {
     list-style: circle;
   }
@@ -16,4 +20,74 @@
   .circle-li {
     list-style: circle;
   }
+
+  h7 {
+    color: #046635;
+    font-size: 18px;
+  }
+}
+
+.privacy-list {
+  padding: 0 !important;
+  cursor: pointer;
+  border: 1px solid #046635;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: 0.8rem 0.8rem;
+    border-bottom: 1px solid #046635;
+    
+    font-weight: 600;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #046635;
+      color: #fff;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.img-box {
+  max-height: 570px;
+  border-radius: 15px;
+  border: 1px solid rgba(4, 102, 53, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  button {
+    position: absolute;
+    top: 80%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+.img-box::before {
+  content: "";
+  position: absolute;
+  border-radius: 15px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(4, 102, 53, 1), transparent);
+}
+.privacy-list ul li.active {
+  background-color: rgba(4, 102, 53, 1);
+  border: 1px solid #fff;
+  color: white; 
 }
