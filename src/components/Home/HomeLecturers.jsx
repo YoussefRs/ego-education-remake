@@ -36,7 +36,7 @@ function HomeLecturers() {
               <div className="col-lg-4 col-md-6 mb-4 pt-5">
                 <div className="card shadow-sm border-0" data-aos={"flip-up"}>
                   <div className="card-body">
-                    <div className="user-picture">
+                    {/* <div className="user-picture">
                       <img
                         src={lecturer?.img}
                         alt={lecturer?.name}
@@ -44,14 +44,14 @@ function HomeLecturers() {
                         height="130"
                         width="130"
                       />
-                    </div>
+                    </div> */}
                     <div className="user-content">
                       <h5 className="text-capitalize user-name">
                         {lecturer?.name}
                       </h5>
-                      <p className=" text-capitalize text-muted small blockquote-footer">
+                      {/* <p className=" text-capitalize text-muted small blockquote-footer">
                         {lecturer?.title}
-                      </p>
+                      </p> */}
                       <p className="small text-muted mb-0">
                        {lecturer?.description}
                       </p>
