@@ -31,7 +31,7 @@ function Courses() {
         <div className="row page-row">
           <div className="courses-wrapper col-lg-8 col-md-12 col-12">
             <div className="featured-courses tabbed-info page-row">
-              <ul className="nav nav-tabss">
+             {/*  <ul className="nav nav-tabss">
                 <li
                   className="nav-item"
                   onClick={() => {
@@ -69,7 +69,7 @@ function Courses() {
                     Pegaso International
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
               <div className="tab-content">
                 <div
                   className={`tab-pane ${

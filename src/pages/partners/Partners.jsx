@@ -58,7 +58,7 @@ function Partners() {
             </p>
           </div>
         </div>
-        <div className="row p-5" style={{ backgroundColor: "#f2f8f1" }}>
+       {/*  <div className="row p-5" style={{ backgroundColor: "#f2f8f1" }}>
           <div className="col-2 partners-row">
             <img src={pegaso} alt="Person" />
           </div>
@@ -72,7 +72,7 @@ function Partners() {
               platform of knowledge under a global perspective.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="row my-5">
           <h2
             className="container-heading-green"

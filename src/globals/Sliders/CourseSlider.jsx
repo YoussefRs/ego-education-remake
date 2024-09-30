@@ -99,7 +99,7 @@ function CourseSlider() {
                 <div className="slide-content-inner mb-4">
                   <h2 className="text-start">{course.title}</h2>
                   <p className="text-start text-white">{course.description}</p>
-                  {course?.featured && (
+                 {/*  {course?.featured && (
                     <span className="slide-featured">
                       <img
                         src="https://pegasointernational.eu/app/templates/public/default/assets/images/logo.png"
@@ -107,7 +107,7 @@ function CourseSlider() {
                       />
                       <span>featured</span>
                     </span>
-                  )}
+                  )} */}
                 </div>
                 <hr />
                 <div className="course_icon_btn mt-4 d-flex align-items-center justify-content-end">

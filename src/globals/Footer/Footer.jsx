@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-contents">
           <div className="footer-col footer-col-1">
             <div className="col-title">
-              <img src={ieli} alt="ego-edication" />
+              <img src={logo} alt="ego-edication" />
             </div>
             <div className="col-contents">
               <p>
